@@ -1,6 +1,7 @@
+
 const PageCatalog = ()=> {
 	return (
-		<div>hello</div>
+		<div></div>
   );
 }
 
