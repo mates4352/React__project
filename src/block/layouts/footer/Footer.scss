@@ -1,0 +1,73 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/base/fonts";
+
+
+.footer {
+    background-color: rgba(240, 240, 244, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top {
+    display: flex;
+    padding: 43px 0 46px 0;
+}
+.title-email {
+    max-width: 232px;
+    width: 100%;
+    margin-bottom: 34px;
+    font-family: $SfProBold;
+    font-size: 14px;
+    color:rgba(47, 48, 53, 1);
+}
+.title {
+    font-family: $SfProBold;
+    font-size: 14px;
+    color:rgba(47, 48, 53, 1);
+}
+.item {
+    font-family: $SFProRegular;
+    font-size: 14px;
+}
+.link {
+    color:rgba(47, 48, 53, 1);
+}
+
+.information-box {
+    margin-left: 144px;
+}
+.online-shop-box {
+    margin: 0 100px 0 100px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.icon {
+    margin-right: 30px;
+}
+.icon:last-child {
+    margin-right: 76px;
+}
+
+
+
+
+
+
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 27px;
+}
+.offer {
+    font-family: $SFProRegular;
+    font-size: 10px;
+    letter-spacing: 0%;
+    color:rgba(47, 48, 53, 1);
+}
+.offer:first-child {
+    margin-right: 81px;
+}
