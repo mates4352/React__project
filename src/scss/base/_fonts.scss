@@ -1,14 +1,90 @@
-// @font-face {
-// 	font-family: 'LarsseitRegular';
-// 	src: url('./../../assets/fonts/Larsseit.eot');
-// 	src: local('Larsseit'),
-// 		 url('./../../assets/fonts/Larsseit.eot?#iefix') format('embedded-opentype'),
-// 		 url('./../../assets/fonts/Larsseit.woff2') format('woff2'),
-// 		 url('./../../assets/fonts/Larsseit.woff') format('woff'),
-// 		 url('./../../assets/fonts/Larsseit.ttf') format('truetype');
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
+// font-weight:100 / Thin
+// font-weight:200 / Extra
+// font-weight:300 / Light
+// font-weight:400 / Normal
+// font-weight:500 / Medium
+// font-weight:600 / Semi Bold
+// font-weight:700 / Bold
+// font-weight:800 / Extra Bold
+// font-weight:900 / Black
+
+@font-face {
+	font-family: 'SfProBold';
+	src: url('#{$way-fonts}/SFProDisplay-Bold.eot');
+	src:local('SFProDisplay-Bold'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.eot') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProSemibold';
+	src: url('#{$way-fonts}/SFProDisplay-Semibold.eot');
+	src: local('SFProDisplay-Semibold'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProMedium';
+	src: url('#{$way-fonts}/SFProDisplay-Medium.eot');
+	src: local('SFProDisplay-Medium'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProRegular';
+	src: url('#{$way-fonts}/SFProDisplay-Regular.eot');
+	src: local('SFProDisplay-Regular'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('#{$way-fonts}/ProximaNovaCond-Regular.eot');
+	src: local('ProximaNovaCond-Regular'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.woff2') format('woff2'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.woff') format('woff'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('#{$way-fonts}/Barlow-Bold.eot');
+	src: local('Barlow-Bold'),
+		 url('#{$way-fonts}/Barlow-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/Barlow-Bold.woff2') format('woff2'),
+		 url('#{$way-fonts}/Barlow-Bold.woff') format('woff'),
+		 url('#{$way-fonts}/Barlow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+
+
+
 
 
 

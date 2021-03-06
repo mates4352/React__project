@@ -1,4 +1,5 @@
 import Img from "../../components/img/Img";
+import Item from "../../components/item/Item";
 import Link from "../../components/link/Link";
 
 import s from "./Header.module.scss"
@@ -10,32 +11,32 @@ const Header = () => {
 				<nav className={s.menu}>
 					<ul className={s.list}>
 
-						<li className={s.item}>
+						<Item className={s.item}>
 							<Link
 								className={s.link}
 								to={"#"}
 								value="Магазины"
 							>
 							</Link>
-						</li>
+						</Item>
 
-						<li className={s.item}>
-						<Link
+						<Item className={s.item}>
+							<Link
+									className={s.link}
+									to={"#"}
+									value="Акции"
+								>
+							</Link>
+						</Item>
+
+						<Item className={s.item}>
+							<Link
 								className={s.link}
 								to={"#"}
-								value="Акции"
+								value="Доставка и оплата"
 							>
-						</Link>
-						</li>
-
-						<li className={s.item}>
-						<Link
-							className={s.link}
-							to={"#"}
-							value="Доставка и оплата"
-					>
-						</Link>
-						</li>
+							</Link>
+						</Item>
 
 					</ul>
 				</nav>
@@ -45,8 +46,10 @@ const Header = () => {
 					<h1 className={s.title}>DRIVE MOTO</h1>
 				</div>
 
-			</div>  
-		</header> /* header */ 
+				<Img src={'#'} alt={'logo'}></Img>
+
+			</div>  /* wrapper */
+		</header> /* header */
   );
 }
 
