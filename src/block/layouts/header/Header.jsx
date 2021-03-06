@@ -2,7 +2,10 @@ import Img from "../../components/img/Img";
 import Item from "../../components/item/Item";
 import Link from "../../components/link/Link";
 
+import logo from "./../../../assets/images/header/logo.svg"
+
 import s from "./Header.module.scss"
+
 
 const Header = () => {
 	return (
@@ -11,44 +14,53 @@ const Header = () => {
 				<nav className={s.menu}>
 					<ul className={s.list}>
 
-						<Item className={s.item}>
-							<Link
-								className={s.link}
-								to={"#"}
-								value="Магазины"
-							>
-							</Link>
+						<Item
+							className={s.item}
+							value={
+								<Link
+									className={s.link}
+									to={"#"}
+									value="Магазины"
+								/>
+							}
+						>
+						
 						</Item>
 
-						<Item className={s.item}>
-							<Link
+						<Item
+							className={s.item}
+							value={
+								<Link
 									className={s.link}
 									to={"#"}
 									value="Акции"
-								>
-							</Link>
+								/>
+							}
+						>
 						</Item>
 
-						<Item className={s.item}>
-							<Link
-								className={s.link}
-								to={"#"}
-								value="Доставка и оплата"
-							>
-							</Link>
+						<Item
+							className={s.item}
+							value={
+								<Link
+									className={s.link}
+									to={"#"}
+									value="Доставка и оплата"
+								/>
+							}
+						>
 						</Item>
 
 					</ul>
 				</nav>
 
-				<div className={s.logo}>
-					<Img className={s.img} src={'#'} alt={'logo'}/>
-					<h1 className={s.title}>DRIVE MOTO</h1>
-				</div>
+				<Img
+					className={s.logo}
+					srs={logo}
+					alt={'logo'}
+				/>
 
-				<Img src={'#'} alt={'logo'}></Img>
-
-			</div>  /* wrapper */
+			</div> 
 		</header> /* header */
   );
 }
