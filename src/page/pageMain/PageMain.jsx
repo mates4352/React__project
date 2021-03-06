@@ -1,7 +1,9 @@
+import Header from "../../block/layouts/header/Header"
+
  const PageMain = ()=> {
 	 return (
-		<div className="wrapper">
-
+		<div className="container">
+			<Header></Header>
 		</div>
   );
 }

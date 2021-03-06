@@ -1,9 +1,9 @@
-import './App.css';
+import './App.scss';
 import PageMain from './page/pageMain/PageMain';
 import PageCatalog from './page/pageCatalog/PageCatalog';
 import PageProduct from './page/pageProduct/PageProduct';
 
-function App() {
+const App = () => {
 	return (
 		<>
 			<PageMain/>

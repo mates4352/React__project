@@ -1,0 +1,17 @@
+%pos-rel {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+%pos-abs {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+%flexCenter{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
