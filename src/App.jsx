@@ -3,6 +3,10 @@ import PageMain from './page/pageMain/PageMain';
 import PageCatalog from './page/pageCatalog/PageCatalog';
 import PageProduct from './page/pageProduct/PageProduct';
 
+
+
+
+
 function App() {
 	return (
 		<>
@@ -10,7 +14,7 @@ function App() {
 			<PageCatalog/>
 			<PageProduct/>
 		</>
-  );
+		);
 }
 
 export default App;
