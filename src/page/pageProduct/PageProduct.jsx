@@ -6,7 +6,7 @@ import Card from "./../../block/layouts/card/Card";
 const PageProduct = () => {
 	return (
 		<>
-			<div className="grid">
+			{/* <div className="grid">
 				<div className="empty">empty</div>
 				<header className="header">header</header>
 				<section className="breadCrumb">breadCrumb</section>
@@ -17,7 +17,7 @@ const PageProduct = () => {
 			<Card />
 				</section>
 				<footer className="footer">footer</footer>
-			</div>
+			</div> */}
 		</>
 	);
 }
