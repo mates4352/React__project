@@ -25,65 +25,72 @@ function Footer() {
 			<Container
 				value={
 					<>
-						<div className= {s.top}>
-							<div className= {s.mail}>
+						<div className={s.top}>
+							<div className={s.mail}>
 
-								<Titleh4 className= {s.titleEmail} 
-								value="Подпишитесь на нашу рассылку 
+								<Titleh4 className={s.titleEmail}
+									value="Подпишитесь на нашу рассылку 
 						и узнавайте о акциях быстрее"/>
 								<form className={s.styles}>
 									<Input className={s.email}
-									value="Введите ваш e-mail:"
+										value="Введите ваш e-mail:"
 									/>
-									<Button className={s.btn} 
-									value="Отправить" 
+									<Button className={s.btn}
+										value="Отправить"
 									/>
 								</form>
 							</div>
-							<div className= {s.informationBox}>
-								<Titleh4 className={s.title} 
-								value="Информация" />
+							<div className={s.informationBox}>
+								<Titleh4 className={s.title}
+									value="Информация" />
+								<List
+									className={s.item}
+									valueItem1={
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="О компании"
+												/>
+											}
+										/>
+									}
+									valueItem2={
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="Контакты"
+												/>
+											}
+										/>
+									}
+									valueItem3={
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="Акции"
+												/>
+											}
+										/>
+									}
+									valueItem4={
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="Магазины"
+												/>
+											}
+										/>
+									}
+								/>
 
-								<List
-									className={s.item}
-									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="О компании"
-										/>
-									}
-								/>
-								<List
-									className={s.item}
-									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="Контакты"
-										/>
-									}
-								/>
-								<List
-									className={s.item}
-									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="Акции"
-										/>
-									}
-								/>
-								<List
-									className={s.item}
-									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="Магазины"
-										/>
-									}
-								/>
 							</div>
 
 							<div className={s.shopBox}>
@@ -92,40 +99,47 @@ function Footer() {
 								<List
 									className={s.item}
 									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="Доставка и самовывоз"
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="Доставка и самовывоз"
+												/>
+											}
 										/>
 									}
-								/>
-								<List
-									className={s.item}
-									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="Оплата"
+									valueItem2={
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="Оплата"
+												/>
+											}
 										/>
 									}
-								/>
-								<List
-									className={s.item}
-									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="Возврат-обмен"
+									valueItem3={
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="Возврат-обмен"
+												/>
+											}
 										/>
 									}
-								/>
-								<List
-									className={s.item}
-									valueItem1={
-										<Link
-											className={s.link}
-											to={"#"}
-											value="Новости"
+									valueItem4={
+										<Item
+											value={
+												<Link
+													className={s.link}
+													to={"#"}
+													value="Новости"
+												/>
+											}
 										/>
 									}
 								/>
@@ -157,11 +171,11 @@ function Footer() {
 
 						<div className={s.bottom}>
 							<div className={s.bottomOffen}>
-								<Link className={s.offer} 
-								to={"#"} value="Договор оферты" 
+								<Link className={s.offer}
+									to={"#"} value="Договор оферты"
 								/>
-								<Link className={s.offer} 
-								to={"#"} value="Политика обработки персональных данных" 
+								<Link className={s.offer}
+									to={"#"} value="Политика обработки персональных данных"
 								/>
 							</div>
 
