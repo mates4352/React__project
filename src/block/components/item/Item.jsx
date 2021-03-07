@@ -1,9 +1,13 @@
 const Item = (props) => {
-	console.log(props);
 	return (
-		<li className={props.className}>{props.value}</li>
-		
-  );
+		<li
+			className={props.className}
+			style={props.style}
+		>
+			{props.value}
+		</li>
+
+	);
 }
 
 export default Item;

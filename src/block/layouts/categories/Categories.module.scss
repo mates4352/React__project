@@ -1,0 +1,19 @@
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+
+.wrapper{
+	height: 55px;
+	margin-bottom:80px;
+	background: #F0F0F4;
+}
+
+.list{
+	@include flex-j-a(center,space-between);
+	height: 100%;
+}
+
+.text{
+	@include font4(20px,24px,$SFProRegular,$main-color);
+	text-transform: capitalize;
+}
+

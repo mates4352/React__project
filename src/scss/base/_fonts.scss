@@ -55,6 +55,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+//...........................//
 
 @font-face {
 	font-family: 'ProximaNova';
@@ -67,6 +68,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+//...........................//
 
 @font-face {
 	font-family: 'Barlow';
@@ -79,7 +81,18 @@
 	font-weight: bold;
 	font-style: normal;
 }
-
+//...........................//
+@font-face {
+	font-family: 'Staatliches';
+	src: url('#{$way-fonts}/Staatliches-Regular.eot');
+	src:  local('Staatliches-Regular'),
+		 url('#{$way-fonts}/Staatliches-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/Staatliches-Regular.woff2') format('woff2'),
+		 url('#{$way-fonts}/Staatliches-Regular.woff') format('woff'),
+		 url('#{$way-fonts}/Staatliches-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
 
 
 

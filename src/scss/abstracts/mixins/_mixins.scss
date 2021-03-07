@@ -28,8 +28,9 @@
 	text-align:$text-align;
 }
 
-@mixin flex-j-a($value,$value1){
+@mixin flex-j-a($value1,$value2,$value3:row){
 	display: flex;
-	justify-content: $value;
 	align-items: $value1;
+	justify-content: $value2;
+	flex-direction: $value3;
 }

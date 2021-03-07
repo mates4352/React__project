@@ -1,68 +1,138 @@
 import Img from "../../components/img/Img";
 import Item from "../../components/item/Item";
 import Link from "../../components/link/Link";
+import Text from "../../components/text/Text";
+import Span from "../../components/span/Span";
+import List from "../../components/list/List";
 
 import logo from "./../../../assets/images/header/logo.svg"
+import location from "./../../../assets/images/svg/location.svg"
+import like from "./../../../assets/images/svg/like.svg"
+import person from "./../../../assets/images/svg/person.svg"
+import basket from "./../../../assets/images/svg/basket.svg"
 
 import s from "./Header.module.scss"
 
 
-const Header = () => {
+const Header = (props) => {
 	return (
-		<header className={s.header}>
+		<header style={props.style} className={s.header}>
 			<div className={s.wrapper}>
 				<nav className={s.menu}>
-					<ul className={s.list}>
 
-						<Item
-							className={s.item}
-							value={
-								<Link
-									className={s.link}
-									to={"#"}
-									value="Магазины"
-								/>
-							}
-						>
-						
-						</Item>
-
-						<Item
-							className={s.item}
-							value={
-								<Link
-									className={s.link}
-									to={"#"}
-									value="Акции"
-								/>
-							}
-						>
-						</Item>
-
-						<Item
-							className={s.item}
-							value={
-								<Link
-									className={s.link}
-									to={"#"}
-									value="Доставка и оплата"
-								/>
-							}
-						>
-						</Item>
-
-					</ul>
+					<List
+						className={s.list}
+						valueItem1={
+							<Item
+								className={s.item}
+								value={
+									<Link
+										className={s.text}
+										to={"#"}
+										value="Магазины"
+									/>
+								}
+							/>
+						}
+						valueItem2={
+							<Item
+								className={s.item}
+								value={
+									<Link
+										className={s.text}
+										to={"#"}
+										value="Акции"
+									/>
+								}
+							/>
+						}
+						valueItem3={
+							<Item
+								className={s.item}
+								value={
+									<Link
+										className={s.text}
+										to={"#"}
+										value="Доставка и оплата"
+									/>
+								}
+							/>
+						}
+					/>
 				</nav>
 
-				<Img
-					className={s.logo}
-					srs={logo}
-					alt={'logo'}
-				/>
+				<div className={s.logo}>
+					<Img
+						srs={logo}
+						alt={'logo'}
+					/>
+					<h1 className={`${s.text} ${s.title}`}>DRIVE MOTO</h1>
+				</div>
 
-			</div> 
-		</header> /* header */
-  );
+
+				<div className={s.row}>
+
+					<div className={s.wrapperSvg}>
+
+						<Img
+							className={s.location}
+							srs={location}
+							alt={'logo'}
+						/>
+
+						<Text
+							className={s.text}
+							value="Москва,  ул. Науки  25"
+						/>
+					</div>
+
+					<List
+						className={s.wrapperSvg}
+						valueItem1={
+							<Item
+								className={s.icon}
+								value={
+									<Img
+										srs={like}
+										alt={'like'}
+									/>
+								}
+							/>
+						}
+						valueItem2={
+							<Item
+								className={s.icon}
+								value={
+									<Img
+										srs={person}
+										alt={'person'}
+									/>
+								}
+							/>
+						}
+						valueItem3={
+							<Item
+								className={s.icon}
+								value={
+									<div className={s.counter}>
+										<Img
+											srs={basket}
+											alt={'basket'}
+										/>
+										<Span
+											className={s.number}
+											value="0"
+										/>
+									</div>
+								}
+							/>
+						}
+					/>
+				</div>
+
+			</div>
+		</header> 
+	);
 }
 
 export default Header;

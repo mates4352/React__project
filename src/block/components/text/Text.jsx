@@ -1,6 +1,6 @@
 const Text = (props) => {
 	return (
-		<p className={props.className}>{props.value}</p>
+		<p className={props.className} style={props.fontWeignt}>{props.value}</p>
   );
 }
 

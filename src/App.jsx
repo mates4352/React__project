@@ -5,12 +5,12 @@ import PageProduct from './page/pageProduct/PageProduct';
 
 const App = () => {
 	return (
-		<>
+		<div className="container">
 			<PageMain/>
 			<PageCatalog/>
 			<PageProduct/>
-		</>
-		);
+		</div>
+	);
 }
 
 export default App;
