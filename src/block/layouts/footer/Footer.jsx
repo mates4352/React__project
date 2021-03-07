@@ -16,7 +16,6 @@ import List from "../../components/list/List";
 import s from "./Footer.module.scss"
 import Img from "../../components/img/Img";
 
-import "./Footer.scss"
 
 function Footer() {
 	return (
@@ -24,24 +23,25 @@ function Footer() {
 			<Container
 				value={
 					<>
-						<div className= {s.top}>
-							<div className= {s.mail}>
+						<div className={s.top}>
+							<div className={s.mail}>
 
-								<Titleh4 className= {s.titleEmail} 
-								value="Подпишитесь на нашу рассылку 
-						и узнавайте о акциях быстрее"/>
+								<Titleh4
+									className={s.titleEmail}
+									value="Подпишитесь на нашу рассылку и узнавайте о акциях быстрее"
+								/>
 								<form className={s.styles}>
 									<Input className={s.email}
-									value="Введите ваш e-mail:"
+										value="Введите ваш e-mail:"
 									/>
-									<Button className={s.btn} 
-									value="Отправить" 
+									<Button className={s.btn}
+										value="Отправить"
 									/>
 								</form>
 							</div>
-							<div className= {s.informationBox}>
-								<Titleh4 className={s.title} 
-								value="Информация" />
+							<div className={s.informationBox}>
+								<Titleh4 className={s.title}
+									value="Информация" />
 
 								<List
 									className={s.item}
@@ -156,11 +156,11 @@ function Footer() {
 
 						<div className={s.bottom}>
 							<div className={s.bottomOffen}>
-								<Link className={s.offer} 
-								to={"#"} value="Договор оферты" 
+								<Link className={s.offer}
+									to={"#"} value="Договор оферты"
 								/>
-								<Link className={s.offer} 
-								to={"#"} value="Политика обработки персональных данных" 
+								<Link className={s.offer}
+									to={"#"} value="Политика обработки персональных данных"
 								/>
 							</div>
 
@@ -168,10 +168,7 @@ function Footer() {
 
 					</>
 				}
-
 			/>
-
-
 		</footer>
 	);
 }
