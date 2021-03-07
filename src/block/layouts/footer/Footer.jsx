@@ -7,6 +7,9 @@ import Email from "./../../components/email/Email";
 import Button from "./../../components/button/Button";
 
 import "./Footer.scss"
+import Titleh4 from "../../components/title/Titleh4";
+import Item from "../../components/item/Item";
+import Link from "../../components/link/Link";
 
 
 
@@ -17,30 +20,35 @@ function Footer() {
 
 			<div div className="top">
 				<div className="mail">
-					<div className="title">
-						Подпишитесь на нашу рассылку 
-						и узнавайте о акция быстрее
-					</div>
+
+					<Titleh4 className= "title-email" value="Подпишитесь на нашу рассылку 
+						и узнавайте о акциях быстрее"/>
+					<form className="styles">
 					<Email />
 					<Button />
+					</form>
 				</div>
 
+				<div className="information-box">
+				<Titleh4 className= "title" value="Информация"/>
 				<ul className="information">
-					<li className="item">Информация</li>
-					<li className="item">О компании</li>
-					<li className="item">Контакты</li>
-					<li className="item">Акции</li>
-					<li className="item">Магазины</li>
+					<Item className="item" value={<Link className="link" to="#" value="О компании" /> }/>
+					<Item className="item" value={<Link className="link" to="#" value="Контакты" /> }/>
+					<Item className="item" value={<Link className="link" to="#" value="Акции" /> }/>
+					<Item className="item" value={<Link className="link" to="#" value="Магазины" /> }/>
 				</ul>
+				</div>
 
+				<div className="online-shop-box">
+				<Titleh4 className= "title" value="Интернет-магазин"/>
 				<ul className="online-shop">
-					<li className="shop-item">Интернет-магазин</li>
-					<li className="shop-item">Доставка и самовывоз</li>
-					<li className="shop-item">Оплата</li>
-					<li className="shop-item">Возврат-обмен</li>
-					<li className="shop-item">Новости</li>
+					<Item className="item" value={<Link className="link" to="#" value="Доставка и самовывоз" /> }/>
+					<Item className="item" value={<Link className="link" to="#" value="Оплата" /> }/>
+					<Item className="item" value={<Link className="link" to="#" value="Возврат-обмен" /> }/>
+					<Item className="item" value={<Link className="link" to="#" value="Новости" /> }/>
 				</ul>
-
+				</div>
+				
 				<div className="social">
 					<img className="icon" src={instagramLogo} alt="" />
 					<img className="icon" src={vkLogo} alt="" />
@@ -49,10 +57,10 @@ function Footer() {
 				</div>
 			</div>
 
-			<div className="footer-bottom">
-				
+			<div className="bottom">
+				<Link className="offer" to="#" value="Договор оферты"/>
+				<Link className="offer" to="#" value="Политика обработки персональных данных"/>
 			</div>
-
 		</div>
 );
 }
