@@ -4,75 +4,70 @@
 
 .footer {
     background-color: rgba(240, 240, 244, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-.top {
+.footer-top {
     display: flex;
     padding: 43px 0 46px 0;
 }
-.title-email {
+.footer-title-email {
     max-width: 232px;
     width: 100%;
     margin-bottom: 34px;
     font-family: $SfProBold;
     font-size: 14px;
     color:$main-color;
+    letter-spacing: -0.4px;
 }
-.title {
+.footer-styles {
+    display: flex;
+}
+.footer-title {
     font-family: $SfProBold;
     font-size: 14px;
     color:$main-color;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
 }
-.item {
+.footer-item {
     font-family: $SFProRegular;
     font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
 }
-.link {
+.footer-link {
     color:$main-color;
 }
-
-.information-box {
+.footer-information-box {
     margin-left: 144px;
 }
-.online-shop-box {
+.footer-online-shop-box {
     margin: 0 100px 0 100px;
 }
-.social {
+.footer-social {
     display: flex;
     justify-content: center;
     align-items:center;
 }
-.icon {
+.footer-icon {
     margin-right: 30px;
 }
-.icon:last-child {
+.footer-icon:last-child {
     margin-right: 76px;
 }
-
-
-
-
-
-
-
-.bottom {
+.footer-bottom {
     display: flex;
     justify-content: center;
     padding-bottom: 27px;
 }
-.bottom-offen {
-    transform: translateX(46px);
+.footer-bottom-offen {
+    transform: translateX(51px);
     display: flex;
 }
-
-.offer {
+.footer-offer {
     font-family: $SFProRegular;
     font-size: 10px;
-    letter-spacing: 0%;
     color:$main-color;
 }
-.offer:first-child {
+.footer-offer:first-child {
     margin-right: 81px;
 }
