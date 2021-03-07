@@ -1,6 +1,7 @@
 import Img from "../../components/img/Img";
-import Span from "../../components/span/Span";
+import Link from "../../components/link/Link";
 import Titleh3 from "../../components/title/Titleh3";
+
 
 import s from "./CategoryCard.module.scss"
 
@@ -18,8 +19,8 @@ const CategoryCard = (props) => {
 				alt={props.alt}
 			/>
 
-			<Span
-				className={s.span}
+			<Link
+				className={s.Link}
 				value='Подробее'
 			/>
 		</div>

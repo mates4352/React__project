@@ -16,10 +16,6 @@ import List from "../../components/list/List";
 import s from "./Footer.module.scss"
 import Img from "../../components/img/Img";
 
-<<<<<<< HEAD
-=======
-import "./Footer.module.scss"
->>>>>>> 7486400d1b8c459e518b30382a6051532630b949
 
 function Footer() {
 	return (
@@ -30,16 +26,10 @@ function Footer() {
 						<div className={s.top}>
 							<div className={s.mail}>
 
-<<<<<<< HEAD
 								<Titleh4
 									className={s.titleEmail}
 									value="Подпишитесь на нашу рассылку и узнавайте о акциях быстрее"
 								/>
-=======
-								<Titleh4 className={s.titleEmail}
-									value="Подпишитесь на нашу рассылку 
-						и узнавайте о акциях быстрее"/>
->>>>>>> 7486400d1b8c459e518b30382a6051532630b949
 								<form className={s.styles}>
 									<Input className={s.email}
 										value="Введите ваш e-mail:"
@@ -52,10 +42,6 @@ function Footer() {
 							<div className={s.informationBox}>
 								<Titleh4 className={s.title}
 									value="Информация" />
-<<<<<<< HEAD
-
-=======
->>>>>>> 7486400d1b8c459e518b30382a6051532630b949
 								<List
 									className={s.item}
 									valueItem1={

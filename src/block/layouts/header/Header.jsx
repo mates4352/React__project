@@ -79,7 +79,7 @@ const Header = (props) => {
 
 								<Img
 									className={s.location}
-									srс={location}
+									src={location}
 									alt={'logo'}
 								/>
 
@@ -96,7 +96,7 @@ const Header = (props) => {
 										className={s.icon}
 										value={
 											<Img
-												srс={like}
+												src={like}
 												alt={'like'}
 											/>
 										}
@@ -107,7 +107,7 @@ const Header = (props) => {
 										className={s.icon}
 										value={
 											<Img
-												srс={person}
+												src={person}
 												alt={'person'}
 											/>
 										}
@@ -119,7 +119,7 @@ const Header = (props) => {
 										value={
 											<div className={s.counter}>
 												<Img
-													srс={basket}
+													src={basket}
 													alt={'basket'}
 												/>
 												<Span
