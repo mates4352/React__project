@@ -18,19 +18,19 @@
     margin-bottom: 34px;
     font-family: $SfProBold;
     font-size: 14px;
-    color:rgba(47, 48, 53, 1);
+    color:$main-color;
 }
 .title {
     font-family: $SfProBold;
     font-size: 14px;
-    color:rgba(47, 48, 53, 1);
+    color:$main-color;
 }
 .item {
     font-family: $SFProRegular;
     font-size: 14px;
 }
 .link {
-    color:rgba(47, 48, 53, 1);
+    color:$main-color;
 }
 
 .information-box {
@@ -62,11 +62,16 @@
     justify-content: center;
     padding-bottom: 27px;
 }
+.bottom-offen {
+    transform: translateX(46px);
+    display: flex;
+}
+
 .offer {
     font-family: $SFProRegular;
     font-size: 10px;
     letter-spacing: 0%;
-    color:rgba(47, 48, 53, 1);
+    color:$main-color;
 }
 .offer:first-child {
     margin-right: 81px;

@@ -1,10 +1,15 @@
 import "./Button.scss"
 
 
-function Button(props) {
+const Button = (props) =>  {
 	return (
-		<button className="bth">Отправить</button>
-  );
+		<button
+			className={props.className}
+			style={props.style}
+		>
+			{props.value}
+		</button>
+	);
 }
 
 export default Button;

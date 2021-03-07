@@ -1,14 +1,14 @@
+const Container = (props) => {
 
-const Link = (props) => {
+	console.log(props);
 	return (
-		<a
+		<div
 			className={props.className}
 			style={props.style}
-			href={props.to}
 		>
 			{props.value}
-		</a>
+		</div>
 	);
 }
 
-export default Link;
+export default Container;

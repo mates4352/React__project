@@ -6,11 +6,11 @@ import PageProduct from './page/pageProduct/PageProduct';
 
 function App() {
 	return (
-		<div className="container">
-			<PageMain/>
-			<PageCatalog/>
-			<PageProduct/>
-		</div>
+		<>
+			<PageMain />
+			<PageCatalog />
+			<PageProduct />
+		</>
 	);
 }
 
