@@ -1,140 +1,168 @@
+// foto
 import instagramLogo from "./../../../assets/images/footerSocial/instagram-sketched 1.png";
 import vkLogo from "./../../../assets/images/footerSocial/vk 1.png";
 import facebookLogo from "./../../../assets/images/footerSocial/facebook 1.png";
 import youtubeLogo from "./../../../assets/images/footerSocial/youtube 1.png";
 
-import Email from "./../../components/email/Email";
+// components
+import Input from "../../components/input/Input";
 import Button from "./../../components/button/Button";
-
-import "./Footer.scss"
 import Titleh4 from "../../components/title/Titleh4";
 import Item from "../../components/item/Item";
 import Link from "../container/Container";
 import Container from "../container/Container";
 import List from "../../components/list/List";
 
+import s from "./Footer.module.scss"
+import Img from "../../components/img/Img";
+
 
 
 
 function Footer() {
 	return (
-		<div className="footer">
+		<footer className={s.footer}>
 			<Container
-				className="container"
 				value={
 					<>
-						<div div className="footer-top">
-							<div className="footer-mail">
+						<div className= {s.top}>
+							<div className= {s.mail}>
 
-								<Titleh4 className="footer-title-email" value="Подпишитесь на нашу рассылку 
+								<Titleh4 className= {s.titleEmail} 
+								value="Подпишитесь на нашу рассылку 
 						и узнавайте о акциях быстрее"/>
-								<form className="footer-styles">
-									<Email />
-									<Button className="btn" value="Отправить" />
+								<form className={s.styles}>
+									<Input className={s.email}
+									value="Введите ваш e-mail:"
+									/>
+									<Button className={s.btn} 
+									value="Отправить" 
+									/>
 								</form>
 							</div>
-							<div className="footer-information-box">
-								<Titleh4 className="footer-title" value="Информация" />
+							<div className= {s.informationBox}>
+								<Titleh4 className={s.title} 
+								value="Информация" />
 
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="О компании"
 										/>
 									}
 								/>
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="Контакты"
 										/>
 									}
 								/>
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="Акции"
 										/>
 									}
 								/>
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="Магазины"
 										/>
 									}
 								/>
 							</div>
 
-							<div className="footer-online-shop-box">
-								<Titleh4 className="footer-title" value="Интернет-магазин" />
+							<div className={s.shopBox}>
+								<Titleh4 className={s.title} value="Интернет-магазин" />
 
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="Доставка и самовывоз"
 										/>
 									}
 								/>
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="Оплата"
 										/>
 									}
 								/>
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="Возврат-обмен"
 										/>
 									}
 								/>
 								<List
-									className="footer-item"
+									className={s.item}
 									valueItem1={
 										<Link
-											className="link"
-											to="#"
+											className={s.link}
+											to={"#"}
 											value="Новости"
 										/>
 									}
 								/>
 							</div>
 
-							<div className="footer-social">
-								<img className="footer-icon" src={instagramLogo} alt="" />
-								<img className="footer-icon" src={vkLogo} alt="" />
-								<img className="footer-icon" src={facebookLogo} alt="" />
-								<img className="footer-icon" src={youtubeLogo} alt="" />
+							<div className={s.social}>
+								<Img
+									className={s.icon}
+									src={instagramLogo}
+									alt={"instagramLogo"}
+								/>
+								<Img
+									className={s.icon}
+									src={vkLogo}
+									alt={"vkLogo"}
+								/>
+								<Img
+									className={s.icon}
+									src={facebookLogo}
+									alt={"facebookLogo"}
+								/>
+								<Img
+									className={s.icon}
+									src={youtubeLogo}
+									alt={"youtubeLogo"}
+								/>
 							</div>
 						</div>
 
-						<div className="footer-bottom">
-							<div className="footer-bottom-offen">
-								<Link className="footer-offer" to="#" value="Договор оферты" />
-								<Link className="footer-offer" to="#" value="Политика обработки персональных данных" />
+						<div className={s.bottom}>
+							<div className={s.bottomOffen}>
+								<Link className={s.offer} 
+								to={"#"} value="Договор оферты" 
+								/>
+								<Link className={s.offer} 
+								to={"#"} value="Политика обработки персональных данных" 
+								/>
 							</div>
 
 						</div>
@@ -145,7 +173,7 @@ function Footer() {
 			/>
 
 
-		</div>
+		</footer>
 	);
 }
 

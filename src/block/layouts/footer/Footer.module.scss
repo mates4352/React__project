@@ -4,12 +4,15 @@
 
 .footer {
     background-color: rgba(240, 240, 244, 1);
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
-.footer-top {
+.top {
     display: flex;
     padding: 43px 0 46px 0;
 }
-.footer-title-email {
+.titleEmail {
     max-width: 232px;
     width: 100%;
     margin-bottom: 34px;
@@ -18,56 +21,74 @@
     color:$main-color;
     letter-spacing: -0.4px;
 }
-.footer-styles {
+.styles {
     display: flex;
 }
-.footer-title {
+.title {
     font-family: $SfProBold;
     font-size: 14px;
     color:$main-color;
     line-height: 1.5;
     letter-spacing: -0.4px;
 }
-.footer-item {
+.item {
     font-family: $SFProRegular;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: -0.4px;
 }
-.footer-link {
+.link {
     color:$main-color;
 }
-.footer-information-box {
+.informationBox {
     margin-left: 144px;
 }
-.footer-online-shop-box {
+.shopBox{
     margin: 0 100px 0 100px;
 }
-.footer-social {
+.social {
     display: flex;
     justify-content: center;
     align-items:center;
 }
-.footer-icon {
+.icon {
     margin-right: 30px;
 }
-.footer-icon:last-child {
+.icon:last-child {
     margin-right: 76px;
 }
-.footer-bottom {
+.bottom {
     display: flex;
     justify-content: center;
     padding-bottom: 27px;
 }
-.footer-bottom-offen {
+.bottomOffen {
     transform: translateX(51px);
     display: flex;
 }
-.footer-offer {
+.offer {
     font-family: $SFProRegular;
     font-size: 10px;
     color:$main-color;
 }
-.footer-offer:first-child {
+.offer:first-child {
     margin-right: 81px;
+}
+.btn{
+    width: 109px;
+    height: 33px;
+    background-color: $sub-color;
+    border: none;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.email {
+    width: 201px;
+    height: 33px;
+    border: none;
+    font-size: 14px;
+    color: rgba(196, 196, 196, 1);
+    background-color: #fff;
+    padding-left: 13px;
 }
