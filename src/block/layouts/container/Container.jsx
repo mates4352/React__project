@@ -1,9 +1,11 @@
+import "./Container.scss"
+
 const Container = (props) => {
 
 	console.log(props);
 	return (
 		<div
-			className={props.className}
+			className='container'
 			style={props.style}
 		>
 			{props.value}

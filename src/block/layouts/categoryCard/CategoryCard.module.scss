@@ -1,0 +1,23 @@
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 20px;
+
+	position: relative;
+
+	border: 1px solid #CDCDCD;
+}
+
+.title{
+	@include font4(23px,28px,$Barlow,$main-color);
+}
+
+.span{
+	@include font4(14px,17px,$SFProRegular,$cardSpan);
+	position:absolute;
+	bottom:15px;
+	left:20px;
+}
