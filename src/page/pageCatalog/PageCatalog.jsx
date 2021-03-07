@@ -5,7 +5,6 @@ const PageCatalog = ()=> {
 	return (
 		<>
 		<Footer/>
-	
 		</>
   );
 }

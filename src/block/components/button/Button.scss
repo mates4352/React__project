@@ -1,7 +1,8 @@
-.bth{
+@import "./../../../scss/abstracts/variable/variable";
+.btn{
     width: 109px;
     height: 33px;
-    background-color: rgba(28, 98, 205, 1);
+    background-color: $sub-color;
     border: none;
     font-size: 11px;
     color: #fff;
