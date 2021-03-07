@@ -1,24 +1,21 @@
-import "./PageProduct.scss"
-import './../../block/layouts/card/Card';
-import Card from "./../../block/layouts/card/Card";
+import Card from "../../block/layouts/card/Card"
+import s from "./PageProduct.module.scss"
+// import './../../block/layouts/card/Card';
+// import Card from "./../../block/layouts/card/Card";
+// import Header from "./../../../src/block/layouts/header/Header"
+// import Footer from "./../../../src/block/layouts/footer/Footer"
 
 
-const PageProduct = () => {
+
+
+
+const PageProduct = (props) => {
 	return (
-		<>
-			{/* <div className="grid">
-				<div className="empty">empty</div>
-				<header className="header">header</header>
-				<section className="breadCrumb">breadCrumb</section>
-				<section className="containerCards">containerCards</section>
-				<section className="navigation">navigation</section>
-				<section className="infoShop">infoShop</section>
-				<section className="innerCards">innerCards
-			<Card />
-				</section>
-				<footer className="footer">footer</footer>
-			</div> */}
-		</>
+	
+			<div className={s.pageProduct}>
+					<Card/>
+			</div>
+		
 	);
 }
 
