@@ -16,7 +16,7 @@ import List from "../../components/list/List";
 import s from "./Footer.module.scss"
 import Img from "../../components/img/Img";
 
-import "./Footer.scss"
+import "./Footer.module.scss"
 
 function Footer() {
 	return (
