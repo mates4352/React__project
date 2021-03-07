@@ -5,14 +5,11 @@ import youtubeLogo from "./../../../assets/images/footerSocial/youtube 1.png";
 
 import Email from "./../../components/email/Email";
 import Button from "./../../components/button/Button";
-
-import "./Footer.scss"
 import Titleh4 from "../../components/title/Titleh4";
 import Item from "../../components/item/Item";
 import Link from "../../components/link/Link";
 
-
-
+import "./Footer.scss"
 
 function Footer() {
 	return (
