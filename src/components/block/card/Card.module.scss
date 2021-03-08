@@ -4,20 +4,29 @@
 @import "./../../../scss/base/fonts";
 
 
-.сard {
+.wrapper {
     @extend %flexCenter;
     flex-direction: column;
-    width: 270px;
+    max-width: 270px;
     height: 403px;
     border: 1px solid #E0E0E0;
     position: relative;
 }
 
-.sale {
+.boxSale {
     @extend %pos-abs;
-    // @include size(63px,25px);
     width: 63px;
     height: 25px;
+    background-color: $sub-color;
+    @extend %flexCenter;
+
+}
+
+.sale {
+    @include font4(12px, 14px, $SFProRegular, #FFFFFF);
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-align: left;
 }
 
 .like {
@@ -26,8 +35,16 @@
     top: 16px;
 }
 
+.wrapText {
+    @extend %flexCenter;
+    padding: 0 20px 0 20px;
+}
+
 .wrapImg {
+    @extend %flexCenter;
     margin-top: 14px;
+    width: 200px;
+    height: 200px;;
 }
 
 .wrapText {
@@ -37,7 +54,7 @@
 }
 
 .text {
-    @include font4(18px,21px,$SFProRegular,$main-color);
+    @include font4(18px, 21px, $SFProRegular, $main-color);
     letter-spacing: 0em;
     text-align: center;
 }
@@ -48,9 +65,11 @@
 }
 
 .btnCart {
+    background-color: $sub-color;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px 0px 0px 0px;
     position: absolute;
     right: 0;
     bottom: 0;
 }
-
-
