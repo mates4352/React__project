@@ -7,3 +7,16 @@
 .CategoriesCards{
 	margin: 280px 0 80px;
 }
+@media screen and(max-width:1050px){
+	.grid{
+		grid-template-columns: 1fr 1fr ;
+	}
+}
+
+@media screen and(max-width:576px){
+	.grid{
+		grid-template-columns: 1fr ;
+	}
+}
+
+

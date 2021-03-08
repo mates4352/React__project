@@ -6,6 +6,7 @@ import Titleh3 from "./../../common/title/Titleh3";
 import s from "./CategoryCard.module.scss"
 
 const CategoryCard = (props) => {
+	console.log(props);
 	return (
 		<div className={s.wrapper}>
 			<Titleh3
@@ -22,6 +23,7 @@ const CategoryCard = (props) => {
 			<Link
 				className={s.Link}
 				value='Подробее'
+				href={props.href}
 			/>
 		</div>
 

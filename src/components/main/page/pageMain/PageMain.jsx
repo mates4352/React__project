@@ -26,33 +26,37 @@ const PageMain = () => {
 							<CategoryCard
 								valueTitle='Квадроциклы'
 								src={ATVs1}
-								alt=""
+								alt="Квадроциклы"
+								href='#'
 							/>
 							<CategoryCard
 								valueTitle='Гидроциклы'
-								style={{color:"#000"}}
-								src={JetSkis }
-								alt=""
+								src={JetSkis}
+								alt="Гидроциклы"
+								href='#'
 							/>
 							<CategoryCard
 								valueTitle='Катера'
-								src={Boats }
-								alt=""
+								src={Boats}
+								alt="Катера"
+								href='#'
 							/>
 							<CategoryCard
 								valueTitle='Снегоходы'
-								src={Snowmobiles }
-								alt=""
+								src={Snowmobiles}
+								alt="Снегоходы"
 							/>
 							<CategoryCard
 								valueTitle='Вездеходы'
 								src={ATVs2}
-								alt=""
+								alt="Вездеходы"
+								href='#'
 							/>
 							<CategoryCard
 								valueTitle='Двигатели'
-								src={Engines }
-								alt=""
+								src={Engines}
+								alt="Двигатели"
+								href='#'
 							/>
 						</div>
 					}
