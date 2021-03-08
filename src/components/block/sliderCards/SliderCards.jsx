@@ -17,8 +17,8 @@ import navigator from "./../../../assets/images/svg/navigator.svg"
 import RF from "./../../../assets/images/svg/RF.svg"
 import suit from "./../../../assets/images/svg/suit.svg"
 
-import price45800 from "./../../../assets/images/svg/price45800.svg"
-import price7000 from "./../../../assets/images/svg/price7000.svg"
+// import price45800 from "./../../../assets/images/svg/price45800.svg"
+// import price7000 from "./../../../assets/images/svg/price7000.svg"
 
 
 const SliderCards = (props) => {
@@ -27,22 +27,22 @@ const SliderCards = (props) => {
 			<Card
 				src={recordPlayer}
 				valueTitle='BRP Audio-портативная система'
-				srcPrice={""}
+				valuePrice=''
 			/>
 			<Card
 				src={navigator}
 				valueTitle='Garmin Echomap Plus 62cv'
-				srcPrice={price45800}
+				valuePrice='45 800'
 			/>
 			<Card
 				src={RF}
 				valueTitle='RF D.E.S.S.TM Key'
-				srcPrice={""}
+				valuePrice=''
 			/>
 			<Card
 				src={suit}
 				valueTitle='Мужской костюм 3мм'
-				srcPrice={price7000}
+				valuePrice='7 000'
 			/>
 		</header>
 	);

@@ -60,9 +60,15 @@
 }
 
 .wrapPrice {
+    @extend %flexCenter;
     height: 36px;
     width: 117px;
 }
+
+.textPrice {
+    @include font4(30px, 36px, $Barlow, $main-color);
+    font-weight: bold;
+} 
 
 .btnCart {
     background-color: $sub-color;

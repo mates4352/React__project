@@ -6,38 +6,38 @@ import Img from "./../../common/img/Img";
 import P from "../../common/p/P";
 
 import like from "./../../../assets/images/svg/like.svg"
-// import waistcoat from "./../../../assets/images/svg/waistcoat.svg"
 import cart from "./../../../assets/images/svg/cart.svg"
-// import price6900 from "./../../../assets/images/svg/price6900.svg"
+
 
 const Card = (props) => {
 	return (
-			<div className={s.wrapper}>
-				<Span className={s.boxSale} value={
-					<P className={s.sale} value='SALE'/>
-					}/>
-				<Span className={s.like} value={
-					<Img src={like} alt={'Like'} />
-					}/>
-				<div className={s.wrapImg}>
-					<Img src={props.src} alt={'product'} />
-				</div>
-				<div className={s.wrapText}>
-					<P
-						className={s.text}
-						value={props.valueTitle}
-					/>
-				</div>
-				<div className={s.wrapPrice}>
-					<Img src={props.srcPrice} alt={"price"} />
-				</div>
-				<Button
-					className={s.btnCart}
-					value={
-						<Img src={cart} alt={'Cart'} />
-					}
+		<div className={s.wrapper}>
+			<Span className={s.boxSale} value={
+				<P className={s.sale} value='SALE' />
+			} />
+			<Span className={s.like} value={
+				<Img src={like} alt={'Like'} />
+			} />
+			<div className={s.wrapImg}>
+				<Img src={props.src} alt={'product'} />
+			</div>
+			<div className={s.wrapText}>
+				<P
+					className={s.text}
+					value={props.valueTitle}
 				/>
 			</div>
+			<Span className={s.wrapPrice} value={
+				<P className={s.textPrice} 
+				value={props.valuePrice} />
+			} />
+			<Button
+				className={s.btnCart}
+				value={
+					<Img src={cart} alt={'Cart'} />
+				}
+			/>
+		</div>
 	);
 }
 

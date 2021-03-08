@@ -1,20 +1,21 @@
+
+import Header from "../../../complex/header/Header"
+import Navigation from "./../../../complex/navigation/Navigation"
 import SliderBlock from "../../../complex/sliderBlock/SliderBlock"
+import Footer from "../../../complex/footer/Footer"
+
 import s from "./PageProduct.module.scss"
-
-
-
-// import Header from "./../../../src/block/layouts/header/Header"
-// import Footer from "./../../../src/block/layouts/footer/Footer"
-
-
-
 
 
 const PageProduct = (props) => {
 	return (
 	
 			<div className={s.pageProduct}>
-					<SliderBlock/>
+				<Header style={{ padding: "27px 0 46px 0" }}/>
+				<Navigation />
+
+				<SliderBlock style={{ padding: "0px 0 100px 0" }}/>
+				<Footer />
 			</div>
 		
 	);
