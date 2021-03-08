@@ -1,35 +1,7 @@
-@import "./../../../scss/abstracts/variable/variable";
-@import "./../../../scss/base/fonts";
+
 
 .ul {
     display: flex;
 }
-.li {
-    font-family: $SFProRegular;
-    font-size: 15px;
-    line-height: 1.5;
-    letter-spacing: -0.4px;
-    position: relative;
-    
-}
-.link {
-    color:rgba(196, 196, 196, 1);
-    margin-right: 26px;
-    
-}
 
-.li:not(:last-child)::after {
-    content: "";
-    width: 6px;
-    height: 10px;
-    background-image: url("./../../../assets/images/PageCatalog/BackBraedCrumbs.png");
-    position: absolute;
-    background-repeat:no-repeat;
-    top: 6px;
-    right: 10px;;
-}
-
-.span {
-    color:rgba(196, 196, 196, 1);
-}
 

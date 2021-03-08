@@ -8,6 +8,7 @@ import Navigation from "./../../../complex/navigation/Navigation"
 import s from "./PageCatalog.module.scss"
 
 import BreadCrumbs from "../../../complex/breadCrumbs/BreadCrumbs"
+import Crumb from "../../../block/crumb/Crumb"
 
 
 const PageCatalog = () => {
@@ -17,10 +18,21 @@ const PageCatalog = () => {
 			<Navigation />
 
 			<BreadCrumbs 
-				value1="Главная" href1={"#"}
-				value2="Гидроциклы" href2={"#"}
-				value3="Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic" href3={""}
+				Crumb={
+					<>
+					<Crumb
+					href="#"
+					value="Главная"
+					/>
+					<Crumb 
+					href="#"
+					value="Гидроциклы"
+					/>
+					</>
+				}
 			/>
+
+
 			<Footer />
 		</>
 	);

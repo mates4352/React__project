@@ -12,43 +12,7 @@ const BreadCrumbs = (props) => {
 			value={
 				<Ul
 					className={s.ul}
-					valueItem1={
-						<Li
-							className={s.li}
-							value={
-								<Link
-									className={s.link}
-									href={props.href1}
-									value={props.value1}
-								/>
-							}
-						/>
-					}
-					valueItem2={
-						<Li
-							className={s.li}
-							value={
-								<Link
-									className={s.link}
-									href={props.href2}
-									value={props.value2}
-								/>
-							}
-						/>
-					}
-
-					valueItem3={
-						<Li
-							className={s.li}
-							value={
-								<Link
-									className={s.link}
-									href={props.href3}
-									value={props.value3}
-								/>
-							}
-						/>
-					}
+					valueItem1={props.Crumb}
 				/>
 			}
 		/>
