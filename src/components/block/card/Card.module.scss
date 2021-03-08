@@ -1,0 +1,56 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/base/fonts";
+
+
+.сard {
+    @extend %flexCenter;
+    flex-direction: column;
+    width: 270px;
+    height: 403px;
+    border: 1px solid #E0E0E0;
+    position: relative;
+}
+
+.sale {
+    @extend %pos-abs;
+    // @include size(63px,25px);
+    width: 63px;
+    height: 25px;
+}
+
+.like {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+}
+
+.wrapImg {
+    margin-top: 14px;
+}
+
+.wrapText {
+    height: 50px;
+    width: 230px;
+    margin: 11px 0 23px;
+}
+
+.text {
+    @include font4(18px,21px,$SFProRegular,$main-color);
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.wrapPrice {
+    height: 36px;
+    width: 117px;
+}
+
+.btnCart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
