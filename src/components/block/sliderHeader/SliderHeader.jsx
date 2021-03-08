@@ -1,7 +1,5 @@
 
-// import Img from "../../common/img/Img";
-// import Span from "../../common/span/Span";
-import P from "../../common/p/P";
+import Titleh2 from "../../common/title/TitleH2";
 import Ul from "../../common/ul/Ul";
 import Li from "../../common/li/Li";
 import Link from "../../common/link/Link";
@@ -12,8 +10,8 @@ import s from "./SliderHeader.module.scss"
 const SliderHeader = (props) => {
 	return (
 		<header className={s.sliderHeader}>
-				<P className={s.title} value="С этим товаром покупают"/>
-				<div className={s.wrapper}>
+			<Titleh2 className={s.title} value="С этим товаром покупают" />
+			<div className={s.wrapper}>
 				<Ul
 					className={s.list}
 					valueItem1={
@@ -89,9 +87,8 @@ const SliderHeader = (props) => {
 						/>
 					}
 				/>
-				</div>
-				
-			</header>
+			</div>
+		</header>
 	);
 }
 

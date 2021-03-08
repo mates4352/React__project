@@ -13,20 +13,16 @@
     position: relative;
 }
 
-.boxSale {
+.sale {
     @extend %pos-abs;
     width: 63px;
     height: 25px;
     background-color: $sub-color;
     @extend %flexCenter;
 
-}
-
-.sale {
     @include font4(12px, 14px, $SFProRegular, #FFFFFF);
     font-weight: 400;
     letter-spacing: 0.07em;
-    text-align: left;
 }
 
 .like {
@@ -35,39 +31,42 @@
     top: 16px;
 }
 
-.wrapText {
-    @extend %flexCenter;
-    padding: 0 20px 0 20px;
-}
-
 .wrapImg {
+    // padding: 0 20px 0 20px;
     @extend %flexCenter;
     margin-top: 14px;
     width: 200px;
     height: 200px;;
 }
 
-.wrapText {
-    height: 50px;
-    width: 230px;
-    margin: 11px 0 23px;
-}
-
 .text {
     @include font4(18px, 21px, $SFProRegular, $main-color);
     letter-spacing: 0em;
     text-align: center;
+
+    @extend %flexCenter;
+    padding: 0 20px 0 20px;
+    margin: 11px 0 23px;
+    height: 50px;
+    width: 230px;
 }
 
 .wrapPrice {
-    @extend %flexCenter;
-    height: 36px;
-    width: 117px;
+    // @extend %flexCenter;
+    // height: 36px;
+    // width: 117px;
+
+    // @include font4(30px, 36px, $Barlow, $main-color);
+    // font-weight: bold;
 }
 
 .textPrice {
     @include font4(30px, 36px, $Barlow, $main-color);
     font-weight: bold;
+
+    @extend %flexCenter;
+    height: 36px;
+    width: 117px;
 } 
 
 .btnCart {

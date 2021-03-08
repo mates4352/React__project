@@ -26,22 +26,22 @@ const SliderCards = (props) => {
 		<header className={s.wrapper}>
 			<Card
 				src={recordPlayer}
-				valueTitle='BRP Audio-портативная система'
+				valueText='BRP Audio-портативная система'
 				valuePrice=''
 			/>
 			<Card
 				src={navigator}
-				valueTitle='Garmin Echomap Plus 62cv'
+				valueText='Garmin Echomap Plus 62cv'
 				valuePrice='45 800'
 			/>
 			<Card
 				src={RF}
-				valueTitle='RF D.E.S.S.TM Key'
+				valueText='RF D.E.S.S.TM Key'
 				valuePrice=''
 			/>
 			<Card
 				src={suit}
-				valueTitle='Мужской костюм 3мм'
+				valueText='Мужской костюм 3мм'
 				valuePrice='7 000'
 			/>
 		</header>
