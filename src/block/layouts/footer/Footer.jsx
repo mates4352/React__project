@@ -9,12 +9,13 @@ import Input from "../../components/input/Input";
 import Button from "./../../components/button/Button";
 import Titleh4 from "../../components/title/Titleh4";
 import Item from "../../components/item/Item";
-import Link from "../container/Container";
-import Container from "../container/Container";
+import Link from "../../components/link/Link";
+import Container from "../../layouts/container/Container";
 import List from "../../components/list/List";
+import Img from "../../components/img/Img";
 
 import s from "./Footer.module.scss"
-import Img from "../../components/img/Img";
+
 
 import "./Footer.module.scss"
 
