@@ -1,0 +1,11 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/base/fonts";
+
+.wrapper {
+    width: 1172px;
+	left: 375px;
+    display: flex;
+    justify-content: space-between;
+}

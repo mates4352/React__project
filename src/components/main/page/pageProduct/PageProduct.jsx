@@ -1,4 +1,4 @@
-import Card from "./../../../block/card/Card"
+import SliderBlock from "../../../complex/sliderBlock/SliderBlock"
 import s from "./PageProduct.module.scss"
 
 
@@ -14,7 +14,7 @@ const PageProduct = (props) => {
 	return (
 	
 			<div className={s.pageProduct}>
-					<Card/>
+					<SliderBlock/>
 			</div>
 		
 	);

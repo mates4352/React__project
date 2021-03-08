@@ -1,0 +1,42 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/base/fonts";
+
+.wrapper {
+    margin: 19px 0 42px;
+    width: 1172px;
+	left: 375px;
+    display: flex;
+    justify-content: flex-start;
+}
+.title {
+@include font4(25px,30px,$Barlow,$main-color);
+font-weight: 700;
+letter-spacing: 0em;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    color: $main-color;
+}
+
+.item {
+    margin-right: 50px;
+}
+
+.text {
+    @include font4(15px,18px,$SFProRegular,$main-color);
+    text-decoration: none;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+    &:active {
+        text-decoration: underline;
+        // color: blue;
+    }
+}
+
