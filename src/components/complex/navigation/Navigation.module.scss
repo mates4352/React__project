@@ -11,9 +11,30 @@
 	@include flex-j-a(center,space-between);
 	height: 100%;
 }
-
 .text{
+	position: relative;
 	@include font4(20px,24px,$SFProRegular,$main-color);
 	text-transform: capitalize;
 }
+
+.text:before{
+	content: "";
+	width: 100%;
+	height: 2px;
+
+	position: absolute;
+	bottom: -15px;
+	background-color: #1C62CD;
+	transform: scale(0);
+	transition: transform 500ms ease;
+	
+}
+.text:hover{
+	font-weight: 900;
+}
+.text:hover:before{
+	transform: scale(1)
+}
+
+
 

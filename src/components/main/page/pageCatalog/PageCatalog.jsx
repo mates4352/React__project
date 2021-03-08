@@ -14,20 +14,20 @@ import Crumb from "../../../block/crumb/Crumb"
 const PageCatalog = () => {
 	return (
 		<>
-			<Header style={{ padding: "55px 0 45px 0" }}/>
+			<Header style={{ padding: "55px 0 45px 0" }} />
 			<Navigation />
 
-			<BreadCrumbs 
+			<BreadCrumbs
 				Crumb={
 					<>
-					<Crumb
-					href="#"
-					value="Главная"
-					/>
-					<Crumb 
-					href="#"
-					value="Гидроциклы"
-					/>
+						<Crumb
+							href="#"
+							value="Главная"
+						/>
+						<Crumb
+							href="#"
+							value="Гидроциклы"
+						/>
 					</>
 				}
 			/>

@@ -19,7 +19,7 @@ import SliderCards from "../../block/sliderCards/SliderCards"
 const SliderBlock = (props) => {
 	return (
 		<div style={props.style} className={s.wrapper}>
-			<SliderHeader className={s.sliderHeader} />
+			<SliderHeader className={s.sliderHeader}/>
 			<SliderCards className={s.sliderCards} />
 		</div>
 	);
