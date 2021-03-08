@@ -1,59 +1,58 @@
-import Item from "../../components/item/Item";
-import Link from "../../components/link/Link";
-import List from "../../components/list/List";
-import Span from "../../components/span/Span";
+import Container from "../../common/container/Container";
+import Li from "../../common/li/Li";
+import Link from "../../common/link/Link";
+import Span from "../../common/span/Span";
+import Ul from "../../common/ul/Ul";
 
 import s from "./BreadCrumbs.module.scss"
 
-function Bread(props) {
+const BreadCrumbs = (props) => {
 	return (
-		<List
-			valueItem1={props.valueItem1}
-			valueItem2={props.valueItem2}
-			valueItem1={props.valueItem1}
-			valueItem1={props.valueItem1}
-			valueItem1={props.valueItem1}
-		/>
+		<Container
+			value={
+				<Ul
+					className={s.ul}
+					valueItem1={
+						<Li
+							className={s.li}
+							value={
+								<Link
+									className={s.link}
+									href={props.href1}
+									value={props.value1}
+								/>
+							}
+						/>
+					}
+					valueItem2={
+						<Li
+							className={s.li}
+							value={
+								<Link
+									className={s.link}
+									href={props.href2}
+									value={props.value2}
+								/>
+							}
+						/>
+					}
 
-		// <List
-		// 	className={s.List}
-		// 	valueItem1={
-		// 		<Item
-		// 			className={s.item}
-		// 			value={
-		// 				<Link
-		// 					className={s.link}
-		// 					to={"#"}
-		// 					value="Главная"
-		// 				/>
-		// 			}
-		// 		/>
-		// 	}
-		// 	valueItem2={
-		// 		<Item
-		// 			className={s.item}
-		// 			value={
-		// 				<Link
-		// 					className={s.link}
-		// 					to={"#"}
-		// 					value="Гидроциклы"
-		// 				/>
-		// 			}
-		// 		/>
-		// 	}
-		// 	valueItem1={
-		// 		<Item
-		// 			className={s.item}
-		// 			value={
-		// 				<Span
-		// 					className={s.span}
-		// 					value="Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic"
-		// 				/>
-		// 			}
-		// 		/>
-		// 	}
-		// />
+					valueItem3={
+						<Li
+							className={s.li}
+							value={
+								<Link
+									className={s.link}
+									href={props.href3}
+									value={props.value3}
+								/>
+							}
+						/>
+					}
+				/>
+			}
+		/>
 	);
 }
 
-export default Bread;
+export default BreadCrumbs;
