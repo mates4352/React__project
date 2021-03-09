@@ -18,7 +18,6 @@ import s from "./Header.module.scss"
 const Header = (props) => {
 	return (
 		<header style={props.style} className={s.header}>
-			<Container
 				value={
 					<div className={s.top}>
 						<nav className={s.menu}>
@@ -133,7 +132,6 @@ const Header = (props) => {
 					</div>
 				</div>
 				}
-			/>
 		</header>
 	);
 }

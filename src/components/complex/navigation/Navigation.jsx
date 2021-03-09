@@ -9,7 +9,6 @@ import s from "./Navigation.module.scss"
 const Navigation = (props) => {
 	return (
 		<section style={props.style} className={s.header}>
-			<Container
 				value={
 					<div className={s.wrapper}>
 						<Ul
@@ -113,7 +112,6 @@ const Navigation = (props) => {
 						/>
 					</div>
 				}
-			/>
 		</section>
 	);
 }
