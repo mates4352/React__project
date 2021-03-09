@@ -1,0 +1,7 @@
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+
+.wrapper {
+	@include flex-j-a(center,center,row);
+}
