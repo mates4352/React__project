@@ -16,7 +16,7 @@ const Card = (props) => {
 			<Img className={s.like} src={like} alt={'Like'} />
 			<Img className={s.wrapImg} src={props.src} alt={'product'} />
 			<P className={s.text} value={props.valueText} />
-			<P className={s.textPrice} value={props.valuePrice} />
+			<Span className={s.textPrice} value={props.valuePrice} />
 			<Button
 				className={s.btnCart}
 				value={
