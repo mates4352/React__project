@@ -37,6 +37,11 @@
 .link {
     color:$main-color;
 }
+
+.li:hover {
+    transform: scale(1.1);
+}
+
 .informationBox {
     margin-left: 144px;
 }
@@ -88,4 +93,12 @@
     color: rgba(196, 196, 196, 1);
     background-color: #fff;
     padding-left: 13px;
+}
+
+@media screen and(max-width:1050px){
+	
+}
+
+@media screen and(max-width:576px){
+	
 }

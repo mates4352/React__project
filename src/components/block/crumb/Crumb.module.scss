@@ -11,9 +11,14 @@
     position: relative;
 }
 
+
+
 .classLink {
     color: rgba(196, 196, 196, 1);
     margin-right: 26px;
+}
+.classLink:hover {
+    color: darken($color: rgba(196, 196, 196, 1), $amount: 30) ;
 }
 
 .classItem:not(:last-child)::after {

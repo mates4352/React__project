@@ -47,6 +47,7 @@ function Footer() {
 									className={s.item}
 									valueItem1={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
@@ -58,6 +59,7 @@ function Footer() {
 									}
 									valueItem2={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
@@ -69,6 +71,7 @@ function Footer() {
 									}
 									valueItem3={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
@@ -80,6 +83,7 @@ function Footer() {
 									}
 									valueItem4={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
@@ -100,6 +104,7 @@ function Footer() {
 									className={s.item}
 									valueItem1={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
@@ -111,6 +116,7 @@ function Footer() {
 									}
 									valueItem2={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
@@ -122,6 +128,7 @@ function Footer() {
 									}
 									valueItem3={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
@@ -133,6 +140,7 @@ function Footer() {
 									}
 									valueItem4={
 										<Li
+										className={s.li}
 											value={
 												<Link
 													className={s.link}
