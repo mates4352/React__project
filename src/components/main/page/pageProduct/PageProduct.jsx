@@ -22,6 +22,7 @@ import rec from "./../../../../assets/images/svg/Rectangle 17.svg"
 import rec1 from "./../../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../../assets/images/svg/Rectangle 17.2.svg"
 import star from "./../../../../assets/images/svg/Star.svg"
+import Container from "../../../common/container/Container"
 
 
 
@@ -30,43 +31,50 @@ const PageProduct = (props) => {
 	return (
 
 		<div className={s.pageProduct}>
-			<Header style={{ padding: "27px 0 46px" }} />
-			<Navigation />
-			<BreadCrumbs
-				Crumb={
+			<Container
+				value={
 					<>
-						<Crumb href='#' value='Главная' />
-						<Crumb href='#' value='Гидроциклы' />
-						<Crumb href='#' value='Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic' />
+						<Header style={{ padding: "27px 0 46px" }} />
+						<Navigation />
+						<BreadCrumbs
+							Crumb={
+								<>
+									<Crumb href='#' value='Главная' />
+									<Crumb href='#' value='Гидроциклы' />
+									<Crumb href='#' value='Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic' />
+								</>
+							}
+						/>
 					</>
 				}
 			/>
+
 			<section className='wrapper' style={{ padding: "36px 0 80px" }}>
 				<Card />
 				<div className='info'>
-					<Titleh2 className='title'value='Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic' />
+					<Titleh2 className='title' value='Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic' />
 					<Span value='Код товара: 	366666-2 ' />
 					<div className="images">
-						<Img src={like} alt={'like'}/>
+						<Img src={like} alt={'like'} />
 						<div className="recs">
-						<Img src={rec2} alt={'rectangle'}/>
-						<Img src={rec1} alt={'rectangle'}/>
-						<Img src={rec} alt={'rectangle'}/>
+							<Img src={rec2} alt={'rectangle'} />
+							<Img src={rec1} alt={'rectangle'} />
+							<Img src={rec} alt={'rectangle'} />
 						</div>
 						<div className="stars">
-							<Img src={star} alt={'star'}/>
-							<Img src={star} alt={'star'}/>
-							<Img src={star} alt={'star'}/>
-							<Img src={star} alt={'star'}/>
-							<Img src={star} alt={'star'}/>
+							<Img src={star} alt={'star'} />
+							<Img src={star} alt={'star'} />
+							<Img src={star} alt={'star'} />
+							<Img src={star} alt={'star'} />
+							<Img src={star} alt={'star'} />
 						</div>
 					</div>
 					<div>
 						<div>Характеристики</div>
 						<div>Наличие в магазине</div>
 					</div>
-					<Show value='Показать еще'/>
-					<Button className="btnBuy" value='купить'/>
+					<Show value='Показать еще' />
+					<Button className="btnBuy" value='купить' />
 
 				</div>
 			</section>

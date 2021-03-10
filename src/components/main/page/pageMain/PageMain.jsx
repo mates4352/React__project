@@ -39,7 +39,6 @@ const PageMain = () => {
 					</div>
 
 					<section className={s.CategoriesCards}>
-						value={
 							<div className={s.grid}>
 								<CategoryCard
 									valueTitle='Квадроциклы'
@@ -78,7 +77,6 @@ const PageMain = () => {
 									href='#'
 								/>
 							</div>
-						}
 					</section>
 				</>
 			}

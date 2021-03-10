@@ -5,13 +5,9 @@ import s from "./BreadCrumbs.module.scss"
 
 const BreadCrumbs = (props) => {
 	return (
-		<Container
-			value={
-				<Ul
-					className={s.ul}
-					valueItem1={props.Crumb}
-				/>
-			}
+		<Ul
+			className={s.ul}
+			valueItem1={props.Crumb}
 		/>
 	);
 }

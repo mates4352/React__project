@@ -19,8 +19,15 @@ import Ul from "../../../common/ul/Ul"
 const PageCatalog = () => {
 	return (
 		<>
-			<Header style={{ padding: "55px 0 45px 0" }} />
-			<Navigation />
+			<Container
+				value={
+					<>
+						<Header style={{ padding: "55px 0 45px 0" }} />
+						<Navigation />
+					</>
+				}
+			/>
+
 
 			<BreadCrumbs
 				Crumb={
@@ -67,26 +74,26 @@ const PageCatalog = () => {
 									/>
 								</>
 							}
-							/>
-	
-								<select>
-									<>
-									<option >По полулярности</option>
-									<option >По цене (min)</option>
-									<option >По цене (max)</option>
-									<option >По количеству отзывам</option>
-									</>
-								</select>
-					
-</>
+						/>
+
+						<select>
+							<>
+								<option >По полулярности</option>
+								<option >По цене (min)</option>
+								<option >По цене (max)</option>
+								<option >По количеству отзывам</option>
+							</>
+						</select>
+
+					</>
 				}
 			/>
 
 
 
 
-						<Footer />
-					</>
+			<Footer />
+		</>
 	);
 }
 

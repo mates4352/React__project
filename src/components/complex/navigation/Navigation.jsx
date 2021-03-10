@@ -1,7 +1,6 @@
 import Ul from "./../../common/ul/Ul";
 import Li from "./../../common/li/Li";
 import Link from "./../../common/link/Link";
-import Container from "./../../common/container/Container";
 
 import s from "./Navigation.module.scss"
 
@@ -9,11 +8,11 @@ import s from "./Navigation.module.scss"
 const Navigation = (props) => {
 	return (
 		<section style={props.style} className={s.header}>
-				value={
-					<div className={s.wrapper}>
-						<Ul
-							className={s.list}
-							valueItem1={
+				<div className={s.wrapper}>
+					<Ul
+						className={s.list}
+						value={
+							<>
 								<Li
 									className={s.item}
 									value={
@@ -24,8 +23,6 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-							valueItem2={
 								<Li
 									className={s.item}
 									value={
@@ -36,8 +33,6 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-							valueItem3={
 								<Li
 									className={s.item}
 									value={
@@ -48,8 +43,6 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-							valueItem4={
 								<Li
 									className={s.item}
 									value={
@@ -60,8 +53,6 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-							valueItem5={
 								<Li
 									className={s.item}
 									value={
@@ -72,8 +63,6 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-							valueItem6={
 								<Li
 									className={s.item}
 									value={
@@ -84,8 +73,6 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-							valueItem7={
 								<Li
 									className={s.item}
 									value={
@@ -96,8 +83,6 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-							valueItem8={
 								<Li
 									className={s.item}
 									value={
@@ -108,11 +93,11 @@ const Navigation = (props) => {
 										/>
 									}
 								/>
-							}
-						/>
-					</div>
-				}
-		</section>
+							</>
+						}
+					/>
+				</div>
+		</section >
 	);
 }
 
