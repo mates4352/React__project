@@ -1,7 +1,7 @@
 import './App.scss';
-import PageMain from './components/main/page/pageMain/PageMain';
-import PageCatalog from './components/main/page/pageCatalog/PageCatalog';
-import PageProduct from './components/main/page/pageProduct/PageProduct';
+import PageMain from './components/page/pageMain/PageMain';
+import PageCatalog from './components/page/pageCatalog/PageCatalog';
+import PageProduct from './components/page/pageProduct/PageProduct';
 
 
 function App() {

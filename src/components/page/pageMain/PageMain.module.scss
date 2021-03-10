@@ -1,0 +1,28 @@
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:30px;
+}
+
+.CategoriesCards{
+	margin: 280px 0 80px;
+}
+
+.banner{
+display: flex;
+justify-content: space-between;
+}
+
+@media screen and(max-width:1050px){
+	.grid{
+		grid-template-columns: 1fr 1fr ;
+	}
+}
+
+@media screen and(max-width:576px){
+	.grid{
+		grid-template-columns: 1fr ;
+	}
+}
+
+
