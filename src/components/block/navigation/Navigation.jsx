@@ -1,4 +1,3 @@
-import Link from "./../../common/link/Link";
 
 import s from "./Navigation.module.scss"
 
@@ -9,67 +8,75 @@ const Navigation = (props) => {
 			<div className={s.wrapper}>
 				<ul className={s.list}>
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Квадроциклы"
-						/>
+						>
+							Квадроциклы
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Катера"
-						/>
+						>
+							Катера
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Гидроциклы"
-						/>
+						>
+							Гидроциклы
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Лодки"
-						/>
+						>
+							Лодки
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Вездеходы"
-						/>
+						>
+							Вездеходы
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Снегоходы"
-						/>
+						>
+							Снегоходы
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Двигатели"
-						/>
+						>
+							Двигатели
+						</a>
 					</li>
 
 					<li>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="Запчасти"
-						/>
+						>
+							Запчасти
+						</a>
 					</li>
 				</ul>
 			</div>

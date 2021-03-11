@@ -5,9 +5,6 @@ import facebookLogo from "./../../../assets/images/footerSocial/facebook 1.png";
 import youtubeLogo from "./../../../assets/images/footerSocial/youtube 1.png";
 
 // components
-
-import Link from "./../../common/link/Link";
-
 import s from "./Footer.module.scss"
 
 function Footer() {
@@ -41,35 +38,39 @@ function Footer() {
 						<ul className={s.list}>
 
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="О компании"
-								/>
+								>
+									О компании
+								</a>
 							</li>
 
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="Контакты"
-								/>
+								>
+									Контакты
+								</a>
 							</li>
 
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="Акции"
-								/>
+								>
+									Акции
+								</a>
 							</li>
 
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="Магазины"
-								/>
+								>
+									Магазины
+								</a>
 							</li>
 						</ul>
 
@@ -82,32 +83,36 @@ function Footer() {
 
 						<ul className={s.list}>
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="Доставка и самовывоз"
-								/>
+								>
+									Доставка и самовывоз
+								</a>
 							</li>
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="Оплата"
-								/>
+								>
+									Оплата
+								</a>
 							</li>
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="Возврат-обмен"
-								/>
+								>
+									Возврат-обмен
+								</a>
 							</li>
 							<li className={s.item}>
-								<Link
+								<a
 									className={s.link}
 									href={"#"}
-									value="Новости"
-								/>
+								>
+									Новости
+								</a>
 							</li>
 						</ul>
 
@@ -137,12 +142,18 @@ function Footer() {
 
 					<div className={s.bottom}>
 						<div className={s.bottomOffen}>
-							<Link className={s.offer}
-								href={"#"} value="Договор оферты"
-							/>
-							<Link className={s.offer}
-								href={"#"} value="Политика обработки персональных данных"
-							/>
+							<a
+								className={s.offer}
+								href={"#"}
+							>
+								Договор оферты
+							</a>
+							<a
+								className={s.offer}
+								href={"#"}
+							>
+								Политика обработки персональных данных
+							</a>
 						</div>
 					</div>
 				</div>

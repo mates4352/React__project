@@ -1,4 +1,3 @@
-import Link from "./../../common/link/Link";
 
 
 import s from "./CategoryCard.module.scss"
@@ -8,20 +7,20 @@ const CategoryCard = (props) => {
 		<div className={s.wrapper}>
 			<h3
 				className={s.title}
-				style={props.style}
 			>
-				{props.valueTitle}
+				{props.Title}
 			</h3>
 			<img
 				className={s.img}
 				src={props.src}
 				alt={props.alt}
 			/>
-			<Link
+			<a
 				className={s.Link}
-				value='Подробее'
 				href={props.href}
-			/>
+			>
+				Подробее
+			</a>
 		</div>
 
 	);
