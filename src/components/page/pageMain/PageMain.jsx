@@ -9,8 +9,6 @@ import img from "./../../../assets/images/img.png"
 
 import Navigation from "./../../block/navigation/Navigation"
 import CategoryCard from "./../../common/categoryCard/CategoryCard"
-import Header from "./../../block/header/Header"
-import Footer from "./../../block/footer/Footer";
 import Card from "./../../common/card/Card"
 
 import s from "./PageMain.module.scss"
@@ -18,65 +16,59 @@ import s from "./PageMain.module.scss"
 const PageMain = () => {
 	return (
 		<>
-			<div className="container">
-				<Header style={{ padding: "55px 0 45px 0" }} />
-				<Navigation />
+			<div className={s.banner}>
+				<img
+					className={s.banner__Img}
+					src={banner}
+					alt="banner"
+				/>
+				<Card
+					valueText="Лодочный мотор Suzuki DF9.9BRS"
+					valuePrice="324234"
+					src={img}
+				/>
+			</div>
 
-				<div className={s.banner}>
-					<img
-						className={s.banner__Img}
-						src={banner}
-						alt="banner"
+			<section className={s.CategoriesCards}>
+				<div className={s.grid}>
+					<CategoryCard
+						Title='Квадроциклы'
+						src={ATVs1}
+						alt="Квадроциклы"
+						href='#'
 					/>
-					<Card
-						valueText="Лодочный мотор Suzuki DF9.9BRS"
-						valuePrice="324234"
-						src={img}
+					<CategoryCard
+						Title='Гидроциклы'
+						src={JetSkis}
+						alt="Гидроциклы"
+						href='#'
+					/>
+					<CategoryCard
+						Title='Катера'
+						src={Boats}
+						alt="Катера"
+						href='#'
+					/>
+					<CategoryCard
+						Title='Снегоходы'
+						src={Snowmobiles}
+						alt="Снегоходы"
+						href='#'
+					/>
+					<CategoryCard
+						Title='Вездеходы'
+						src={ATVs2}
+						alt="Вездеходы"
+						href='#'
+					/>
+					<CategoryCard
+						Title='Двигатели'
+						src={Engines}
+						alt="Двигатели"
+						href='#'
 					/>
 				</div>
-
-				<section className={s.CategoriesCards}>
-					<div className={s.grid}>
-						<CategoryCard
-							valueTitle='Квадроциклы'
-							src={ATVs1}
-							alt="Квадроциклы"
-							href='#'
-						/>
-						<CategoryCard
-							valueTitle='Гидроциклы'
-							src={JetSkis}
-							alt="Гидроциклы"
-							href='#'
-						/>
-						<CategoryCard
-							valueTitle='Катера'
-							src={Boats}
-							alt="Катера"
-							href='#'
-						/>
-						<CategoryCard
-							valueTitle='Снегоходы'
-							src={Snowmobiles}
-							alt="Снегоходы"
-							href='#'
-						/>
-						<CategoryCard
-							valueTitle='Вездеходы'
-							src={ATVs2}
-							alt="Вездеходы"
-							href='#'
-						/>
-						<CategoryCard
-							valueTitle='Двигатели'
-							src={Engines}
-							alt="Двигатели"
-							href='#'
-						/>
-					</div>
-				</section>
-			</div>
-			<Footer />
+			</section>
 		</>
 	);
 }

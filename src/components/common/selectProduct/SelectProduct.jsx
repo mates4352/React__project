@@ -1,6 +1,3 @@
-
-import Link from "./../../common/link/Link";
-
 import s from "./SelectProduct.module.scss"
 
 
@@ -11,54 +8,61 @@ const SelectProduct = (props) => {
 			<div className={s.wrapper}>
 				<ul className={s.list}>
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="запчасти"
-						/>
+						>
+							запчасти
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="моторы"
-						/>
+						>
+							моторы
+						</a>
 					</li>
 
 					<li className={s.item}>
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="шины"
-						/>
-					</li>
-
-					<li className={s.item}>
-
-						<Link
-							className={s.link}
-							href={"#"}
-							value="электроника"
-						/>
-					</li>
-
-					<li className={s.item}>
-						<Link
-							className={s.link}
-							href={"#"}
-							value="инструменты"
-						/>
+						>
+							шины
+						</a>
 					</li>
 
 					<li className={s.item}>
 
-						<Link
+						<a
 							className={s.link}
 							href={"#"}
-							value="аксессуары"
-						/>
+
+						>
+							электроника
+						</a>
 					</li>
+
+					<li className={s.item}>
+						<a
+							className={s.link}
+							href={"#"}
+						>
+							инструменты
+						</a>
+					</li>
+
+					<li className={s.item}>
+						<a
+							className={s.link}
+							href={"#"}
+						>
+							аксессуары
+						</a>
+					</li>
+
 				</ul>
 			</div>
 		</header>
