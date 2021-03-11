@@ -2,6 +2,8 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/variable/variable";
 
+
+
 .grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -92,4 +94,29 @@ justify-content: space-between;
 
 .button:hover{
 	background-color: transparentize($sub-color, 0.15);
+}
+
+.discount{
+	@extend %flexCenter;
+	min-height: 165px;
+	margin: 80px 0;
+	background: $sub-color;
+}
+
+.discountTitle{
+	max-width: 280px;
+	margin: 0 50px;
+
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+
+.discountLink{
+	@extend %flexCenter;
+	padding: 0 40px;
+	@include font4(24px,24px,$SFProMedium,$main-color);
+	min-height: 60px;
+	background: #FFFFFF;
 }

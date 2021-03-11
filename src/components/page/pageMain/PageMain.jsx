@@ -6,6 +6,7 @@ import ATVs2 from "./../../../assets/images/CategoriesCards/ATVs2.png"
 import Engines from "./../../../assets/images/CategoriesCards/Engines.png"
 import banner from "./../../../assets/images/banner.jpg"
 import img from "./../../../assets/images/img.png"
+import discountImg from "./../../../assets/images/discount/discount.png"
 
 import Navigation from "./../../block/navigation/Navigation"
 import CategoryCard from "./../../common/categoryCard/CategoryCard"
@@ -85,6 +86,19 @@ const PageMain = () => {
 					/>
 				</div>
 			</section>
+			<div className={s.discount}>
+				<img 
+					className={s.discountImg} 
+					src={discountImg}
+				/>
+				<h3 className={s.discountTitle} >CКИДКИ <br/>на все запчасти до 70%</h3>
+				<a
+					className={s.discountLink}
+					href='#'
+				>
+					ПОСМОТЕТЬ ВСЕ
+				</a>
+			</div>
 		</>
 	);
 }
