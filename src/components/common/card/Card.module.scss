@@ -31,33 +31,53 @@
     top: 16px;
 }
 
-.wrapImg {
-    @extend %flexCenter;
-    margin-top: 14px;
-    width: 200px;
-    height: 200px;;
+.imageWrap{
+    margin-top: 10px;
 }
 
-.text {
-    @include font4(18px, 21px, $SFProRegular, $main-color);
-    letter-spacing: 0em;
-    text-align: center;
+.image {
+    @extend %flexCenter;
+    // margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
 
+.name, 
+.absent {
+    @include font4(18px, 21px, $SFProRegular, $main-color);
+    text-align: center;
+}
+
+.name {
     @extend %flexCenter;
     padding: 0 20px 0 20px;
-    margin: 11px 0 23px;
+    margin-top: 12px;
     height: 50px;
     width: 230px;
 }
 
-.textPrice {
+.absent {
+    font-weight: bold;
+    margin: 10px 0px 13px;
+}
+
+.message {
+    @include font4(16px, 19px, $SFProRegular, $sub-color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.price {
     @include font4(30px, 36px, $Barlow, $main-color);
     font-weight: bold;
 
     @extend %flexCenter;
     height: 36px;
-    width: 117px;
-} 
+    margin-top: 23px;
+}
 
 .btnCart {
     background-color: $sub-color;

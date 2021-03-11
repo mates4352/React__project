@@ -4,9 +4,13 @@
 
 .footer {
     background-color: rgba(240, 240, 244, 1);
+    display: flex;
+    flex-direction: column;
+
 }
 .top {
     display: flex;
+    justify-content: center;
     padding: 43px 0 46px 0;
 }
 .titleEmail {
@@ -18,9 +22,7 @@
     color:$main-color;
     letter-spacing: -0.4px;
 }
-.styles {
-    display: flex;
-}
+
 .title {
     font-family: $SfProBold;
     font-size: 14px;
