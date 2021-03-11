@@ -1,11 +1,11 @@
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+
 .grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap:30px;
-}
-
-.CategoriesCards{
-	margin: 280px 0 80px;
 }
 
 .banner{
@@ -25,4 +25,71 @@ justify-content: space-between;
 	}
 }
 
+.Search{
+	margin: 80px 0;
+}
 
+.SearchTop{
+	margin-bottom: 25px;
+}
+
+.SearchText{
+	padding:10px 20px;
+
+	@include font4(20px,24px,$SfProBold,$main-color);
+
+	border-radius: 5px;
+
+	transition: background 500ms ease;
+	cursor: pointer;
+}
+
+.SearchText:hover{
+	background: #F0F0F4;
+}
+
+.SearchInput{
+	position: relative;
+}
+
+.input{
+	@include size(100%,50px);
+
+	font-size: 16px;
+	line-height: 19px;
+	text-indent: 50px;
+
+	background: #F0F0F4;
+	border-radius: 3px;
+}
+
+.input::placeholder{
+	transform: scale(1);
+	transition: transform 500ms ease;
+}
+
+.input:focus::placeholder{
+	transform: scale(0);
+}
+
+.button{
+	@include size(145px,100%);
+
+	position:absolute;
+	top:0;
+	right:0;
+
+	@include font4(14px,17px,$SfProBold,#fff);
+
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+
+	border-radius: 3px;
+	background-color:$sub-color;
+
+	transition:background-color 200ms ease ;
+}
+
+.button:hover{
+	background-color: transparentize($sub-color, 0.15);
+}

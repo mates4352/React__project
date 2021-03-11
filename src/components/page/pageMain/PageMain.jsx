@@ -29,6 +29,22 @@ const PageMain = () => {
 				/>
 			</div>
 
+			<div className={s.Search}>
+				<div className={s.SearchTop}>
+					<span className={s.SearchText}>Поиск по  номеру</span>
+					<span className={s.SearchText}>Поиск по марке</span>
+					<span className={s.SearchText}>Поиск по названию товара</span>
+				</div>
+				<div className={s.SearchInput}>
+					<input
+						type="text"
+						className={s.input}
+						placeholder="Введите марку"
+					/>
+					<button className={s.button}>искать</button>
+				</div>
+			</div>
+
 			<section className={s.CategoriesCards}>
 				<div className={s.grid}>
 					<CategoryCard

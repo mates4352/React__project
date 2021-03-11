@@ -90,7 +90,7 @@ const Header = (props) => {
 					</div>
 				</div>
 			</header>
-			<Navigation/>
+			<Navigation />
 		</>
 	);
 }
