@@ -4,7 +4,7 @@ import s from "./Navigation.module.scss"
 
 const Navigation = (props) => {
 	return (
-		<section style={props.style} className={s.header}>
+		<section className={s.Navigation} style={props.style}>
 			<div className={s.wrapper}>
 				<ul className={s.list}>
 					<li className={s.item}>

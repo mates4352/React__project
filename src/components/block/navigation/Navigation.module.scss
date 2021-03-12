@@ -1,40 +1,77 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/variable/variable";
 
-.wrapper{
-	height: 55px;
-	margin-bottom:80px;
-	background: #F0F0F4;
+
+.Navigation{
+	.wrapper{
+		height: 55px;
+		margin-bottom:80px;
+		background: #F0F0F4;
+		.list{
+			@include flex-j-a(center,space-between);
+			height: 100%;
+			.link{
+				position: relative;
+				@include font4(20px,24px,$SFProRegular,$main-color);
+				text-transform: capitalize;
+				&:before{
+					content: "";
+					@include size(100%,2px);
+				
+					position: absolute;
+					bottom: -15px;
+					
+					background-color: #1C62CD;
+					transform: scale(0);
+					transition: transform 500ms ease;
+				}
+				&:hover{
+					font-weight: 900;
+				}
+				&:hover:before{
+					transform: scale(1)
+				}
+			}
+		}
+	}
 }
 
-.list{
-	@include flex-j-a(center,space-between);
-	height: 100%;
-}
-.link{
-	position: relative;
-	@include font4(20px,24px,$SFProRegular,$main-color);
-	text-transform: capitalize;
-}
-
-.link:before{
-	content: "";
-	width: 100%;
-	height: 2px;
-
-	position: absolute;
-	bottom: -15px;
-	background-color: #1C62CD;
-	transform: scale(0);
-	transition: transform 500ms ease;
+// .Navigation{
 	
-}
-.link:hover{
-	font-weight: 900;
-}
-.link:hover:before{
-	transform: scale(1)
-}
+// }
+// .wrapper{
+// 	height: 55px;
+// 	margin-bottom:80px;
+// 	background: #F0F0F4;
+// }
+// .list{
+// 	@include flex-j-a(center,space-between);
+// 	height: 100%;
+// }
+// .link{
+// 	position: relative;
+// 	@include font4(20px,24px,$SFProRegular,$main-color);
+// 	text-transform: capitalize;
+// }
+
+// .link:before{
+// 	content: "";
+// 	width: 100%;
+// 	height: 2px;
+
+// 	position: absolute;
+// 	bottom: -15px;
+// 	background-color: #1C62CD;
+// 	transform: scale(0);
+// 	transition: transform 500ms ease;
+	
+// }
+// .link:hover{
+// 	font-weight: 900;
+// }
+// .link:hover:before{
+// 	transform: scale(1)
+// }
 
 
 

@@ -8,7 +8,6 @@ import banner from "./../../../assets/images/banner.jpg"
 import img from "./../../../assets/images/img.png"
 import discountImg from "./../../../assets/images/discount/discount.png"
 
-import Navigation from "./../../block/navigation/Navigation"
 import CategoryCard from "./../../common/categoryCard/CategoryCard"
 import Card from "./../../common/card/Card"
 
@@ -16,10 +15,10 @@ import s from "./PageMain.module.scss"
 
 const PageMain = () => {
 	return (
-		<>
+		<div className={s.PageMain}>
 			<div className={s.banner}>
 				<img
-					className={s.banner__Img}
+					className={s.bannerImg}
 					src={banner}
 					alt="banner"
 				/>
@@ -87,11 +86,11 @@ const PageMain = () => {
 				</div>
 			</section>
 			<div className={s.discount}>
-				<img 
-					className={s.discountImg} 
+				<img
+					className={s.discountImg}
 					src={discountImg}
 				/>
-				<h3 className={s.discountTitle} >CКИДКИ <br/>на все запчасти до 70%</h3>
+				<h3 className={s.discountTitle} >CКИДКИ <br />на все запчасти до 70%</h3>
 				<a
 					className={s.discountLink}
 					href='#'
@@ -99,7 +98,7 @@ const PageMain = () => {
 					ПОСМОТЕТЬ ВСЕ
 				</a>
 			</div>
-		</>
+		</div>
 	);
 }
 

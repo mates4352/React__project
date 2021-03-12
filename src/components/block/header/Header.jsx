@@ -3,16 +3,17 @@ import location from "./../../../assets/images/svg/location.svg"
 import like from "./../../../assets/images/svg/like.svg"
 import person from "./../../../assets/images/svg/person.svg"
 import basket from "./../../../assets/images/svg/basket.svg"
+import Navigation from "../navigation/Navigation"
+
 
 import s from "./Header.module.scss"
-import Navigation from "../navigation/Navigation"
 
 const Header = (props) => {
 
 	return (
 		<>
 			<header style={props.style} className={s.header}>
-				<div className={s.top}>
+				<div className={s.wrapper}>
 					<nav className={s.menu}>
 						<ul className={s.list}>
 
@@ -55,7 +56,7 @@ const Header = (props) => {
 					</div>
 
 					<div className={s.row}>
-						<div className={s.wrapperSvg}>
+						<div className={s.wrapperBlock}>
 							<img
 								className={s.location}
 								src={location}
@@ -68,17 +69,20 @@ const Header = (props) => {
 
 						</div>
 
-						<div className={s.wrapperSvg}>
+						<div className={s.wrapperBlock}>
 							<img
+								className={s.icon}
 								src={like}
 								alt={'like'}
 							/>
 							<img
+								className={s.icon}
 								src={person}
 								alt={'person'}
 							/>
 							<div className={s.counter}>
 								<img
+									className={s.icon}
 									src={basket}
 									alt={'basket'}
 								/>

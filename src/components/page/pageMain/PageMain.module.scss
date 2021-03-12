@@ -2,121 +2,119 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/variable/variable";
 
-
-
-.grid{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap:30px;
-}
-
-.banner{
-display: flex;
-justify-content: space-between;
-}
-
-@media screen and(max-width:1050px){
-	.grid{
-		grid-template-columns: 1fr 1fr ;
+.PageMain{
+	.CategoriesCards{
+		.grid{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap:30px;
+		}
 	}
-}
-
-@media screen and(max-width:576px){
-	.grid{
-		grid-template-columns: 1fr ;
+	
+	.banner{
+		display: flex;
+		justify-content: space-between;
 	}
+	
+	@media screen and(max-width:1050px){
+		.grid{
+			grid-template-columns: 1fr 1fr ;
+		}
+	}
+	
+	@media screen and(max-width:576px){
+		.grid{
+			grid-template-columns: 1fr ;
+		}
+	}
+	
+	.Search{
+		margin: 80px 0;
+		.SearchTop{
+			margin-bottom: 25px;
+			.SearchText{
+				padding:10px 20px;
+			
+				@include font4(20px,24px,$SfProBold,$main-color);
+			
+				border-radius: 5px;
+			
+				transition: background 500ms ease;
+				cursor: pointer;
+				&:hover{
+					background: #F0F0F4;
+				}
+			}
+		}
+	}
+	
+	.SearchInput{
+		position: relative;
+		
+		.input{
+			@include size(100%,50px);
+		
+			@include font2(16px,19px);
+			text-indent: 50px;
+		
+			background: #F0F0F4;
+			border-radius: 3px;
+			
+			&::placeholder{
+				transform: scale(1);
+				transition: transform 500ms ease;
+			}
+			&:focus::placeholder{
+				transform: scale(0);
+			}
+		}
+	
+		.button{
+			@include size(145px,100%);
+		
+			position:absolute;
+			top:0;
+			right: 0;
+		
+			@include font4(14px,17px,$SfProBold,#fff);
+		
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+		
+			border-radius: 3px;
+			background-color:$sub-color;
+		
+			transition:background-color 200ms ease ;
+	
+			&:hover{
+				background-color: transparentize($sub-color, 0.15);
+			}
+		}
+	}
+	
+	.discount{
+		@extend %flexCenter;
+		min-height: 165px;
+		margin: 80px 0;
+		background: $sub-color;
+		.discountTitle{
+			max-width: 280px;
+			margin: 0 50px;
+			@include font4(36px,36px,$SfProBold,#fff);
+		}
+		.discountLink{
+			@extend %flexCenter;
+			min-height: 60px;
+			padding: 0 40px;
+		
+			@include font4(24px,24px,$SFProMedium,$main-color);
+		
+			background: #FFFFFF;
+		}
+	}
+	
+	
+	
 }
 
-.Search{
-	margin: 80px 0;
-}
 
-.SearchTop{
-	margin-bottom: 25px;
-}
-
-.SearchText{
-	padding:10px 20px;
-
-	@include font4(20px,24px,$SfProBold,$main-color);
-
-	border-radius: 5px;
-
-	transition: background 500ms ease;
-	cursor: pointer;
-}
-
-.SearchText:hover{
-	background: #F0F0F4;
-}
-
-.SearchInput{
-	position: relative;
-}
-
-.input{
-	@include size(100%,50px);
-
-	font-size: 16px;
-	line-height: 19px;
-	text-indent: 50px;
-
-	background: #F0F0F4;
-	border-radius: 3px;
-}
-
-.input::placeholder{
-	transform: scale(1);
-	transition: transform 500ms ease;
-}
-
-.input:focus::placeholder{
-	transform: scale(0);
-}
-
-.button{
-	@include size(145px,100%);
-
-	position:absolute;
-	top:0;
-	right:0;
-
-	@include font4(14px,17px,$SfProBold,#fff);
-
-	letter-spacing: 0.12em;
-	text-transform: uppercase;
-
-	border-radius: 3px;
-	background-color:$sub-color;
-
-	transition:background-color 200ms ease ;
-}
-
-.button:hover{
-	background-color: transparentize($sub-color, 0.15);
-}
-
-.discount{
-	@extend %flexCenter;
-	min-height: 165px;
-	margin: 80px 0;
-	background: $sub-color;
-}
-
-.discountTitle{
-	max-width: 280px;
-	margin: 0 50px;
-
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 36px;
-	color: #FFFFFF;
-}
-
-.discountLink{
-	@extend %flexCenter;
-	padding: 0 40px;
-	@include font4(24px,24px,$SFProMedium,$main-color);
-	min-height: 60px;
-	background: #FFFFFF;
-}
