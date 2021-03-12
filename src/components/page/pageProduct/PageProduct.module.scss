@@ -4,17 +4,17 @@
 
 .pageProduct {
     border: 5px solid lightgreen;
+    display: flex;
+    justify-content: space-around;
 }
 
 .wrapper {
 //     width: 570px;
 // height: 589px;
     // @include flex-j-a(center,center,row);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
 }
 
 
