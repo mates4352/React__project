@@ -2,36 +2,125 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/variable/variable";
 
-.pageProduct {
+.aboutProduct {
     border: 5px solid lightgreen;
-}
-
-.wrapper {
-//     width: 570px;
-// height: 589px;
-    // @include flex-j-a(center,center,row);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    
+    justify-content: space-around;
+    margin: 45px 0;
 }
 
+// ------------bigCard
+.bigCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bigImage {
+    margin-top: 64px;
+    max-width: 500px;
+    max-height: 375px;
+}
+
+.lastPrice {
+    @include font4(30px, 36px, $Barlow, $main-color);
+    // font-weight: normal;
+    opacity: 0.6;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        background-color: $main-color;
+        width: 140px;
+        height: 2px;
+        bottom: 15px;
+        left: 5px;
+        transform: rotate(172deg);
+    }
+}
+
+.price {
+    @include font4(40px, 48px, $Barlow, $main-color);
+    font-weight: bold;
+    margin: 12px 0 17px;
+}
+
+.message {
+    @include font4(15px, 18px, $SFProRegular, $sub-color);
+
+    &:hover {
+        // text-decoration: underline;
+        border-bottom: 3px solid;
+    }
+}
+
+// ------------infoCard
+.infoCard {
+    position: relative;
+}
 
 .title {
-    @include font4(30px,36px,$SfProBold,$main-color);
+    @include font4(30px, 36px, $SfProBold, $main-color);
+    margin-bottom: 26px;
+}
+
+.code {
+    @include font4(15px, 18px, $SFProRegular, $main-color);
+
+}
+
+.images {
+    display: flex;
+    align-items: flex-end;
+    // flex-direction: row;
+    margin: 22px 0 50px;
+}
+
+.like,
+.recs {
+    margin-right: 25px;
+}
+
+.recs {
+    display: flex;
+    align-items: flex-end;
+}
+
+.recs,
+.rec {
+    margin-right: 4px;
+}
+
+.stars {
+    margin-left: 25px;
+}
+
+.table {
+    border: 2px solid red;
+}
+
+.show {
+    @include font4(14px, 17px, $SFProRegular, $sub-color);
+
+    &:hover {
+        text-decoration-line: underline;
+    }
+
+    margin-top: 20px;
 }
 
 .btnBuy {
+    @include font4(14px, 17px, $SFProRegular, white);
+    text-align: center;
+
     background-color: $sub-color;
     width: 177px;
     height: 50px;
     border-radius: 3px;
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
 }

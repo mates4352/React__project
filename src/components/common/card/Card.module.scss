@@ -5,25 +5,26 @@
 
 
 .wrapper {
-    @extend %flexCenter;
+    display: flex;
     flex-direction: column;
-    max-width: 270px;
+    align-items: center;
+    width: 270px;
     height: 403px;
     border: 1px solid #E0E0E0;
     position: relative;
 }
 
-.sale {
-    @extend %pos-abs;
-    width: 63px;
-    height: 25px;
-    background-color: $sub-color;
-    @extend %flexCenter;
+// .sale {
+//     @extend %pos-abs;
+//     width: 63px;
+//     height: 25px;
+//     background-color: $sub-color;
+//     @extend %flexCenter;
 
-    @include font4(12px, 14px, $SFProRegular, #FFFFFF);
-    font-weight: 400;
-    letter-spacing: 0.07em;
-}
+//     @include font4(12px, 14px, $SFProRegular, #FFFFFF);
+//     font-weight: 400;
+//     letter-spacing: 0.07em;
+// }
 
 .like {
     position: absolute;
@@ -31,35 +32,27 @@
     top: 16px;
 }
 
-.imageWrap{
-    margin-top: 10px;
-}
-
 .image {
-    @extend %flexCenter;
-    // margin-top: 10px;
     width: 200px;
     height: 200px;
-    background-size: contain;
-}
-
-.name, 
-.absent {
-    @include font4(18px, 21px, $SFProRegular, $main-color);
-    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 12px;
 }
 
 .name {
-    @extend %flexCenter;
-    padding: 0 20px 0 20px;
-    margin-top: 12px;
-    height: 50px;
     width: 230px;
+    height: 50px;
+    @extend %flexCenter;
+    @include font4(20px, 24px, $SFProRegular, $main-color);
+    text-align: center;
 }
 
 .absent {
+    @include font4(18px, 21px, $SFProRegular, $main-color);
+    text-align: center;
     font-weight: bold;
-    margin: 10px 0px 13px;
+    margin-top: 10px;
+    margin-bottom: 13px;
 }
 
 .message {
@@ -75,8 +68,7 @@
     font-weight: bold;
 
     @extend %flexCenter;
-    height: 36px;
-    margin-top: 23px;
+    padding-bottom: 30px;
 }
 
 .btnCart {
