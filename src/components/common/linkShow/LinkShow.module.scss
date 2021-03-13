@@ -4,7 +4,8 @@
 
 .show {
     @include font4(14px,17px,$SFProRegular,$sub-color);
+    text-decoration-line: underline;
     &:hover {
-        text-decoration-line: underline;
+        border-bottom: 2px solid;
     }
 }
