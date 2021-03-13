@@ -16,7 +16,7 @@ function App() {
 				{/* <PageCatalog />
 				<PageProduct /> */}
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

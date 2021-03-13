@@ -3,7 +3,7 @@
 @import "./../../../scss/abstracts/variable/variable";
 
 .header{
-	.wrapper{
+	.header__wrapper{
 		display: flex;
 		justify-content: space-between;
 	}
@@ -72,22 +72,22 @@
 			}
 		}
 	}
+	@media screen and(max-width:992px) {
+		.menu{
+			.list{
+				.item:not(:last-of-type){
+					margin-right: 25px;
+				}
+			}
+		}
+		.row{
+			.wrapperBlock{
+				&:first-child{
+					margin-right: 35px;
+				}
+			}
+		}
+		
+	}
 }
 
-
-
-
-
-
-
-
-
-@media screen and(max-width:1140px) {
-	.item:not(:last-of-type){
-		margin-right: 30px;
-	}
-
-	.wrapperSvg:first-child{
-		margin-right: 55px;
-	}
-}

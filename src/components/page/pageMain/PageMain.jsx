@@ -17,11 +17,13 @@ const PageMain = () => {
 	return (
 		<div className={s.PageMain}>
 			<div className={s.banner}>
-				<img
-					className={s.bannerImg}
-					src={banner}
-					alt="banner"
-				/>
+				<div className={s.bannerWrapperImg}>
+					<img
+						className={s.bannerImg}
+						src={banner}
+						alt="banner"
+					/>
+				</div>
 				<Card
 					valueText="Лодочный мотор Suzuki DF9.9BRS"
 					valuePrice="324234"

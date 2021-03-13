@@ -12,8 +12,8 @@ const Header = (props) => {
 
 	return (
 		<>
-			<header style={props.style} className={s.header}>
-				<div className={s.wrapper}>
+			<header className={s.header} style={props.style}>
+				<div className={s.header__wrapper}>
 					<nav className={s.menu}>
 						<ul className={s.list}>
 
