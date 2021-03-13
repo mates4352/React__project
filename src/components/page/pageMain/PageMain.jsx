@@ -13,21 +13,54 @@ import Card from "./../../common/card/Card"
 
 import s from "./PageMain.module.scss"
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
+
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import SliderBlock from "../../block/sliderBlock/SliderBlock"
+
+SwiperCore.use([Navigation ]);
+
+
 const PageMain = () => {
 	return (
 		<div className={s.PageMain}>
 			<div className={s.banner}>
-				<div className={s.bannerWrapperImg}>
-					<img
-						className={s.bannerImg}
-						src={banner}
-						alt="banner"
-					/>
-				</div>
+				<Swiper
+					spaceBetween={0}
+					slidesPerView={1}
+					navigation
+					onSlideChange={() => console.log('slide change')}
+					onSwiper={(swiper) => console.log(swiper)}
+				>
+					<SwiperSlide className={s.swipper}>
+							<img
+								className={s.bannerImg}
+								src={banner}
+								alt="banner"
+							/>
+					</SwiperSlide>
+					<SwiperSlide className={s.swipper}>
+							<img
+								className={s.bannerImg}
+								src={banner}
+								alt="banner"
+							/>
+					</SwiperSlide>
+					<SwiperSlide className={s.swipper}>
+							<img
+								className={s.bannerImg}
+								src={banner}
+								alt="banner"
+							/>
+					</SwiperSlide>
+	  </Swiper>
 				<Card
-					valueText="Лодочный мотор Suzuki DF9.9BRS"
-					valuePrice="324234"
-					src={img}
+					absent="Лодочный мотор Suzuki DF9.9BRS"
+					price="190000р"
+					image={img}
 				/>
 			</div>
 
@@ -87,6 +120,7 @@ const PageMain = () => {
 					/>
 				</div>
 			</section>
+			<SliderBlock style={{ padding: "100px 0" }} />
 			<div className={s.discount}>
 				<img
 					className={s.discountImg}
@@ -100,6 +134,7 @@ const PageMain = () => {
 					ПОСМОТЕТЬ ВСЕ
 				</a>
 			</div>
+			<SliderBlock style={{ padding: "100px 0" }} />
 		</div>
 	);
 }
