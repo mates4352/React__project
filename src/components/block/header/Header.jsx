@@ -94,7 +94,16 @@ const Header = (props) => {
 					</div>
 				</div>
 			</header>
-			<Navigation />
+			<Navigation
+				text1="Квадроциклы"
+				text2="Катера"
+				text3="Гидроциклы"
+				text4="Лодки"
+				text5="Вездеходы"
+				text6="Снегоходы"
+				text7="Двигатели"
+				text8="Запчасти"
+			/>
 		</>
 	);
 }
