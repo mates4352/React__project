@@ -1,6 +1,6 @@
-import Crumb from "./../../block/breadCrumbs/crumb/Crumb"
+import Crumb from "./../../block/breadCrumbs/crumb/Crumb";
 
-import s from "./BreadCrumbs.module.scss"
+import s from "./BreadCrumbs.module.scss";
 
 const BreadCrumbs = (props) => {
 	// <Crumb href='#' value='Гидроциклы' />

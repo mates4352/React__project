@@ -1,0 +1,48 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/base/fonts";
+@import "./../../../scss/abstracts/mixins/mixins";
+
+.radio {
+    position: relative;
+}
+
+.padioInput {
+appearance: none;
+position: absolute;
+}
+
+.radioLabel {
+    padding-left: 23px;
+    @include font4(14px,1.2,$SFProRegular,$main-color);
+    cursor: pointer;
+}
+.radioLabel::before{
+    content: "";
+    display: block;
+    @include size(14px, 14px);
+    background-image: url("./../../../assets/images/PageCatalog/RadioButton.png");
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.radioLabel::after{
+    content: "";
+    display: block;
+    @include size(14px, 14px);
+    background-image: url("./../../../assets/images/PageCatalog/RadioButtonBlue.png");
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    opacity: 0;
+}
+
+.padioInput:checked + .radioLabel::after {
+    opacity: 1;
+}
+
