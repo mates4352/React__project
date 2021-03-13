@@ -1,53 +1,54 @@
 import s from "./PageCatalog.module.scss"
 
 import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
-import Sorting from "./../../common/sorting/Sorting"
 
 const PageCatalog = () => {
 	return (
 		<>
 			<BreadCrumbs />
 
-			<h2 className={s.titleH2}>
-				Гидроциклы
-			</h2>
 
-			<ul className={s.sortingLef}>
-				<li>
-					<Sorting
-						href="#"
-						value="Полноприводные"
-					/>
-				</li>
+			<h2 className={s.titleH2}>Гидроциклы</h2>
 
-				<li>
-					<Sorting
-						href="#"
-						value="от 5000"
-					/>
-				</li>
+			<div className={s.productCategory}>
+				<ul className={s.productCategoryLef}>
+					<li slassName={s.productCategoryItem}>
+						<a className={s.productCategoryLink}>
+							Полноприводные
+						</a>
+					</li>
+					<li slassName={s.productCategoryItem}>
+						<a className={s.productCategoryLink}>
+							5000
+						</a>
+					</li>
+					<li slassName={s.productCategoryItem}>
+						<a className={s.productCategoryLink}>
+							BRP
+						</a>
+					</li>
+					<li slassName={s.productCategoryItem}>
+						<a className={s.productCategoryLink}>
+							еще
+						</a>
+					</li>
+				</ul>
 
-				<li>
-					<Sorting
-						href="#"
-						value="BRP"
-					/>
-				</li>
+				<div className={s.productCategorySelect}>
+					<select>
+						<option value="По полулярности">По полулярности</option>
+						<option value="По цене (min)">По цене (min)</option>
+						<option value="По цене (max)">По цене (max)</option>
+						<option value="По количеству отзывам">По количеству отзывам</option>
+					</select>
+				</div>
 
-				<li>
-					<Sorting
-						href="#"
-						value="еще"
-					/>
-				</li>
 
-			</ul>
-			<select>
-				<option >По полулярности</option>
-				<option >По цене (min)</option>
-				<option >По цене (max)</option>
-				<option >По количеству отзывам</option>
-			</select>
+
+			</div>
+
+
+
 		</>
 	);
 }

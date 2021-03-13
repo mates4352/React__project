@@ -7,6 +7,56 @@
 @include font4(30px, 1.5, $SFProSemibold, $main-color);
 margin: 41px 0 26px 0;
 }
-.sortingLef {
-margin-bottom: 50px;
+
+.productCategory {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.productCategoryLef {
+    display: flex;
+}
+
+.productCategoryLink {
+    background-color:  #F0F0F4;
+    margin-right: 10px;
+    padding: 4px 23px;
+    @include font4(14px,1.5,$SFProRegular,$main-color);
+}
+
+
+// =========select========= //
+
+.productCategorySelect {
+    position: relative;
+
+}
+
+.productCategorySelect::after {
+    content: "";
+    display: block;
+    // background-image: url("./../../../assets/images/PageCatalog/Shape.png");
+    background-color:aqua;
+    width: 12px;
+    height: 8px;
+
+    position: absolute;
+    // top: 50%;
+    
+
+
+}
+.productCategorySelect select{
+    display: block;
+    width: 178px;
+    height: 33px;
+    background: none;
+    border: 1.5px solid #D7D9DF;
+    padding-left: 20px;
+    appearance: none;
+
+    @include font4(14px, 1.5, $SFProRegular, $main-color);
+
+
 }
