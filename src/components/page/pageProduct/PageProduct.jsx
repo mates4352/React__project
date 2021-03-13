@@ -13,12 +13,14 @@ import rec from "./../../../assets/images/svg/Rectangle 17.svg"
 import rec1 from "./../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 import star from "./../../../assets/images/svg/Star.svg"
+import Sale from "../../common/sale/Sale"
+
 
 const PageProduct = (props) => {
 	return (
 		<>
 			<BreadCrumbs />
-			<section className='wrapper' style={{ padding: "36px 0 80px" }}>
+			<section className={s.pageProduct} style={{ padding: "36px 0 80px" }}>
 				<Card
 				/>
 				<div className='info'>
@@ -49,7 +51,8 @@ const PageProduct = (props) => {
 					<button className="btnBuy">купить</button>
 				</div>
 			</section>
-			<SliderBlock style={{ padding: "0px 0 100px" }} />
+			<SliderBlock style={{ padding: "100px 0 100px" }} />
+			
 		</>
 	);
 }

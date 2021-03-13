@@ -6,8 +6,8 @@ import ATVs2 from "./../../../assets/images/CategoriesCards/ATVs2.png"
 import Engines from "./../../../assets/images/CategoriesCards/Engines.png"
 import banner from "./../../../assets/images/banner.jpg"
 import img from "./../../../assets/images/img.png"
+import discountImg from "./../../../assets/images/discount/discount.png"
 
-import Navigation from "./../../block/navigation/Navigation"
 import CategoryCard from "./../../common/categoryCard/CategoryCard"
 import Card from "./../../common/card/Card"
 
@@ -15,10 +15,10 @@ import s from "./PageMain.module.scss"
 
 const PageMain = () => {
 	return (
-		<>
+		<div className={s.PageMain}>
 			<div className={s.banner}>
 				<img
-					className={s.banner__Img}
+					className={s.bannerImg}
 					src={banner}
 					alt="banner"
 				/>
@@ -27,6 +27,22 @@ const PageMain = () => {
 					valuePrice="324234"
 					src={img}
 				/>
+			</div>
+
+			<div className={s.Search}>
+				<div className={s.SearchTop}>
+					<span className={s.SearchText}>Поиск по  номеру</span>
+					<span className={s.SearchText}>Поиск по марке</span>
+					<span className={s.SearchText}>Поиск по названию товара</span>
+				</div>
+				<div className={s.SearchInput}>
+					<input
+						type="text"
+						className={s.input}
+						placeholder="Введите марку"
+					/>
+					<button className={s.button}>искать</button>
+				</div>
 			</div>
 
 			<section className={s.CategoriesCards}>
@@ -69,7 +85,20 @@ const PageMain = () => {
 					/>
 				</div>
 			</section>
-		</>
+			<div className={s.discount}>
+				<img
+					className={s.discountImg}
+					src={discountImg}
+				/>
+				<h3 className={s.discountTitle} >CКИДКИ <br />на все запчасти до 70%</h3>
+				<a
+					className={s.discountLink}
+					href='#'
+				>
+					ПОСМОТЕТЬ ВСЕ
+				</a>
+			</div>
+		</div>
 	);
 }
 

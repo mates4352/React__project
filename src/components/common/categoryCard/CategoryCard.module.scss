@@ -1,7 +1,7 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/variable/variable";
 
-.wrapper{
+.CategoryCard{
 	display: flex;
 	justify-content: space-between;
 	padding: 15px 20px;
@@ -11,54 +11,56 @@
 	border: 1px solid #CDCDCD;
 
 	transition:box-shadow 300ms ease, border-radius 500ms ease ;
+
+	&:hover{
+		box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+		border-radius: 3px;
+	}
+	
+	&:hover .title{
+		color: #1C62CD;
+	}
+
+	.title{
+		@include font4(23px,28px,$Barlow,$main-color);
+		font-weight: 700;
+	}
+	.Link{
+		@include font4(14px,17px,$SFProRegular,$cardSpan);
+		position:absolute;
+		bottom:15px;
+		left:20px;
+	}
 }
-
-
-.wrapper:hover{
-	box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-	border-radius: 3px;
-}
-
-.title{
-	@include font4(23px,28px,$Barlow,$main-color);
-	font-weight: 700;
-}
-
-.wrapper:hover .title{
-	color: #1C62CD;
-}
-
-.Link{
-	@include font4(14px,17px,$SFProRegular,$cardSpan);
-	position:absolute;
-	bottom:15px;
-	left:20px;
-}
-
 @media screen and(max-width:768px){
-	.wrapper{
+	.CategoryCard{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		.img{
+			margin: 20px 0;
+		}
+		.Link{
+			left:50%;
+			transform: translateX(-50%);
+		}
 	}
-	.img{
-		margin: 20px 0;
-	}
-	.Link{
-		left:50%;
-		transform: translateX(-50%);
-	}
+	
+	
 }
 
 @media screen and(max-width:576px){
-	.wrapper{
+	.CategoryCard{
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
-	}
-
-	.Link{
-		left:20px;
-		transform:none;
+		.Link{
+			left:20px;
+			transform:none;
+		}
 	}
 }
+
+
+
+

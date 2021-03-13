@@ -4,7 +4,7 @@ import s from "./CategoryCard.module.scss"
 
 const CategoryCard = (props) => {
 	return (
-		<div className={s.wrapper}>
+		<div className={s.CategoryCard}>
 			<h3
 				className={s.title}
 			>

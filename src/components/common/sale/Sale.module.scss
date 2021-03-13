@@ -1,0 +1,17 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/base/fonts";
+
+
+.sale {
+    @extend %pos-abs;
+    width: 63px;
+    height: 25px;
+    background-color: $sub-color;
+    @extend %flexCenter;
+
+    @include font4(12px, 14px, $SFProRegular, #FFFFFF);
+    font-weight: 400;
+    letter-spacing: 0.07em;
+}
