@@ -7,6 +7,7 @@ import SliderBlock from "./../../block/sliderBlock/SliderBlock"
 // common
 import Sale from "../../common/sale/Sale"
 import LinkShow from "../../common/linkShow/LinkShow"
+import Button from "../../common/button/Button"
 
 // Image
 import like from "./../../../assets/images/svg/like.svg"
@@ -15,6 +16,7 @@ import rec from "./../../../assets/images/svg/Rectangle 17.svg"
 import rec1 from "./../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 import star from "./../../../assets/images/svg/Star.svg"
+
 
 
 
@@ -30,7 +32,7 @@ const PageProduct = (props) => {
 
 				<div className={s.bigCard} style={{ margin: "0 100px 0 0" }}>
 					<Sale
-					style={{ width: "94px", height: "44px" }} 
+					style={{ width: "94px", height: "44px", fontSize:"15px", lineHeight:"18px" }} 
 					text='SALE'
 					/>
 					<img className={s.bigImage} src={gidrotsikl36666} alt={'bigImage'} />
@@ -59,14 +61,37 @@ const PageProduct = (props) => {
 							<img src={star} alt={'star'} />
 						</div>
 					</div>
-					<div className={s.table}>
-						<table>таблица</table>
-						{/* <span>Характеристики</span>
-						<span>Наличие в магазине</span> */}
-					</div>
+					{/* <div className={s.table}> */}
+						<table className={s.table}>
+							<tr>
+								<th>Характеристики</th>
+								<th>Наличие в магазине</th>
+							</tr>
+							<tr>
+								<td id={s.leftcol}>Производитель</td>
+								<td id={s.rightcol}>Канада</td>
+							</tr>
+							<tr>
+								<td id={s.leftcol}>Количество мест, шт: </td>
+								<td id={s.rightcol}>3</td>
+							</tr>
+							<tr>
+								<td id={s.leftcol}>Мощность, л.с.</td>
+								<td id={s.rightcol}>155</td>
+							</tr>
+							<tr>
+								<td id={s.leftcol}>Тип двигателя</td>
+								<td id={s.rightcol}>Бензиновый</td>
+							</tr>
+							<tr>
+								<td id={s.leftcol}>Год выпуска</td>
+								<td id={s.rightcol}>2018</td>
+							</tr>
+						</table>
+					{/* </div> */}
 					<LinkShow href={'#'}/>
-					{/* <a className={s.show}>Показать еще</a> */}
 					<button className={s.btnBuy}>купить</button>
+					{/* <Button/> */}
 				</div>
 			</section>
 

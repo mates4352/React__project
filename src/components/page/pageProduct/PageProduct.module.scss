@@ -3,7 +3,7 @@
 @import "./../../../scss/abstracts/variable/variable";
 
 .aboutProduct {
-    border: 5px solid lightgreen;
+    // border: 5px solid lightgreen;
     display: flex;
     justify-content: space-around;
     margin: 45px 0;
@@ -64,7 +64,7 @@
 
 .title {
     @include font4(30px, 36px, $SfProBold, $main-color);
-    margin-bottom: 26px;
+    margin-bottom: 10px;
 }
 
 .code {
@@ -76,7 +76,7 @@
     display: flex;
     align-items: flex-end;
     // flex-direction: row;
-    margin: 22px 0 50px;
+    margin: 22px 0 35px;
 }
 
 .like,
@@ -98,20 +98,82 @@
     margin-left: 25px;
 }
 
+// ------------table
 .table {
-    border: 2px solid red;
+    display: table;
+    max-width: 436px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+
 }
 
+tr {
+    border-bottom: 1px solid rgb(231, 227, 227);
+
+    // opacity: 0.6;
+    &:hover {
+        // border-bottom: 3px solid $sub-color;
+        // text-decoration: underline;
+        // text-decoration-color: $sub-color;
+    }
+
+    &:first-child {
+        border-bottom: none;
+    }
+}
+
+th {
+    text-align: left;
+    /* Выравнивание по левому краю */
+    @include font4(20px, 24px, $SFProRegular, $main-color);
+    font-weight: 400;
+    opacity: 0.6;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $sub-color;
+        opacity: 1;
+    }
+
+    &:active {
+        font-weight: bold;
+        border-bottom: 3px solid $sub-color;
+    }
+}
+
+td {
+    @include font4(20px, 24px, $SFProRegular, $main-color);
+}
+
+#rightcol {
+    width: 242px;
+    padding-left: 93px;
+}
+
+#leftcol,
+#rightcol {
+    &:hover {
+        text-decoration: underline;
+        text-decoration-style: 5px solid;
+        text-decoration-color: $sub-color;
+    }
+}
+
+th,
+td {
+    padding: 15px 0px 6px;
+}
+
+// --------- ссылка
 .show {
     @include font4(14px, 17px, $SFProRegular, $sub-color);
 
     &:hover {
         text-decoration-line: underline;
     }
-
-    margin-top: 20px;
 }
 
+// ---------- кнопка
 .btnBuy {
     @include font4(14px, 17px, $SFProRegular, white);
     text-align: center;
@@ -123,4 +185,5 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    margin-top: 45px;
 }

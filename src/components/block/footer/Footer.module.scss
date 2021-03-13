@@ -55,12 +55,17 @@
     justify-content: center;
     align-items:center;
 }
-.icon {
+.socialLink {
     margin-right: 30px;
 }
-.icon:last-child {
+.socialLink:last-child {
     margin-right: 76px;
 }
+.socialLink:hover {
+    transform: scale(1.1);
+}
+
+
 .bottom {
     display: flex;
     justify-content: center;
@@ -87,6 +92,10 @@
     color: #fff;
     text-transform: uppercase;
 }
+.btn:hover {
+    background-color: darken($sub-color, 10%);
+}
+
 .email {
     width: 201px;
     height: 33px;

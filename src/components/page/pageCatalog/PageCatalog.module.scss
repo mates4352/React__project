@@ -3,10 +3,85 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/base/fonts";
 
+.pageCatalog {
+    border: 1px solid red;
+
+}
 .titleH2 {
 @include font4(30px, 1.5, $SFProSemibold, $main-color);
 margin: 41px 0 26px 0;
 }
-.sortingLef {
-margin-bottom: 50px;
+
+.productCategory {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.productCategoryLef {
+    display: flex;
+}
+
+.productCategoryLink {
+    background-color:  #F0F0F4;
+    margin-right: 10px;
+    padding: 4px 23px;
+    @include font4(14px,1.5,$SFProRegular,$main-color);
+}
+
+.productCategoryLink:hover {
+    background-color: darken(#F0F0F4, 5%)
+
+}
+
+
+// =========select========= //
+
+.productCategorySelect {
+    position: relative;
+
+}
+
+.productCategorySelect::after {
+    content: "";
+    display: block;
+    background-image: url("./../../../assets/images/PageCatalog/Shape.png");
+
+    width: 12px;
+    height: 8px;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    
+    pointer-events: none;
+
+
+}
+.productCategorySelect select{
+    display: block;
+    width: 178px;
+    height: 33px;
+    background: none;
+    border: 1.5px solid #D7D9DF;
+    padding-left: 20px;
+    appearance: none;
+
+    @include font4(14px, 1.5, $SFProRegular, $main-color);
+}
+
+.productCategoryRight {
+    display: flex;
+}
+.btnProductCategory {
+    background-color: white;
+    margin-left: 10px;
+}
+.btnProductCategory:first-of-type{
+    margin-left: 34px;
+}
+
+.titleMenu {
+    margin-bottom: 41px;
 }
