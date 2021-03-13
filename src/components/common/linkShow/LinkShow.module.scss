@@ -1,0 +1,10 @@
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+
+.show {
+    @include font4(14px,17px,$SFProRegular,$sub-color);
+    &:hover {
+        text-decoration-line: underline;
+    }
+}
