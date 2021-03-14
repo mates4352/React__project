@@ -12,6 +12,7 @@ import CheckBox from "../../common/checkBox/CheckBox";
 
 import ButtonSorting from "../../common/buttonSorting/ButtonSorting";
 import BtnShow from "../../common/btnShow/BtnShow";
+import RangeSlider from "../../block/rangeSlider/RangeSlider";
 
 const PageCatalog = () => {
 	return (
@@ -136,7 +137,9 @@ const PageCatalog = () => {
 					id="lebe3"
 					for="lebe3"
 					labelvalue="Цена"
-				// value={ }
+				value={ 
+					<RangeSlider/>
+				}
 				/>
 
 				<MenuSorting
