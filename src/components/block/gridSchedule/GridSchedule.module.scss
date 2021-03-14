@@ -1,0 +1,12 @@
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 18% 36%;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+}
