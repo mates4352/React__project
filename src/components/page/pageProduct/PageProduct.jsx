@@ -1,12 +1,13 @@
 import s from "./PageProduct.module.scss"
 
-// complex
+// components
 import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
 import SliderBlock from "./../../block/sliderBlock/SliderBlock"
+import Navigation from "./../../block/navigation/Navigation"
 
 // common
 import Sale from "../../common/sale/Sale"
-import LinkShow from "../../common/linkShow/LinkShow"
+import BtnShow from "../../common/btnShow/BtnShow"
 import Button from "../../common/button/Button"
 
 // Image
@@ -16,6 +17,7 @@ import rec from "./../../../assets/images/svg/Rectangle 17.svg"
 import rec1 from "./../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 import star from "./../../../assets/images/svg/Star.svg"
+// import { Navigation } from "swiper"
 
 
 
@@ -61,7 +63,6 @@ const PageProduct = (props) => {
 							<img src={star} alt={'star'} />
 						</div>
 					</div>
-					{/* <div className={s.table}> */}
 						<table className={s.table}>
 							<tr>
 								<th>Характеристики</th>
@@ -88,12 +89,56 @@ const PageProduct = (props) => {
 								<td id={s.rightcol}>2018</td>
 							</tr>
 						</table>
-					{/* </div> */}
-					<LinkShow href={'#'}/>
+					<BtnShow />
 					<button className={s.btnBuy}>купить</button>
 					{/* <Button/> */}
 				</div>
 			</section>
+
+			<Navigation
+			styleWrapper={{ height: "70px" }}
+			styleList={{ paddingLeft: "38px" }}
+			// linkStyle={{ marginRight: "70px" }}
+				text1="О товаре"
+				text2="Характеристики"
+				text3="Отзывы"
+				text4="Самовывоз"
+				text5="Доставка"
+				text6="Cервис"
+				text7="Гарантия"
+				// text8=""
+			/>
+
+			<div className={s.grid}>
+				<div className={s.gridItem} id={s.item1}></div>
+				<div className={s.gridItem} id={s.item2}>Магазин</div>
+				<div className={s.gridItem} id={s.item3}>Забрать сегодня</div>
+				<div className={s.gridItem} id={s.item4}>Забрать в течение недели</div>
+				<div className={s.gridItem} id={s.item5}>Адрес</div>
+				<div className={s.gridItem} id={s.item6}>Режим работы</div>
+				<div className={s.gridItem} id={s.item7}>Доступно</div>
+				<div className={s.gridItem} id={s.item8}>Количество</div>
+				<div className={s.gridItem} id={s.item9}>Москва, ул. Науки 25</div>
+				<div className={s.gridItem} id={s.item10}>Москва, ул.  Южная 134</div>
+				<div className={s.gridItem} id={s.item11}>Санкт-Петербург, ул. Красная 19</div>
+				<div className={s.gridItem} id={s.item12}>Киев, ул Шевченко 167</div>
+				<div className={s.gridItem} id={s.item13}>пн-сб:</div>
+				<div className={s.gridItem} id={s.item14}>пн-сб:</div>
+				<div className={s.gridItem} id={s.item15}>пн-сб:</div>
+				<div className={s.gridItem} id={s.item16}>пн-сб:</div>
+				<div className={s.gridItem} id={s.item17}>В наличии</div>
+				<div className={s.gridItem} id={s.item18}>В наличии</div>
+				<div className={s.gridItem} id={s.item19}>Нет в наличии</div>
+				<div className={s.gridItem} id={s.item20}>Нет в наличии</div>
+				<div className={s.gridItem} id={s.item21}>1</div>
+				<div className={s.gridItem} id={s.item22}>2</div>
+				<div className={s.gridItem} id={s.item23}>0</div>
+				<div className={s.gridItem} id={s.item24}>0</div>
+				<div className={s.gridItem} id={s.item25}></div>
+				<div className={s.gridItem} id={s.item26}></div>
+				<div className={s.gridItem} id={s.item27}></div>
+				<div className={s.gridItem} id={s.item28}></div>
+			</div>
 
 			<SliderBlock style={{ padding: "100px 0" }} />
 

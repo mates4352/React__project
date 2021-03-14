@@ -3,9 +3,11 @@
 @import "./../../../scss/abstracts/variable/variable";
 
 .show {
+    cursor: pointer;
     @include font4(14px,17px,$SFProRegular,$sub-color);
     text-decoration-line: underline;
     &:hover {
         border-bottom: 2px solid;
     }
+    background-color: white;
 }
