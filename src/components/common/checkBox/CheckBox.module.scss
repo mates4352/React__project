@@ -1,0 +1,48 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/base/fonts";
+@import "./../../../scss/abstracts/mixins/mixins";
+
+.checkbox {
+    position: relative;
+}
+
+.checkboxInput {
+appearance: none;
+position: absolute;
+}
+
+.checkboxLable {
+    padding-left: 23px;
+    @include font4(14px,1.2,$SFProRegular,$main-color);
+    cursor: pointer;
+}
+.checkboxLable::before{
+    content: "";
+    display: block;
+    @include size(14px, 14px);
+    background-image: url("./../../../assets/images/PageCatalog/RadioButton.png");
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.checkboxLable::after{
+    content: "";
+    display: block;
+    @include size(14px, 14px);
+    background-image: url("./../../../assets/images/PageCatalog/checkBox.png");
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    opacity: 0;
+}
+
+.checkboxInput:checked + .checkboxLable::after {
+    opacity: 1;
+}
+

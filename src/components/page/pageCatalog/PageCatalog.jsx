@@ -1,6 +1,6 @@
 import iconGrid from "./../../../assets/images/PageCatalog/iconGrid.png";
 import iconList from "./../../../assets/images/PageCatalog/iconList.png";
-import ExpandMoreUp from "./../../../assets/images/PageCatalog/ExpandMoreUp.png";
+
 
 import s from "./PageCatalog.module.scss"
 
@@ -8,6 +8,7 @@ import s from "./PageCatalog.module.scss"
 import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
 import RadioBatton from "../../common/radioButton/RadioBatton";
 import MenuSorting from "../../block/menuSorting/MenuSorting";
+import CheckBox from "../../common/checkBox/CheckBox";
 
 const PageCatalog = () => {
 	return (
@@ -20,22 +21,22 @@ const PageCatalog = () => {
 			<div className={s.productCategory}>
 				<ul className={s.productCategoryLef}>
 					<li slassName={s.productCategoryItem}>
-						<a className={s.productCategoryLink}>
+						<a className={s.productCategoryLink} href="#">
 							Полноприводные
 						</a>
 					</li>
 					<li slassName={s.productCategoryItem}>
-						<a className={s.productCategoryLink}>
+						<a className={s.productCategoryLink} href="#">
 							5000
 						</a>
 					</li>
 					<li slassName={s.productCategoryItem}>
-						<a className={s.productCategoryLink}>
+						<a className={s.productCategoryLink} href="#">
 							BRP
 						</a>
 					</li>
 					<li slassName={s.productCategoryItem}>
-						<a className={s.productCategoryLink}>
+						<a className={s.productCategoryLink} href="#">
 							еще
 						</a>
 					</li>
@@ -66,12 +67,12 @@ const PageCatalog = () => {
 
 			<div className={s.leftSection}>
 				<div className={s.titleMenu}>
-					<a className={s.titleMenuLink} href="#">Параметры</a>
-					<a className={s.titleMenuLink} href="#">По марке</a>
+					<button className={s.btntitle}>Параметры</button>
+					<button className={s.btntitle}>По марке</button>
 				</div>
 
 				<MenuSorting
-					type="checkbox"
+					type="radio"
 					id="lebe1"
 					for="lebe1"
 					labelvalue="Наличие"
@@ -93,12 +94,78 @@ const PageCatalog = () => {
 							/>
 						</>
 					}
-
-
-
-
+				/>
+				<MenuSorting
+					type="radio"
+					id="lebe2"
+					for="lebe2"
+					labelvalue="Новинки"
+					value={
+						<>
+							<RadioBatton style={{ padding: "0 20px 0 0" }}
+								name="on"
+								type="radio"
+								id="radio_3"
+								for="radio_3"
+								value="Все"
+							/>
+							<RadioBatton style={{ padding: "0 20px 0 0" }}
+								name="on"
+								type="radio"
+								id="radio_4"
+								for="radio_4"
+								value="Новинки"
+							/>
+							<RadioBatton
+								name="on"
+								type="radio"
+								id="radio_5"
+								for="radio_5"
+								value="Акции"
+							/>
+						</>
+					}
 				/>
 
+				<MenuSorting
+					type="checkbox"
+					id="lebe3"
+					for="lebe3"
+					labelvalue="Цена"
+				// value={ }
+				/>
+
+				<MenuSorting
+					type="checkbox"
+					id="lebe4"
+					for="lebe4"
+					labelvalue="Бренд"
+					value={ 
+						<>
+						<CheckBox style={{ padding: "0 90px 0 0" }}
+							type="checkbox"
+							id="checkbox1"
+							for="checkbox1"
+							value="BRP"
+						/> 
+						<CheckBox style={{ padding: "0 90px 0 0" }}
+							type="checkbox"
+							id="checkbox2"
+							for="checkbox2"
+							value="Spark 2"
+						/> 
+						<CheckBox 
+							type="checkbox"
+							id="checkbox3"
+							for="checkbox3"
+							value="Spark 3"
+						/> 
+						</>
+					}
+				/>
+
+
+				
 
 
 

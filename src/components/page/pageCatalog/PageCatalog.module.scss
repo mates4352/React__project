@@ -82,6 +82,22 @@ margin: 41px 0 26px 0;
     margin-left: 34px;
 }
 
+
+
+// =========leftSection========= //
 .titleMenu {
     margin-bottom: 41px;
+    
+}
+.btntitle {
+    @include font4(16px, 1.5, $SfProBold, #C4C4C4);
+    letter-spacing: 1px;
+    margin-right: 40px;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.btntitle:active {
+    color: $main-color;
+    border-bottom: 2px solid $sub-color;
 }
