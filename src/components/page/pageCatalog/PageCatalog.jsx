@@ -9,6 +9,8 @@ import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
 import RadioBatton from "../../common/radioButton/RadioBatton";
 import MenuSorting from "../../block/menuSorting/MenuSorting";
 import CheckBox from "../../common/checkBox/CheckBox";
+import LinkShow from "../../common/linkShow/LinkShow";
+import ButtonSorting from "../../common/buttonSorting/ButtonSorting";
 
 const PageCatalog = () => {
 	return (
@@ -72,9 +74,10 @@ const PageCatalog = () => {
 				</div>
 
 				<MenuSorting
-					type="radio"
+					type="checkbox"
 					id="lebe1"
 					for="lebe1"
+					
 					labelvalue="Наличие"
 					value={
 						<>
@@ -96,7 +99,7 @@ const PageCatalog = () => {
 					}
 				/>
 				<MenuSorting
-					type="radio"
+					type="checkbox"
 					id="lebe2"
 					for="lebe2"
 					labelvalue="Новинки"
@@ -140,32 +143,138 @@ const PageCatalog = () => {
 					id="lebe4"
 					for="lebe4"
 					labelvalue="Бренд"
-					value={ 
+					
+					value={
 						<>
-						<CheckBox style={{ padding: "0 90px 0 0" }}
-							type="checkbox"
-							id="checkbox1"
-							for="checkbox1"
-							value="BRP"
-						/> 
-						<CheckBox style={{ padding: "0 90px 0 0" }}
-							type="checkbox"
-							id="checkbox2"
-							for="checkbox2"
-							value="Spark 2"
-						/> 
-						<CheckBox 
-							type="checkbox"
-							id="checkbox3"
-							for="checkbox3"
-							value="Spark 3"
-						/> 
+							<CheckBox style={{ padding: "0 90px 0 0" }}
+								type="checkbox"
+								id="checkbox1"
+								for="checkbox1"
+								value="BRP"
+							/>
+							<CheckBox style={{ padding: "0 90px 0 0" }}
+								type="checkbox"
+								id="checkbox2"
+								for="checkbox2"
+								value="Spark 2"
+							/>
+							<CheckBox
+								type="checkbox"
+								id="checkbox3"
+								for="checkbox3"
+								value="Spark 3"
+							/>
+							<LinkShow
+								href="#"
+							/>
 						</>
 					}
 				/>
 
+				<MenuSorting
+					type="checkbox"
+					id="lebe5"
+					for="lebe5"
+					labelvalue="Модель"
+					value={
+						<>
+							<div className={s.sortingModel}>
+								<input className={s.sortingModelInput}
+									placeholder="Введите модель"
+									type="text" />
+							</div>
 
-				
+
+							<CheckBox style={{ padding: "0 16px 0 0" }}
+								type="checkbox"
+								id="checkbox4"
+								for="checkbox4"
+								value="Sea-doo Spark 2"
+							/>
+							<CheckBox
+								type="checkbox"
+								id="checkbox5"
+								for="checkbox5"
+								value="SeaDoo Spark 90"
+							/>
+							<CheckBox style={{ padding: "0 16px 0 0" }}
+								type="checkbox"
+								id="checkbox6"
+								for="checkbox6"
+								value="SeaDoo GTI 155"
+							/>
+							<CheckBox
+								type="checkbox"
+								id="checkbox7"
+								for="checkbox7"
+								value="SeaDoo GTR 230"
+							/>
+							<LinkShow
+								href="#"
+							/>
+						</>
+					}
+				/>
+
+				<MenuSorting
+					type="checkbox"
+					id="lebe6"
+					for="lebe6"
+					labelvalue="Акции"
+					value={ 
+						<>
+						<ButtonSorting 
+							value="Sale"
+						/>
+						<ButtonSorting 
+							value="New"
+						/>
+						<ButtonSorting 
+							value="Hit"
+						/>
+						<ButtonSorting 
+							value="Дилер"
+						/>
+						</>
+					}
+				/>
+				<MenuSorting
+					type="checkbox"
+					id="lebe7"
+					for="lebe7"
+					labelvalue="Страны"
+					value={
+						<>
+							<CheckBox 
+								type="checkbox"
+								id="checkbox8"
+								for="checkbox8"
+								value="Россия"
+							/>
+							<CheckBox 
+								type="checkbox"
+								id="checkbox9"
+								for="checkbox9"
+								value="Германия"
+							/>
+							<CheckBox
+								type="checkbox"
+								id="checkbox10"
+								for="checkbox10"
+								value="Китай"
+							/>
+							<CheckBox
+								type="checkbox"
+								id="checkbox11"
+								for="checkbox11"
+								value="Китай"
+							/>
+							<LinkShow
+								href="#"
+							/>
+						</>
+					}
+				/>
 
 
 

@@ -1,0 +1,12 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/base/fonts";
+@import "./../../../scss/abstracts/mixins/mixins";
+
+.buttonSorting {
+    @include font3(12px,1.2,$SfProBold);
+    padding: 7px 16px;
+    text-transform:uppercase;
+    letter-spacing: 0,7px;
+    margin-right: 10px;
+}
+

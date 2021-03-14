@@ -85,6 +85,13 @@ margin: 41px 0 26px 0;
 
 
 // =========leftSection========= //
+
+.leftSection {
+    // max-width: 290px;
+    // width: 100%;
+    // border: 1px solid rgb(24, 230, 17);
+}
+
 .titleMenu {
     margin-bottom: 41px;
     
@@ -101,3 +108,15 @@ margin: 41px 0 26px 0;
     color: $main-color;
     border-bottom: 2px solid $sub-color;
 }
+
+
+.sortingModelInput {
+    width: 290px;
+    height: 30px;
+    border: solid 1px #E0E0E0;
+    padding-left: 20px;
+}
+
+
+
+
