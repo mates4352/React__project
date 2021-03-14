@@ -6,7 +6,7 @@
     // border: 5px solid lightgreen;
     display: flex;
     justify-content: space-around;
-    margin: 45px 0;
+    margin: 45px 0 80px;
 }
 
 // ------------bigCard
@@ -124,7 +124,6 @@ tr {
 
 th {
     text-align: left;
-    /* Выравнивание по левому краю */
     @include font4(20px, 24px, $SFProRegular, $main-color);
     font-weight: 400;
     opacity: 0.6;
@@ -164,26 +163,149 @@ td {
     padding: 15px 0px 6px;
 }
 
-// --------- ссылка
-.show {
-    @include font4(14px, 17px, $SFProRegular, $sub-color);
-
-    &:hover {
-        text-decoration-line: underline;
-    }
+// ------------grid
+.grid {
+    display: grid;
+    grid-template-columns: 3% 26% 21% 18% 20% 12%;
+    grid-auto-rows: minmax(34px, auto);
+    grid-row-gap: 20px;
 }
 
-// ---------- кнопка
-.btnBuy {
-    @include font4(14px, 17px, $SFProRegular, white);
-    text-align: center;
+.gridItem {
+    border: 2px solid lightgray;
+    background-color: rgb(218, 244, 253);
+    font-size: 20px;
+}
 
-    background-color: $sub-color;
-    width: 177px;
-    height: 50px;
-    border-radius: 3px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-top: 45px;
+#item5,
+#item6,
+#item7,
+#item8,
+#item9,
+#item10,
+#item11,
+#item12,
+#ite13,
+#item14,
+#item15,
+#item16,
+#item17,
+#item18,
+#item19,
+#item20,
+#item21,
+#item22,
+#item23,
+#item25,
+#item25,
+#item26,
+#item27,
+#item28,
+#item29,
+#item30 {
+    min-height: 70px;
+}
+
+#item1 {
+    grid-area: 1/1/7/span 1;
+}
+
+#item2 {
+    grid-area: 1/2/2/span 2;
+}
+
+#item3 {
+    grid-area: 1/4/2/span 1;
+}
+
+#item4 {
+    grid-area: 1/5/2/span 2;
+}
+
+#item5 {
+    grid-area: 2/2/3/span 1;
+}
+
+#item6 {
+    grid-area: 2/3/3/span 1;
+}
+
+#item7 {
+    grid-area: 2/4/3/span 1;
+}
+
+#item8 {
+    grid-area: 2/5/3/span 2;
+}
+
+#item9 {
+    grid-area: 3/2/4/span 1;
+}
+
+#item10 {
+    grid-area: 4/2/5/span 1;
+}
+
+#item11 {
+    grid-area: 5/2/6/span 1;
+}
+
+#item12 {
+    grid-area: 6/2/7/span 1;
+}
+
+#item13 {
+    grid-area: 3/3/4/span 1;
+}
+
+#item14 {
+    grid-area: 4/3/5/span 1;
+}
+
+#item15 {
+    grid-area: 5/3/6/span 1;
+}
+
+#item16 {
+    grid-area: 6/3/7/span 1;
+}
+
+#item17 {
+    grid-area: 3/4/4/span 1;
+}
+
+#item18 {
+    grid-area: 4/4/5/span 1;
+}
+
+#item19 {
+    grid-area: 5/4/6/span 1;
+}
+
+#item20 {
+    grid-area: 6/4/7/span 1;
+}
+
+#item21 {
+    grid-area: 3/5/4/span 2;
+}
+
+#item22 {
+    grid-area: 4/5/5/span 2;
+}
+
+#item23 {
+    grid-area: 5/5/6/span 2;
+}
+
+#item24 {
+    grid-area: 6/5/7/span 2;
+}
+
+#item21,
+#item22,
+#item23,
+#item24 {
+    display: flex;
+    justify-content: space-between;
 }
