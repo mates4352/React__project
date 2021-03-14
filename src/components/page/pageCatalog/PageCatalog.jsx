@@ -9,8 +9,9 @@ import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
 import RadioBatton from "../../common/radioButton/RadioBatton";
 import MenuSorting from "../../block/menuSorting/MenuSorting";
 import CheckBox from "../../common/checkBox/CheckBox";
-import LinkShow from "../../common/linkShow/LinkShow";
+
 import ButtonSorting from "../../common/buttonSorting/ButtonSorting";
+import BtnShow from "../../common/btnShow/BtnShow";
 
 const PageCatalog = () => {
 	return (
@@ -164,9 +165,7 @@ const PageCatalog = () => {
 								for="checkbox3"
 								value="Spark 3"
 							/>
-							<LinkShow
-								href="#"
-							/>
+							<BtnShow/>
 						</>
 					}
 				/>
@@ -209,9 +208,7 @@ const PageCatalog = () => {
 								for="checkbox7"
 								value="SeaDoo GTR 230"
 							/>
-							<LinkShow
-								href="#"
-							/>
+							<BtnShow/>
 						</>
 					}
 				/>
@@ -269,9 +266,7 @@ const PageCatalog = () => {
 								for="checkbox11"
 								value="Китай"
 							/>
-							<LinkShow
-								href="#"
-							/>
+							<BtnShow/>
 						</>
 					}
 				/>
