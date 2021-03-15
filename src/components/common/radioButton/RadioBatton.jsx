@@ -3,7 +3,7 @@ import s from "./RadioButton.module.scss";
 const RadioBatton = (props) => {
     return (
         <div  style={props.style} className={s.radio}>
-            <input className={s.padioInput}
+            <input className={s.radioInput}
                 name={props.name}
                 type={props.type}
                 id={props.id} />
