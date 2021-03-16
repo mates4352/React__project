@@ -19,6 +19,10 @@ import rec1 from "./../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 import star from "./../../../assets/images/svg/Star.svg"
 
+import Rating from "react-rating"
+
+
+
 
 // import { Navigation } from "swiper"
 
@@ -59,6 +63,7 @@ const PageProduct = (props) => {
 							<img src={star} alt={'star'} />
 							<img src={star} alt={'star'} />
 						</div>
+						<Rating  style={{ margin: "0 0 0 50px" }}/>
 					</div>
 					<table className={s.table}>
 						<tr>
@@ -111,11 +116,15 @@ const PageProduct = (props) => {
 				<header className={s.header}>
 					<form className={s.form}>
 						<label className={s.label}>
-							Магазин <input className={s.inputShop} type="text" value={s.value} />
+							Магазин <input className={s.inputShop} type="text" placeholder="Адрес" value={s.value} />
 						</label>
 					</form>
+					<form className={s.form}>
 					<input className={s.checkbox} type="checkbox" />Забрать сегодня
+					</form>
+					<form className={s.form}>
 					<input className={s.checkbox} type="checkbox" />Забрать в течение недели
+					</form>
 				</header>
 
 				<div className={s.gridWrapper}>
@@ -125,22 +134,7 @@ const PageProduct = (props) => {
 					<div className={s.gridItem} id={s.item8}>Количество</div>
 					<div className={s.gridItem} id={s.item9}>Москва, ул. Науки 25</div>
 
-					<div className={s.gridItem} id={s.innerItem10}>
-						<GridSchedule />
-						{/* <div className={s.workDays}>
-							<span className={s.days}>пн-сб:</span>
-							<span className={s.time}>08:00-19:00</span>
-						</div>
-						<div className={s.sunday}>
-							<span className={s.days}>вс:</span>
-							<span className={s.time}>09:00-17:00</span>
-						</div> */}
-
-						{/* <div className={s.gridItem} id={s.innerItem101}>пн-сб:</div>
-						<div className={s.gridItem} id={s.innerItem102}>08:00-19:00</div>
-						<div className={s.gridItem} id={s.innerItem103}>вс:</div>
-						<div className={s.gridItem} id={s.innerItem104}>09:00-17:00</div> */}
-					</div>
+					<div className={s.gridItem} id={s.item10}><GridSchedule /></div>
 					<div className={s.gridItem} id={s.item11}>В наличии </div>
 					<div className={s.gridItem} id={s.item12}>1<BtnBuy /></div>
 					<div className={s.gridItem} id={s.item13}>Москва, ул.  Южная 134</div>
@@ -157,8 +151,6 @@ const PageProduct = (props) => {
 					<div className={s.gridItem} id={s.item24}>0<BtnBuy /></div>
 				</div>
 			</div>
-
-
 
 			<SliderBlock style={{ padding: "100px 0" }} />
 

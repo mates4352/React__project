@@ -108,7 +108,7 @@
 }
 
 tr {
-    border-bottom: 1px solid rgba(0,0,0,.12);
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
 
     // opacity: 0.6;
     &:hover {
@@ -155,7 +155,7 @@ td {
         text-decoration: underline;
         text-decoration-style: 5px solid;
         text-decoration-color: $sub-color;
-    }
+}
 }
 
 th,
@@ -178,39 +178,111 @@ td {
     align-items: center;
 }
 
+.label {
+    position: relative;
+    &::after {
+        display: inline-block;
+        content: "";
+        background-image: url(./../../../assets/images/svg/loupe.svg);
+        background-size: cover;
+        opacity: 0.3;
+        width: 16px;
+        height: 16px;
+        right: 117px;
+        bottom: 0px;
+        z-index: 9999;
+        position: absolute;
+    }
+    .inputShop {
+        margin: 0 100px 0 17px;
+        min-width: 313px;
+        height: 33px;
+        background: #F0F0F4;
+        border-radius: 3px;
+        padding: 17px;
+
+        &:hover {
+            border: 2px solid $sub-color;
+        }
+    
+        &::-webkit-input-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &::-moz-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:-moz-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:-ms-input-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus::-webkit-input-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus::-moz-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus:-moz-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus:-ms-input-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
+
 .checkbox {
     max-width: 14px;
     height: 14px;
     margin: 0 18px 0 55px;
 }
 
-.inputShop {
-    margin: 0 100px 0 17px;
-    width: 313px;
-    height: 33px;
-    background: #F0F0F4;
-    border-radius: 3px;
+.form:hover {
+    text-decoration: underline;
+    text-decoration-color: $sub-color;
 }
 
 .gridWrapper {
     display: grid;
-    grid-template-columns: 300px 254px 204px 376px;
+    grid-template-columns: 27% 22% 18% 33%;
     grid-auto-rows: minmax(70px, auto);
     grid-row-gap: 20px;
 
     @include font4(16px, 24px, $SFProRegular, $main-color);
 }
 
+.gridWrapper:hover>.gridItem {
+    border-bottom: 2px solid $sub-color;
+}
+
 .gridItem {
     // border: 2px solid lightgray;
     // background-color: rgb(218, 244, 253);
-    border-bottom: 1px solid rgba(0,0,0,.12);
-    
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+
     &:hover {
-        border-bottom: 3px solid $sub-color;
-        // text-decoration: none;
-        // text-decoration-color: $sub-color;
-    }
+            //border-bottom: 3px solid $sub-color;
+            //text-decoration: none;
+            //text-decoration-color: $sub-color;
+            text-decoration: underline;
+            text-decoration-color: $sub-color;
+}
 
     &:first-child,
     &:nth-child(2),
@@ -231,28 +303,6 @@ td {
 #item5,
 #item6,
 #item7,
-#item8{
+#item8 {
     @include font4(20px, 24px, $SFProRegular, $main-color);
-    // font-weight: bold;
 }
-
-// -----------------inner
-// #innerItem10 {
-//     // display: flex;
-//     // flex-wrap: wrap;
-    
-    
-//     display: grid;
-//     grid-template-columns: 18% 36%;
-//     grid-auto-rows: minmax(20px, auto);
-//     grid-row-gap: 20px;
-//     grid-column-gap: 10px;
-// }
-
-// .days{
-//     display: inline-block;
-//     height: 20px;
-//     width: 46px;
-//     margin: 0 20px 10px 0;
-// }
-
