@@ -1,6 +1,21 @@
 import iconGrid from "./../../../assets/images/PageCatalog/iconGrid.png";
 import iconList from "./../../../assets/images/PageCatalog/iconList.png";
 
+import gidro1 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl1.png";
+import gidro2 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl2.png";
+import gidro3 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl3.png";
+import gidro4 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl4.png";
+import gidro5 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl5.png";
+import gidro6 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl6.png";
+import gidro7 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl7.png";
+import gidro8 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl8.png";
+import gidro9 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl9.png";
+import gidro10 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl10.png";
+import gidro11 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl11.png";
+import gidro12 from "./../../../assets/images/PageCatalog/Gidro/gidrotsikl12.png";
+
+
+
 
 import s from "./PageCatalog.module.scss"
 
@@ -13,6 +28,8 @@ import CheckBox from "../../common/checkBox/CheckBox";
 import ButtonSorting from "../../common/buttonSorting/ButtonSorting";
 import BtnShow from "../../common/btnShow/BtnShow";
 import RangeSlider from "../../block/rangeSlider/RangeSlider";
+import Card from "./../../common/card/Card";
+
 
 const PageCatalog = () => {
 	return (
@@ -300,10 +317,126 @@ const PageCatalog = () => {
 				</div>
 
 				<div className={s.rightSection}>
+					
+					
+					<Card
+						image={gidro1}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango"
+						styleName={{fontSize: "18px" }}
+						price="1 049 500 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro2}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic"
+						styleName={{fontSize: "18px" }}
+						price="1 100 475 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro3}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro4}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro5}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro6}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro7}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro8}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro9}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro10}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro11}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					<Card
+						image={gidro12}
+						styleImg={{ width: "250px", height: "190px" }}
+						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
+						styleName={{fontSize: "18px" }}
+						price="1 323 700 ₽"
+						absent=""
+						message=""
+					/>
+					
+
+
+
+
 
 
 
 				</div>
+						
 
 			</div>
 
