@@ -24,6 +24,7 @@ import Rating from "react-rating"
 
 
 
+
 // import { Navigation } from "swiper"
 
 const PageProduct = (props) => {
@@ -120,10 +121,12 @@ const PageProduct = (props) => {
 						</label>
 					</form>
 					<form className={s.form}>
-					<input className={s.checkbox} type="checkbox" />Забрать сегодня
+					<input className={s.checkbox} type="checkbox"/>
+					<label> Забрать сегодня</label>
 					</form>
 					<form className={s.form}>
-					<input className={s.checkbox} type="checkbox" />Забрать в течение недели
+					<input className={s.checkbox} type="checkbox" checked="checked"/>
+					<label> Забрать в течение недели</label>
 					</form>
 				</header>
 
