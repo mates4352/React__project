@@ -4,6 +4,7 @@ import s from "./PageProduct.module.scss"
 import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
 import SliderBlock from "./../../block/sliderBlock/SliderBlock"
 import Navigation from "./../../block/navigation/Navigation"
+import GridSchedule from "../../block/gridSchedule/GridSchedule"
 
 // common
 import Sale from "../../common/sale/Sale"
@@ -18,13 +19,12 @@ import rec1 from "./../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 import star from "./../../../assets/images/svg/Star.svg"
 
+import Rating from "react-rating"
+
+
+
+
 // import { Navigation } from "swiper"
-
-
-
-
-
-
 
 const PageProduct = (props) => {
 	return (
@@ -63,6 +63,7 @@ const PageProduct = (props) => {
 							<img src={star} alt={'star'} />
 							<img src={star} alt={'star'} />
 						</div>
+						<Rating  style={{ margin: "0 0 0 50px" }}/>
 					</div>
 					<table className={s.table}>
 						<tr>
@@ -110,31 +111,45 @@ const PageProduct = (props) => {
 			// text8=""
 			/>
 
-			<div className={s.grid}>
-				<div className={s.gridItem} id={s.item1}></div>
-				<div className={s.gridItem} id={s.item2}>Магазин</div>
-				<div className={s.gridItem} id={s.item3}>Забрать сегодня</div>
-				<div className={s.gridItem} id={s.item4}>Забрать в течение недели</div>
-				<div className={s.gridItem} id={s.item5}>Адрес</div>
-				<div className={s.gridItem} id={s.item6}>Режим работы</div>
-				<div className={s.gridItem} id={s.item7}>Доступно</div>
-				<div className={s.gridItem} id={s.item8}>Количество</div>
-				<div className={s.gridItem} id={s.item9}>Москва, ул. Науки 25</div>
-				<div className={s.gridItem} id={s.item10}>Москва, ул.  Южная 134</div>
-				<div className={s.gridItem} id={s.item11}>Санкт-Петербург, ул. Красная 19</div>
-				<div className={s.gridItem} id={s.item12}>Киев, ул Шевченко 167</div>
-				<div className={s.gridItem} id={s.item13}>пн-сб:</div>
-				<div className={s.gridItem} id={s.item14}>пн-сб:</div>
-				<div className={s.gridItem} id={s.item15}>пн-сб:</div>
-				<div className={s.gridItem} id={s.item16}>пн-сб:</div>
-				<div className={s.gridItem} id={s.item17}>В наличии</div>
-				<div className={s.gridItem} id={s.item18}>В наличии</div>
-				<div className={s.gridItem} id={s.item19}>Нет в наличии</div>
-				<div className={s.gridItem} id={s.item20}>Нет в наличии</div>
-				<div className={s.gridItem} id={s.item21}>1<BtnBuy /></div>
-				<div className={s.gridItem} id={s.item22}>2<BtnBuy /></div>
-				<div className={s.gridItem} id={s.item23}>0<BtnBuy /></div>
-				<div className={s.gridItem} id={s.item24}>0<BtnBuy /></div>
+			<div className={s.selfdelivery}>
+
+				<header className={s.header}>
+					<form className={s.form}>
+						<label className={s.label}>
+							Магазин <input className={s.inputShop} type="text" placeholder="Адрес" value={s.value} />
+						</label>
+					</form>
+					<form className={s.form}>
+					<input className={s.checkbox} type="checkbox" />Забрать сегодня
+					</form>
+					<form className={s.form}>
+					<input className={s.checkbox} type="checkbox" />Забрать в течение недели
+					</form>
+				</header>
+
+				<div className={s.gridWrapper}>
+					<div className={s.gridItem} id={s.item5}>Адрес</div>
+					<div className={s.gridItem} id={s.item6}>Режим работы</div>
+					<div className={s.gridItem} id={s.item7}>Доступно</div>
+					<div className={s.gridItem} id={s.item8}>Количество</div>
+					<div className={s.gridItem} id={s.item9}>Москва, ул. Науки 25</div>
+
+					<div className={s.gridItem} id={s.item10}><GridSchedule /></div>
+					<div className={s.gridItem} id={s.item11}>В наличии </div>
+					<div className={s.gridItem} id={s.item12}>1<BtnBuy /></div>
+					<div className={s.gridItem} id={s.item13}>Москва, ул.  Южная 134</div>
+					<div className={s.gridItem} id={s.item14}><GridSchedule /></div>
+					<div className={s.gridItem} id={s.item15}>В наличии </div>
+					<div className={s.gridItem} id={s.item16}>2<BtnBuy /> </div>
+					<div className={s.gridItem} id={s.item17}>Санкт-Петербург, ул. Красная 19</div>
+					<div className={s.gridItem} id={s.item18}><GridSchedule /></div>
+					<div className={s.gridItem} id={s.item19}>Нет в наличии</div>
+					<div className={s.gridItem} id={s.item20}>0<BtnBuy /></div>
+					<div className={s.gridItem} id={s.item21}>Киев, ул. Шевченко 167</div>
+					<div className={s.gridItem} id={s.item22}><GridSchedule /></div>
+					<div className={s.gridItem} id={s.item23}>Нет в наличии</div>
+					<div className={s.gridItem} id={s.item24}>0<BtnBuy /></div>
+				</div>
 			</div>
 
 			<SliderBlock style={{ padding: "100px 0" }} />

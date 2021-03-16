@@ -108,12 +108,12 @@
 }
 
 tr {
-    border-bottom: 1px solid rgb(231, 227, 227);
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
 
     // opacity: 0.6;
     &:hover {
-        // border-bottom: 3px solid $sub-color;
-        // text-decoration: underline;
+        border-bottom: 3px solid $sub-color;
+        // text-decoration: none;
         // text-decoration-color: $sub-color;
     }
 
@@ -155,7 +155,7 @@ td {
         text-decoration: underline;
         text-decoration-style: 5px solid;
         text-decoration-color: $sub-color;
-    }
+}
 }
 
 th,
@@ -163,149 +163,146 @@ td {
     padding: 15px 0px 6px;
 }
 
-// ------------grid
-.grid {
+// ------------selfdelivery, grid
+.selfdelivery {
+    padding-left: 38px;
+    // border: 2px solid rgb(199, 248, 125);
+}
+
+.header {
+    padding-bottom: 50px;
+    @include font4(17px, 20px, $SFProRegular, $main-color);
+    opacity: 0.7;
+
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    position: relative;
+    &::after {
+        display: inline-block;
+        content: "";
+        background-image: url(./../../../assets/images/svg/loupe.svg);
+        background-size: cover;
+        opacity: 0.3;
+        width: 16px;
+        height: 16px;
+        right: 117px;
+        bottom: 0px;
+        z-index: 9999;
+        position: absolute;
+    }
+    .inputShop {
+        margin: 0 100px 0 17px;
+        min-width: 313px;
+        height: 33px;
+        background: #F0F0F4;
+        border-radius: 3px;
+        padding: 17px;
+
+        &:hover {
+            border: 2px solid $sub-color;
+        }
+    
+        &::-webkit-input-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &::-moz-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:-moz-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:-ms-input-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus::-webkit-input-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus::-moz-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus:-moz-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        &:focus:-ms-input-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
+
+.checkbox {
+    max-width: 14px;
+    height: 14px;
+    margin: 0 18px 0 55px;
+}
+
+.form:hover {
+    text-decoration: underline;
+    text-decoration-color: $sub-color;
+}
+
+.gridWrapper {
     display: grid;
-    grid-template-columns: 3% 26% 21% 18% 20% 12%;
-    grid-auto-rows: minmax(34px, auto);
+    grid-template-columns: 27% 22% 18% 33%;
+    grid-auto-rows: minmax(70px, auto);
     grid-row-gap: 20px;
+
+    @include font4(16px, 24px, $SFProRegular, $main-color);
+}
+
+.gridWrapper:hover>.gridItem {
+    border-bottom: 2px solid $sub-color;
 }
 
 .gridItem {
-    border: 2px solid lightgray;
-    background-color: rgb(218, 244, 253);
-    font-size: 20px;
+    // border: 2px solid lightgray;
+    // background-color: rgb(218, 244, 253);
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+
+    &:hover {
+            //border-bottom: 3px solid $sub-color;
+            //text-decoration: none;
+            //text-decoration-color: $sub-color;
+            text-decoration: underline;
+            text-decoration-color: $sub-color;
+}
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+        border-bottom: none;
+    }
+}
+
+#item12,
+#item16,
+#item20,
+#item24 {
+    display: flex;
+    justify-content: space-between;
 }
 
 #item5,
 #item6,
 #item7,
-#item8,
-#item9,
-#item10,
-#item11,
-#item12,
-#ite13,
-#item14,
-#item15,
-#item16,
-#item17,
-#item18,
-#item19,
-#item20,
-#item21,
-#item22,
-#item23,
-#item25,
-#item25,
-#item26,
-#item27,
-#item28,
-#item29,
-#item30 {
-    min-height: 70px;
-}
-
-#item1 {
-    grid-area: 1/1/7/span 1;
-}
-
-#item2 {
-    grid-area: 1/2/2/span 2;
-}
-
-#item3 {
-    grid-area: 1/4/2/span 1;
-}
-
-#item4 {
-    grid-area: 1/5/2/span 2;
-}
-
-#item5 {
-    grid-area: 2/2/3/span 1;
-}
-
-#item6 {
-    grid-area: 2/3/3/span 1;
-}
-
-#item7 {
-    grid-area: 2/4/3/span 1;
-}
-
 #item8 {
-    grid-area: 2/5/3/span 2;
-}
-
-#item9 {
-    grid-area: 3/2/4/span 1;
-}
-
-#item10 {
-    grid-area: 4/2/5/span 1;
-}
-
-#item11 {
-    grid-area: 5/2/6/span 1;
-}
-
-#item12 {
-    grid-area: 6/2/7/span 1;
-}
-
-#item13 {
-    grid-area: 3/3/4/span 1;
-}
-
-#item14 {
-    grid-area: 4/3/5/span 1;
-}
-
-#item15 {
-    grid-area: 5/3/6/span 1;
-}
-
-#item16 {
-    grid-area: 6/3/7/span 1;
-}
-
-#item17 {
-    grid-area: 3/4/4/span 1;
-}
-
-#item18 {
-    grid-area: 4/4/5/span 1;
-}
-
-#item19 {
-    grid-area: 5/4/6/span 1;
-}
-
-#item20 {
-    grid-area: 6/4/7/span 1;
-}
-
-#item21 {
-    grid-area: 3/5/4/span 2;
-}
-
-#item22 {
-    grid-area: 4/5/5/span 2;
-}
-
-#item23 {
-    grid-area: 5/5/6/span 2;
-}
-
-#item24 {
-    grid-area: 6/5/7/span 2;
-}
-
-#item21,
-#item22,
-#item23,
-#item24 {
-    display: flex;
-    justify-content: space-between;
+    @include font4(20px, 24px, $SFProRegular, $main-color);
 }

@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.padioInput {
+.radioInput {
 appearance: none;
 position: absolute;
 }
@@ -42,7 +42,7 @@ position: absolute;
     opacity: 0;
 }
 
-.padioInput:checked + .radioLabel::after {
+.radioInput:checked + .radioLabel::after {
     opacity: 1;
 }
 

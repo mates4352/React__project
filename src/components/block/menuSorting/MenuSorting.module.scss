@@ -54,7 +54,7 @@
 }
 
 .menuInput:checked ~ .menuContent {
-    height: 20px;
+    height: auto;
     overflow-y: auto;
 }
 
