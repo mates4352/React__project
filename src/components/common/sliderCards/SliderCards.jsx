@@ -13,7 +13,7 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import "./SliderCards.scss"
 
-SwiperCore.use([Navigation,Autoplay]);
+SwiperCore.use([Navigation,Autoplay,]);
 
 
 const SliderCards = (props) => {
@@ -22,7 +22,11 @@ const SliderCards = (props) => {
 			<Swiper
 				spaceBetween={20}
 				slidesPerView={4}
-				Autoplay = {1}
+				loop={true}
+				autoplay={{
+					delay: 2500,
+					disableOnInteraction: false
+			  }}
 				navigation
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}
@@ -67,25 +71,6 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className="swipper">
-					<Card
-						image={suit}
-						name='Мужской костюм 3мм'
-						price='7 000 ₽'
-						absent=''
-						message=''
-					/>
-				</SwiperSlide>
-
-				<SwiperSlide className="swipper">
-					<Card
-						image={suit}
-						name='Мужской костюм 3мм'
-						price='7 000 ₽'
-						absent=''
-						message=''
-					/>
-				</SwiperSlide>
 				
 			</Swiper>
 		</div>
