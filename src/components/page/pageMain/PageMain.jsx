@@ -4,12 +4,12 @@ import Boats from "./../../../assets/images/CategoriesCards/Boats.png"
 import Snowmobiles from "./../../../assets/images/CategoriesCards/Snowmobiles.png"
 import ATVs2 from "./../../../assets/images/CategoriesCards/ATVs2.png"
 import Engines from "./../../../assets/images/CategoriesCards/Engines.png"
-import banner from "./../../../assets/images/banner.jpg"
 import img from "./../../../assets/images/img.png"
 import discountImg from "./../../../assets/images/discount/discount.png"
 
 import CategoryCard from "./../../common/categoryCard/CategoryCard"
 import Card from "./../../common/card/Card"
+import SliderBlock from "../../block/sliderBlock/SliderBlock"
 
 import s from "./PageMain.module.scss"
 
@@ -19,44 +19,16 @@ import SwiperCore, { Navigation } from 'swiper';
 
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
-import SliderBlock from "../../block/sliderBlock/SliderBlock"
+import SliderBanner from "../../block/sliderBanner/SliderBanner"
 
-SwiperCore.use([Navigation ]);
+SwiperCore.use([Navigation]);
 
 
 const PageMain = () => {
 	return (
 		<div className={s.PageMain}>
 			<div className={s.banner}>
-				<Swiper
-					spaceBetween={0}
-					slidesPerView={1}
-					navigation
-					onSlideChange={() => console.log('slide change')}
-					onSwiper={(swiper) => console.log(swiper)}
-				>
-					<SwiperSlide className={s.swipper}>
-							<img
-								className={s.bannerImg}
-								src={banner}
-								alt="banner"
-							/>
-					</SwiperSlide>
-					<SwiperSlide className={s.swipper}>
-							<img
-								className={s.bannerImg}
-								src={banner}
-								alt="banner"
-							/>
-					</SwiperSlide>
-					<SwiperSlide className={s.swipper}>
-							<img
-								className={s.bannerImg}
-								src={banner}
-								alt="banner"
-							/>
-					</SwiperSlide>
-	  </Swiper>
+				<SliderBanner/>
 				<Card
 					absent="Лодочный мотор Suzuki DF9.9BRS"
 					price="190000р"

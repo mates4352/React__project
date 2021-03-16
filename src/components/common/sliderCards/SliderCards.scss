@@ -5,10 +5,14 @@
 
 .wrapper {
     width: 1172px;
-	left: 375px;
     display: flex;
     justify-content: space-between;
 }
-.swipper{
-	
+.wrapper .swiper-button-prev,
+.wrapper .swiper-button-next{
+	color: #000;
+}
+.wrapper .swiper-button-next{
+	right: 20px;
+	z-index: 100;
 }

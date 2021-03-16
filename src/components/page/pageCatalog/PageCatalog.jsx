@@ -79,7 +79,6 @@ const PageCatalog = () => {
 					type="checkbox"
 					id="lebe1"
 					for="lebe1"
-					
 					labelvalue="Наличие"
 					value={
 						<>
@@ -137,9 +136,9 @@ const PageCatalog = () => {
 					id="lebe3"
 					for="lebe3"
 					labelvalue="Цена"
-				value={ 
-					<RangeSlider/>
-				}
+					value={
+						<RangeSlider />
+					}
 				/>
 
 				<MenuSorting
@@ -147,7 +146,7 @@ const PageCatalog = () => {
 					id="lebe4"
 					for="lebe4"
 					labelvalue="Бренд"
-					
+
 					value={
 						<>
 							<CheckBox style={{ padding: "0 90px 0 0" }}
@@ -168,7 +167,7 @@ const PageCatalog = () => {
 								for="checkbox3"
 								value="Spark 3"
 							/>
-							<BtnShow/>
+							<BtnShow />
 						</>
 					}
 				/>
@@ -211,7 +210,7 @@ const PageCatalog = () => {
 								for="checkbox7"
 								value="SeaDoo GTR 230"
 							/>
-							<BtnShow/>
+							<BtnShow />
 						</>
 					}
 				/>
@@ -221,20 +220,20 @@ const PageCatalog = () => {
 					id="lebe6"
 					for="lebe6"
 					labelvalue="Акции"
-					value={ 
+					value={
 						<>
-						<ButtonSorting 
-							value="Sale"
-						/>
-						<ButtonSorting 
-							value="New"
-						/>
-						<ButtonSorting 
-							value="Hit"
-						/>
-						<ButtonSorting 
-							value="Дилер"
-						/>
+							<ButtonSorting
+								value="Sale"
+							/>
+							<ButtonSorting
+								value="New"
+							/>
+							<ButtonSorting
+								value="Hit"
+							/>
+							<ButtonSorting
+								value="Дилер"
+							/>
 						</>
 					}
 				/>
@@ -245,13 +244,13 @@ const PageCatalog = () => {
 					labelvalue="Страны"
 					value={
 						<>
-							<CheckBox 
+							<CheckBox
 								type="checkbox"
 								id="checkbox8"
 								for="checkbox8"
 								value="Россия"
 							/>
-							<CheckBox 
+							<CheckBox
 								type="checkbox"
 								id="checkbox9"
 								for="checkbox9"
@@ -269,20 +268,11 @@ const PageCatalog = () => {
 								for="checkbox11"
 								value="Китай"
 							/>
-							<BtnShow/>
+							<BtnShow />
 						</>
 					}
 				/>
-
-
-
-
-
-
-
-
 			</div>
-
 
 		</div>
 	);

@@ -1,6 +1,3 @@
-
-import s from "./SliderCards.module.scss"
-
 //Компоненты
 import Card from "../card/Card";
 // Картинки
@@ -10,25 +7,27 @@ import RF from "./../../../assets/images/svg/RF.svg"
 import suit from "./../../../assets/images/svg/suit.svg"
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, { Navigation,Autoplay  } from 'swiper';
 
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
+import "./SliderCards.scss"
 
+SwiperCore.use([Navigation,Autoplay]);
 
-SwiperCore.use([Navigation]);
 
 const SliderCards = (props) => {
 	return (
-		<div className={s.wrapper}>
+		<div className="wrapper">
 			<Swiper
 				spaceBetween={20}
 				slidesPerView={4}
+				Autoplay = {1}
 				navigation
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}
 			>
-				<SwiperSlide className={s.swipper}>
+				<SwiperSlide className="swipper">
 					<Card
 						image={recordPlayer}
 						name='BRP Audio-портативная система'
@@ -38,7 +37,7 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
+				<SwiperSlide className="swipper">
 					<Card
 						image={navigator}
 						name='Garmin Echomap Plus 62cv'
@@ -48,7 +47,7 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
+				<SwiperSlide className="swipper">
 					<Card
 						image={RF}
 						name='RF D.E.S.S.TM Key'
@@ -58,7 +57,7 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
+				<SwiperSlide className="swipper">
 					<Card
 						image={suit}
 						name='Мужской костюм 3мм'
@@ -68,7 +67,7 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
+				<SwiperSlide className="swipper">
 					<Card
 						image={suit}
 						name='Мужской костюм 3мм'
@@ -78,7 +77,7 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
+				<SwiperSlide className="swipper">
 					<Card
 						image={suit}
 						name='Мужской костюм 3мм'
