@@ -487,7 +487,6 @@ const PageCatalog = () => {
 
 
 
-
 		</div>
 	);
 }

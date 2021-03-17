@@ -4,11 +4,22 @@
 @import "./../../../scss/base/fonts";
 
 .wrapper {
-    width: 1172px;
-	left: 375px;
+    width: 100%;
+	// left: 375px;
     display: flex;
     justify-content: space-between;
 }
-.swipper{
-	
+.wrapper .swiper-button-prev,
+.wrapper .swiper-button-next{
+	color: #000;
+}
+.wrapper .swiper-button-next{
+	right: 20px;
+	z-index: 100;
+}
+
+.card {
+    position: relative;
+    flex: 0 1 25%;
+    object-fit: cover;
 }
