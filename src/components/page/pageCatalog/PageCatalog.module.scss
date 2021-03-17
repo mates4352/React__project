@@ -115,6 +115,79 @@
 
 
 
+// ========= Наличие ========= //
+
+// ========= Новинки ========= //
+
+// ========= Цена ========= //
+
+.prise {
+    display: flex;
+    flex-direction: column;
+}
+
+.specificationsSelect{
+    max-width: 268px;
+    width: 100%;
+    border-bottom: 2px solid #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 26px;
+    padding-bottom: 6px;
+    align-items: baseline;
+    margin-top: 26px;
+}
+
+.specificationsText {
+    /* margin-bottom: 17px; */
+}
+
+.specificationsDropdown{
+    position: relative;
+    // height: 17px;
+}
+
+.specificationsDropdown::after {
+    content: "";
+    display: block;
+    background-image: url("./../../../assets/images/PageCatalog/Shape.png");
+    width: 12px;
+    height: 7.4px;
+    right: -2px;
+    top:50%;
+    position: absolute;
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+
+.specificationsDropdown:focus-within{
+    margin-bottom: 10px;
+}
+
+.specificationsDropdown:focus-within::after {
+    transform: rotate(0deg);
+}
+
+.selectItem{
+    position: relative;
+    border: 0;
+    appearance: none;
+    height: 1rem;
+    width: 45px;
+    // cursor: url("./media/select_cursor.png") 25 12, pointer;
+}
+
+.selectItem:focus{
+    outline: 0;
+}
+
+
+
+
+
+
+
+
 
 .sortingModel{
     display: flex;
@@ -195,4 +268,5 @@
     border: 1px solid rgb(28, 0, 128);
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    gap: 30px;
 }

@@ -158,9 +158,52 @@ const PageCatalog = () => {
 						for="lebe3"
 						labelvalue="Цена"
 						value={
-							<RangeSlider />
+							<div className={s.prise}>
+								<RangeSlider />
+								<div className={s.specifications}>
+									<div className={s.specificationsSelect}>
+										<span className={s.specificationsText}>Мощность, л.с.</span>
+										<div className={s.specificationsDropdown}>
+											<select className={s.selectItem}>
+												<option value="90">90</option>
+												<option value="130">130</option>
+												<option value="154">154</option>
+												<option value="230">230</option>
+												<option value="300">300</option>
+											</select>
+
+										</div>
+									</div>
+
+									<div className={s.specificationsSelect}>
+										<span className={s.specificationsText}>Мощность двигателя, л.с.</span>
+										<div className={s.specificationsDropdown}>
+											<select className={s.selectItem}>
+												<option value="55">55</option>
+												<option value="65">65</option>
+												<option value="75">75</option>
+											</select>
+
+										</div>
+									</div>
+
+									<div className={s.specificationsSelect}>
+										<span className={s.specificationsText}>Макс. скорость</span>
+										<div className={s.specificationsDropdown}>
+											<select className={s.selectItem}>
+												<option value="205">205</option>
+												<option value="210">210</option>
+												<option value="215">215</option>
+											</select>
+
+										</div>
+									</div>
+								</div>
+							</div>
 						}
 					/>
+
+
 
 					<MenuSorting
 						type="checkbox"
@@ -317,13 +360,13 @@ const PageCatalog = () => {
 				</div>
 
 				<div className={s.rightSection}>
-					
-					
+
+
 					<Card
 						image={gidro1}
-						styleImg={{ width: "250px", height: "190px" }}
+						styleImg={{ width: "250px", height: "190px", marginRight: "0px" }}
 						name="Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango"
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 049 500 ₽"
 						absent=""
 						message=""
@@ -332,7 +375,7 @@ const PageCatalog = () => {
 						image={gidro2}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic"
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 100 475 ₽"
 						absent=""
 						message=""
@@ -341,7 +384,7 @@ const PageCatalog = () => {
 						image={gidro3}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -350,7 +393,7 @@ const PageCatalog = () => {
 						image={gidro4}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -359,7 +402,7 @@ const PageCatalog = () => {
 						image={gidro5}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -368,7 +411,7 @@ const PageCatalog = () => {
 						image={gidro6}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -377,7 +420,7 @@ const PageCatalog = () => {
 						image={gidro7}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -386,7 +429,7 @@ const PageCatalog = () => {
 						image={gidro8}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -395,7 +438,7 @@ const PageCatalog = () => {
 						image={gidro9}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -404,7 +447,7 @@ const PageCatalog = () => {
 						image={gidro10}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -413,7 +456,7 @@ const PageCatalog = () => {
 						image={gidro11}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
@@ -422,12 +465,12 @@ const PageCatalog = () => {
 						image={gidro12}
 						styleImg={{ width: "250px", height: "190px" }}
 						name="Гидроцикл BRP SeaDoo GTR 230hp X California green "
-						styleName={{fontSize: "18px" }}
+						styleName={{ fontSize: "18px" }}
 						price="1 323 700 ₽"
 						absent=""
 						message=""
 					/>
-					
+
 
 
 
@@ -436,7 +479,7 @@ const PageCatalog = () => {
 
 
 				</div>
-						
+
 
 			</div>
 
