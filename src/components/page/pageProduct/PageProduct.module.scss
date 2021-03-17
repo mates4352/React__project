@@ -179,85 +179,133 @@ td {
     align-items: center;
 }
 
-.label {
+// .label {
+//     position: relative;
+//     &::after {
+//         display: inline-block;
+//         content: "";
+//         background-image: url(./../../../assets/images/svg/loupe.svg);
+//         background-size: cover;
+//         opacity: 0.3;
+//         width: 16px;
+//         height: 16px;
+//         right: 117px;
+//         bottom: 0px;
+//         z-index: 9999;
+//         position: absolute;
+//     }
+//     .inputShop {
+//         margin: 0 100px 0 17px;
+//         min-width: 313px;
+//         height: 33px;
+//         background: #F0F0F4;
+//         border-radius: 3px;
+//         padding: 17px;
+
+//         &:hover {
+//             border: 2px solid $sub-color;
+//         }
+    
+//         &::-webkit-input-placeholder {
+//             opacity: 1;
+//             transition: opacity 0.3s ease;
+//         }
+    
+//         &::-moz-placeholder {
+//             opacity: 1;
+//             transition: opacity 0.3s ease;
+//         }
+    
+//         &:-moz-placeholder {
+//             opacity: 1;
+//             transition: opacity 0.3s ease;
+//         }
+    
+//         &:-ms-input-placeholder {
+//             opacity: 1;
+//             transition: opacity 0.3s ease;
+//         }
+    
+//         &:focus::-webkit-input-placeholder {
+//             opacity: 0;
+//             transition: opacity 0.3s ease;
+//         }
+    
+//         &:focus::-moz-placeholder {
+//             opacity: 0;
+//             transition: opacity 0.3s ease;
+//         }
+    
+//         &:focus:-moz-placeholder {
+//             opacity: 0;
+//             transition: opacity 0.3s ease;
+//         }
+    
+//         &:focus:-ms-input-placeholder {
+//             opacity: 0;
+//             transition: opacity 0.3s ease;
+//         }
+//     }
+// }
+
+/* 
+ * Hide the inputs. 
+ */
+
+ input {
+    display: none;
+  }
+
+  label {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  label span {
     position: relative;
-    &::after {
-        display: inline-block;
-        content: "";
-        background-image: url(./../../../assets/images/svg/loupe.svg);
-        background-size: cover;
-        opacity: 0.3;
-        width: 16px;
-        height: 16px;
-        right: 117px;
-        bottom: 0px;
-        z-index: 9999;
-        position: absolute;
-    }
-    .inputShop {
-        margin: 0 100px 0 17px;
-        min-width: 313px;
-        height: 33px;
-        background: #F0F0F4;
-        border-radius: 3px;
-        padding: 17px;
+    line-height: 22px;
+  }
+ 
+  label span:before,
+  label span:after {
+    content: '';
+  }
 
-        &:hover {
-            border: 2px solid $sub-color;
-        }
-    
-        &::-webkit-input-placeholder {
-            opacity: 1;
-            transition: opacity 0.3s ease;
-        }
-    
-        &::-moz-placeholder {
-            opacity: 1;
-            transition: opacity 0.3s ease;
-        }
-    
-        &:-moz-placeholder {
-            opacity: 1;
-            transition: opacity 0.3s ease;
-        }
-    
-        &:-ms-input-placeholder {
-            opacity: 1;
-            transition: opacity 0.3s ease;
-        }
-    
-        &:focus::-webkit-input-placeholder {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-    
-        &:focus::-moz-placeholder {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-    
-        &:focus:-moz-placeholder {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-    
-        &:focus:-ms-input-placeholder {
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-    }
-}
-
-.checkbox {
-    max-width: 14px;
+  label span:before {
+    border: 1px solid #222021;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  label span:after {
+    background: #222021;
+    width: 14px;
     height: 14px;
-    margin: 0 18px 0 55px;
-}​
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    transition: 300ms;
+    opacity: 0;
+  }
+  label input:checked+span:after {
+    opacity: 1;
+  }
+ 
 
-.form:hover {
-    text-decoration: underline;
-    text-decoration-color: $sub-color;
-}
+// .checkbox {
+//     max-width: 14px;
+//     height: 14px;
+//     margin: 0 18px 0 55px;
+// }​
+
+// .form:hover {
+//     text-decoration: underline;
+//     text-decoration-color: $sub-color;
+// }
 
 .gridWrapper {
     display: grid;
@@ -269,16 +317,16 @@ td {
 }
 
 .gridWrapper:hover>.gridItem {
-    border-bottom: 2px solid $sub-color;
+    // border-bottom: 2px solid $sub-color;
 }
 
 .gridItem {
     // border: 2px solid lightgray;
     // background-color: rgb(218, 244, 253);
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    border-bottom: 3px solid rgba(0, 0, 0, .12);
 
     &:hover {
-            //border-bottom: 3px solid $sub-color;
+            border-bottom: 3px solid $sub-color;
             //text-decoration: none;
             //text-decoration-color: $sub-color;
             text-decoration: underline;

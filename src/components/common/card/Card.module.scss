@@ -22,14 +22,19 @@
 
 .image {
     max-width: 200px;
-    min-height: 200px;
-    margin-top: 50px;
-    margin-bottom: 12px;
+    // min-height: 200px;
+    // margin-top: 50px;
+    // margin-bottom: 12px;
+    // padding-top: 50px;
+    padding-bottom: 12px;
+    flex-grow: 1;
+
+
 }
 
 .name {
-    width: 70%;
-    height: 50px;
+    max-width: 70%;
+    // height: 50px;
     @extend %flexCenter;
     @include font4(20px, 24px, $SFProRegular, $main-color);
     text-align: center;
@@ -54,7 +59,6 @@
 .price {
     @include font4(30px, 36px, $Barlow, $main-color);
     font-weight: bold;
-
     @extend %flexCenter;
     padding-bottom: 30px;
 }
