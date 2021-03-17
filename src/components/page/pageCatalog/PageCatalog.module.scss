@@ -189,15 +189,13 @@
 
 .rightSection {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-	 gap: 32px;
+    grid-template-columns: 270px 270px 270px;
+	 gap: 33px;
 
 	 @media screen and(max-width:992px) {
-		grid-template-columns: 1fr 1fr ;
-		justify-content: center;
+		grid-template-columns: 270px 270px;
 	}
 	@media screen and(max-width:576px) {
-		grid-template-columns: 1fr;
-		justify-content: center;
+		grid-template-columns: 270px;
 	}
 }

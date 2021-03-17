@@ -8,23 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 270px;
+    // width: 270px;
     height: 403px;
     border: 1px solid #E0E0E0;
     position: relative;
 }
-
-// .sale {
-//     @extend %pos-abs;
-//     width: 63px;
-//     height: 25px;
-//     background-color: $sub-color;
-//     @extend %flexCenter;
-
-//     @include font4(12px, 14px, $SFProRegular, #FFFFFF);
-//     font-weight: 400;
-//     letter-spacing: 0.07em;
-// }
 
 .like {
     position: absolute;
@@ -33,14 +21,14 @@
 }
 
 .image {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    min-height: 200px;
     margin-top: 50px;
     margin-bottom: 12px;
 }
 
 .name {
-    width: 230px;
+    width: 70%;
     height: 50px;
     @extend %flexCenter;
     @include font4(20px, 24px, $SFProRegular, $main-color);

@@ -3,5 +3,5 @@
 @import "./../../../scss/abstracts/variable/variable";
 
 .wrapper {
-	@include flex-j-a(center,center,column);
+	@include flex-j-a(flex-start,center,column);
 }
