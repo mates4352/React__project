@@ -114,38 +114,25 @@ const PageProduct = (props) => {
 			<section className={s.selfdelivery}>
 
 				<header className={s.header}>
-					{/* <form className={s.form}>
+					<form>
 						<label className={s.label}>
 							Магазин <input className={s.inputShop} type="text" placeholder="Адрес" value={s.value} />
 						</label>
-					</form> */}
-
-					{/* <form className={s.form}>
-					<input className={s.radio} type="radio" value="radio"/>
-					<label> Забрать сегодня</label>
 					</form>
-					<form className={s.form}>
-					<input className={s.radio} type="radio" value="radio"/>
-					<label> Забрать в течение недели</label>
-					</form> */}
- {/* <label>
-  <input type="radio" name="radio"/>
-  <span>EMAIL</span>
-</label>
 
-<label>
-  <input type="radio" name="radio"/>
-  <span>PHONE</span>
-</label> */}
+					<div className={s.radio}>
+						<label className={s.customRadio}>
+							<input type="radio" name="time" />
+							<span>Забрать сегодня</span>
+						</label>
+					</div>
 
-					{/* <label class="active">
-                        <span></span>
-						<input type="radio" className="radio" value="email" checked />Забрать сегодня
-					</label>
-					<label>
-                        <span></span>
-						<input type="radio" className="radio" value="phone" />Забрать в течение недели
-					</label> */}
+					<div className={s.radio}>
+						<label className={s.customRadio}>
+							<input type="radio" name="time" />
+							<span>Забрать в течение недели</span>
+						</label>
+					</div>
 
 				</header>
 
