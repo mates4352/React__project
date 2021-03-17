@@ -36,8 +36,8 @@ const SliderCards = (props) => {
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}
 			>
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={recordPlayer}
 						name='BRP Audio-портативная система'
 						price=''
@@ -46,8 +46,8 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={navigator}
 						name='Garmin Echomap Plus 62cv'
 						price='7 000 ₽'
@@ -56,8 +56,8 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={RF}
 						name='RF D.E.S.S.TM Key'
 						price=''
@@ -66,8 +66,8 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={suit}
 						name='Мужской костюм 3мм'
 						price='7 000 ₽'
@@ -76,8 +76,8 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={bag}
 						name='Водонепроницаемый Рюкзак'
 						price='9 800 ₽'
@@ -86,8 +86,8 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={jacket}
 						name="Спасательный жилет BRP Men's Airflow PFD"
 						price='6 900 ₽'
@@ -96,8 +96,8 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={BRP}
 						name='BRP Audio-Premium System'
 						price='68 000 ₽'
@@ -106,8 +106,8 @@ const SliderCards = (props) => {
 					/>
 				</SwiperSlide>
 
-				<SwiperSlide className={s.swipper}>
-					<Card className={s.card}
+				<SwiperSlide className="swipper">
+					<Card className="card"
 						image={equipment}
 						name='Спасательное снаряжение'
 						price=''
