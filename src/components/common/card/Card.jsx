@@ -10,9 +10,9 @@ import Sale from "../sale/Sale";
 const Card = (props) => {
 	return (
 		<div className={s.wrapper}>
-			<Sale text='SALE'/>
+			<Sale text='SALE' />
 			<img className={s.like} src={like} alt={'Like'} />
-				<img style={props.styleImg} className={s.image} src={props.image} alt={'image'} />
+			<img style={props.styleImg} className={s.image} src={props.image} alt={'image'} />
 			<p style={props.styleName} className={s.name} >{props.name}</p>
 			<div>
 				<p className={s.absent} >{props.absent}</p>

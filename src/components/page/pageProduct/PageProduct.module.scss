@@ -3,7 +3,6 @@
 @import "./../../../scss/abstracts/variable/variable";
 
 .aboutProduct {
-    // border: 5px solid lightgreen;
     display: flex;
     justify-content: space-around;
     margin: 45px 0 80px;
@@ -19,7 +18,7 @@
 
 .bigImage {
     margin-top: 64px;
-    max-width: 500px;
+    // max-width: 500px;
     // width: 150%;
     max-height: 375px;
 }
@@ -310,11 +309,13 @@ td {
 .radio {
     margin-bottom: 0.2em;
     padding-right: 55px;
+
     &:hover {
         text-decoration: underline;
         text-decoration-color: $sub-color;
     }
 }
+
 /* для элемента input c type="radio" */
 .customRadio>input {
     position: absolute;
@@ -382,9 +383,9 @@ td {
     @include font4(16px, 24px, $SFProRegular, $main-color);
 }
 
-.gridWrapper:hover>.gridItem {
-    // border-bottom: 2px solid $sub-color;
-}
+// .gridWrapper:hover>.gridItem {
+//     // border-bottom: 2px solid $sub-color;
+// }
 
 .gridItem {
     // border: 2px solid lightgray;
