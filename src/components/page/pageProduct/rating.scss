@@ -1,0 +1,10 @@
+@import "./../../../scss/abstracts/variable/variable";
+
+
+.rating .MuiRating-root{
+	color: $sub-color;
+}
+.rating .MuiRating-sizeLarge{
+	font-size: 3rem;
+	margin-left: 15px;
+}

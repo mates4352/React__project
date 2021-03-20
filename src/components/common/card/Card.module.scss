@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     // width: 270px;
-    height: 403px;
+    min-height: 403px;
     border: 1px solid #E0E0E0;
     position: relative;
 }
@@ -19,13 +19,11 @@
     right: 18px;
     top: 16px;
 }
-.img{
-	
-}
+
 .image {
 	flex-grow: 1;
-	margin-top: 50px;
 	margin-bottom: 12px;
+    width: max-content;
 }
 
 .name {
@@ -68,3 +66,18 @@
     right: 0;
     bottom: 0;
 }
+
+@media screen and(max-width:992px) {
+    .name {
+        font-size: 25px;
+    }
+    
+    .image {
+        width: auto;
+    }
+
+    .price {
+        font-size: 35px;
+    }
+}
+

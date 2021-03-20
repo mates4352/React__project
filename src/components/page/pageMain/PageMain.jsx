@@ -18,6 +18,7 @@ const PageMain = () => {
 			<div className={s.banner}>
 				<SliderBanner />
 				<Card
+					styleCard={{minWidth:"265px"}}
 					absent="Лодочный мотор Suzuki DF9.9BRS"
 					price="190000р"
 					image={img}
@@ -41,22 +42,12 @@ const PageMain = () => {
 			</div>
 
 			<CategoriesCards
-				data0={data[0]}
-				data1={data[1]}
-				data2={data[2]}
-				data3={data[3]}
-				data4={data[4]}
-				data5={data[5]}
-			/>
-
-			<CategoriesCards
-				data0={data[0]}
-				data1={data[1]}
-				data2={data[2]}
-				data3={data[3]}
-				data4={data[4]}
-				data5={data[5]}
-				data6={data[6]}
+				card={data}
+				// card1={data[1]}
+				// card2={data[2]}
+				// card3={data[3]}
+				// card4={data[4]}
+				// card5={data[5]}
 			/>
 
 			<SliderBlock style={{ padding: "100px 0" }} />

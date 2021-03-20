@@ -1,0 +1,28 @@
+@import "./../../../../scss/abstracts/mixins/mixins";
+@import "./../../../../scss/abstracts/variable/variable";
+
+
+.item{
+	.link{
+		position: relative;
+		@include font4(20px,24px,$SFProRegular,$main-color);
+		text-transform: capitalize;
+		&:before{
+			content: "";
+			@include size(100%,2px);
+		
+			position: absolute;
+			bottom: -15px;
+			
+			background-color: #1C62CD;
+			transform: scale(0);
+			transition: transform 500ms ease;
+		}
+		&:hover{
+			font-weight: 900;
+		}
+		&:hover:before{
+			transform: scale(1)
+		}
+	}
+}
