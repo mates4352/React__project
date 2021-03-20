@@ -4,8 +4,8 @@ import like from "./../../../assets/images/svg/like.svg"
 import person from "./../../../assets/images/svg/person.svg"
 import basket from "./../../../assets/images/svg/basket.svg"
 import Navigation from "../navigation/Navigation"
-import {data} from "./../navigation/data"
-
+import { data } from "./../navigation/data"
+import { NavLink } from "react-router-dom"
 import s from "./Header.module.scss"
 
 const Header = (props) => {
@@ -18,30 +18,30 @@ const Header = (props) => {
 						<ul className={s.list}>
 
 							<li className={s.item}>
-								<a
+								<NavLink
 									className={s.text}
-									href={"#"}
+									to={"#"}
 								>
 									Магазины
-								</a>
+								</NavLink>
 							</li>
 
 							<li className={s.item}>
-								<a
+								<NavLink
 									className={s.text}
-									href={"#"}
+									to={"#"}
 								>
 									Акции
-								</a>
+								</NavLink>
 							</li>
 
 							<li className={s.item}>
-								<a
+								<NavLink
 									className={s.text}
-									href={"#"}
+									to={"#"}
 								>
 									Доставка и оплата
-								</a>
+								</NavLink>
 							</li>
 
 						</ul>
@@ -91,19 +91,18 @@ const Header = (props) => {
 							</span>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</header>
 			<Navigation
-				text={data[0].text}
-				href ={data[0].href}
-				text2="Катера"
-				text3="Гидроциклы"
-				text4="Лодки"
-				text5="Вездеходы"
-				text6="Снегоходы"
-				text7="Двигатели"
-				text8="Запчасти"
+				link0={data[0]}
+				link1={data[1]}
+				link2={data[2]}
+				link3={data[3]}
+				link4={data[4]}
+				link5={data[5]}
+				link6={data[6]}
 			/>
 		</>
 	);

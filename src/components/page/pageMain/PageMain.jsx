@@ -49,16 +49,6 @@ const PageMain = () => {
 				data5={data[5]}
 			/>
 
-			<CategoriesCards
-				data0={data[0]}
-				data1={data[1]}
-				data2={data[2]}
-				data3={data[3]}
-				data4={data[4]}
-				data5={data[5]}
-				data6={data[6]}
-			/>
-
 			<SliderBlock style={{ padding: "100px 0" }} />
 			<div className={s.discount}>
 				<img
