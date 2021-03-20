@@ -81,3 +81,9 @@
     }
 }
 
+@media screen and(max-width:576px) {
+    .image {
+        width: max-content;
+    }
+}
+
