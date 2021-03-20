@@ -156,7 +156,7 @@ td {
         text-decoration: underline;
         text-decoration-style: 5px solid;
         text-decoration-color: $sub-color;
-}
+    }
 }
 
 th,
@@ -174,13 +174,14 @@ td {
     padding-bottom: 50px;
     @include font4(17px, 20px, $SFProRegular, $main-color);
     opacity: 0.7;
-
     display: flex;
     align-items: center;
 }
 
+// -------------------- inputShop
 .label {
     position: relative;
+
     &::after {
         display: inline-block;
         content: "";
@@ -194,6 +195,7 @@ td {
         z-index: 9999;
         position: absolute;
     }
+
     .inputShop {
         margin: 0 100px 0 17px;
         min-width: 313px;
@@ -205,42 +207,42 @@ td {
         &:hover {
             border: 2px solid $sub-color;
         }
-    
+
         &::-webkit-input-placeholder {
             opacity: 1;
             transition: opacity 0.3s ease;
         }
-    
+
         &::-moz-placeholder {
             opacity: 1;
             transition: opacity 0.3s ease;
         }
-    
+
         &:-moz-placeholder {
             opacity: 1;
             transition: opacity 0.3s ease;
         }
-    
+
         &:-ms-input-placeholder {
             opacity: 1;
             transition: opacity 0.3s ease;
         }
-    
+
         &:focus::-webkit-input-placeholder {
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-    
+
         &:focus::-moz-placeholder {
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-    
+
         &:focus:-moz-placeholder {
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-    
+
         &:focus:-ms-input-placeholder {
             opacity: 0;
             transition: opacity 0.3s ease;
@@ -248,17 +250,129 @@ td {
     }
 }
 
-.checkbox {
-    max-width: 14px;
-    height: 14px;
-    margin: 0 18px 0 55px;
-}​
+// -------------------radio-buttons
 
-.form:hover {
-    text-decoration: underline;
-    text-decoration-color: $sub-color;
+//  .radio {
+//     display: none;
+//   }
+
+//   .labelRadio {
+//     display: inline-block;
+//     padding: 5px 10px;
+//     cursor: pointer;
+//   }
+
+//   .labelRadio span {
+//     position: relative;
+//     line-height: 22px;
+//   }
+
+//   .labelRadio span:before,
+//   .labelRadio span:after {
+//     content: '';
+//   }
+
+//   .labelRadio span:before {
+//     border: 1px solid $sub-color;
+//     width: 20px;
+//     height: 20px;
+//     margin-right: 10px;
+//     display: inline-block;
+//     vertical-align: top;
+//   }
+
+//   .labelRadio span:after {
+//     background: $sub-color;
+//     width: 14px;
+//     height: 14px;
+//     position: absolute;
+//     top: 2px;
+//     left: 3px;
+//     // transition: 500ms;
+//     opacity: 0;
+// }
+//   .labelRadio .radio:checked+span:after {
+//     opacity: 1;
+//   }
+
+//   /* стили для радиокнопки, находящейся в состоянии checked */
+//   .labelRadio>input:checked+span::before {
+//     border-color: #0b76ef;
+//     // background-color: #0b76ef;
+//   }
+
+//   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+//   .labelRadio>input:focus:not(:checked)+span::before {
+//     border-color: #80bdff;
+//   }
+
+// ----------------radio new
+.radio {
+    margin-bottom: 0.2em;
+    padding-right: 55px;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $sub-color;
+    }
+}
+/* для элемента input c type="radio" */
+.customRadio>input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
 
+/* для элемента label связанного с .custom-radio */
+.customRadio>span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.customRadio>span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.customRadio>input:not(:disabled):not(:checked)+span:hover::before {
+    border-color: #b3d7ff;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.customRadio>input:active+span::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.customRadio>input:focus+span::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.customRadio>input:focus:not(:checked)+span::before {
+    border-color: #80bdff;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.customRadio>input:checked+span::before {
+    border-color: $sub-color;
+    background-color: $sub-color;
+}
+
+
+// ---------------------- grid
 .gridWrapper {
     display: grid;
     grid-template-columns: 27% 22% 18% 33%;
@@ -269,21 +383,21 @@ td {
 }
 
 .gridWrapper:hover>.gridItem {
-    border-bottom: 2px solid $sub-color;
+    // border-bottom: 2px solid $sub-color;
 }
 
 .gridItem {
     // border: 2px solid lightgray;
     // background-color: rgb(218, 244, 253);
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    border-bottom: 3px solid rgba(0, 0, 0, .12);
 
     &:hover {
-            //border-bottom: 3px solid $sub-color;
-            //text-decoration: none;
-            //text-decoration-color: $sub-color;
-            text-decoration: underline;
-            text-decoration-color: $sub-color;
-}
+        border-bottom: 3px solid $sub-color;
+        //text-decoration: none;
+        //text-decoration-color: $sub-color;
+        text-decoration: underline;
+        text-decoration-color: $sub-color;
+    }
 
     &:first-child,
     &:nth-child(2),

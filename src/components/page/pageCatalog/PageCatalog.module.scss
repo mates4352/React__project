@@ -5,8 +5,8 @@
 
 .pageCatalog {
     border: 1px solid red;
-
 }
+
 .titleH2 {
     @include font4(30px, 1.5, $SFProSemibold, $main-color);
     margin: 41px 0 26px 0;
@@ -33,7 +33,6 @@
     background-color: darken(#F0F0F4, 5%)
 
 }
-
 
 // =========select========= //
 
@@ -85,6 +84,9 @@
 
 .wrapper {
     display: flex;
+	 @media screen and(max-width:992px) {
+		justify-content: center;
+	}
 }
 
 // ========= левый блок ========= //
@@ -93,8 +95,10 @@
     max-width: 290px;
     width: 100%;
     border: 1px solid green;
+	 @media screen and(max-width:992px) {
+		display: none;
+	}
 }
-
 .titleMenu {
     margin-bottom: 41px;
     
@@ -112,6 +116,7 @@
     border-bottom: 2px solid $sub-color;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -189,6 +194,8 @@
 
 
 
+=======
+>>>>>>> dcf22d41d4ef57b0a4f96eaaa7064af1ca5e93fd
 .sortingModel{
     display: flex;
     flex-wrap: wrap;
@@ -214,10 +221,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
-
-
 
 // =========кнопки нижнии========= //
 .leftSectionBtnSelect {
@@ -265,10 +268,14 @@
 // ========= правый блок ========= //
 
 .rightSection {
-    border: 1px solid rgb(28, 0, 128);
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 30px;
-    margin-left: 10px;
-    // grid-auto-columns: minmax(270px, auto);
+    grid-template-columns: 270px 270px 270px;
+	 gap: 33px;
+
+	 @media screen and(max-width:992px) {
+		grid-template-columns: 270px 270px;
+	}
+	@media screen and(max-width:576px) {
+		grid-template-columns: 270px;
+	}
 }

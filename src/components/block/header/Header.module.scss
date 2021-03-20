@@ -26,7 +26,7 @@
 		position:absolute;
 		top:0;
 		left:51%;
-	
+		
 		transform:translateX(-50%);
 		.title{
 			margin-top: 10px;
@@ -78,6 +78,16 @@
 				.item:not(:last-of-type){
 					margin-right: 25px;
 				}
+			}
+		}
+
+		.logo{
+			img{
+				display: none;
+			}
+			.title{
+				margin-top: 35px;
+				font-family:$Staatliches;
 			}
 		}
 		.row{
