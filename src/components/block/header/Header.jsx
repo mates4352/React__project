@@ -4,7 +4,7 @@ import like from "./../../../assets/images/svg/like.svg"
 import person from "./../../../assets/images/svg/person.svg"
 import basket from "./../../../assets/images/svg/basket.svg"
 import Navigation from "../navigation/Navigation"
-
+import {data} from "./../navigation/data"
 
 import s from "./Header.module.scss"
 
@@ -95,7 +95,8 @@ const Header = (props) => {
 				</div>
 			</header>
 			<Navigation
-				text1="Квадроциклы"
+				text={data[0].text}
+				href ={data[0].href}
 				text2="Катера"
 				text3="Гидроциклы"
 				text4="Лодки"

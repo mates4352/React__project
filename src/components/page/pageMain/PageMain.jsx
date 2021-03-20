@@ -1,34 +1,22 @@
-import ATVs1 from "./../../../assets/images/CategoriesCards/ATVs1.png"
-import JetSkis from "./../../../assets/images/CategoriesCards/JetSkis.png"
-import Boats from "./../../../assets/images/CategoriesCards/Boats.png"
-import Snowmobiles from "./../../../assets/images/CategoriesCards/Snowmobiles.png"
-import ATVs2 from "./../../../assets/images/CategoriesCards/ATVs2.png"
-import Engines from "./../../../assets/images/CategoriesCards/Engines.png"
 import img from "./../../../assets/images/img.png"
 import discountImg from "./../../../assets/images/discount/discount.png"
 
-import CategoryCard from "./../../common/categoryCard/CategoryCard"
+import CategoriesCards from "../../block/CategoriesCards/CategoriesCards"
 import Card from "./../../common/card/Card"
 import SliderBlock from "../../block/sliderBlock/SliderBlock"
+import { data } from "./../../common/cardTransport/data"
 
 import s from "./PageMain.module.scss"
 
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
-
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
 import SliderBanner from "../../block/sliderBanner/SliderBanner"
 
-SwiperCore.use([Navigation]);
-
-
 const PageMain = () => {
+	console.log(data);
 	return (
 		<div className={s.PageMain}>
+
 			<div className={s.banner}>
-				<SliderBanner/>
+				<SliderBanner />
 				<Card
 					absent="Лодочный мотор Suzuki DF9.9BRS"
 					price="190000р"
@@ -52,46 +40,25 @@ const PageMain = () => {
 				</div>
 			</div>
 
-			<section className={s.CategoriesCards}>
-				<div className={s.grid}>
-					<CategoryCard
-						Title='Квадроциклы'
-						src={ATVs1}
-						alt="Квадроциклы"
-						href='#'
-					/>
-					<CategoryCard
-						Title='Гидроциклы'
-						src={JetSkis}
-						alt="Гидроциклы"
-						href='#'
-					/>
-					<CategoryCard
-						Title='Катера'
-						src={Boats}
-						alt="Катера"
-						href='#'
-					/>
-					<CategoryCard
-						Title='Снегоходы'
-						src={Snowmobiles}
-						alt="Снегоходы"
-						href='#'
-					/>
-					<CategoryCard
-						Title='Вездеходы'
-						src={ATVs2}
-						alt="Вездеходы"
-						href='#'
-					/>
-					<CategoryCard
-						Title='Двигатели'
-						src={Engines}
-						alt="Двигатели"
-						href='#'
-					/>
-				</div>
-			</section>
+			<CategoriesCards
+				data0={data[0]}
+				data1={data[1]}
+				data2={data[2]}
+				data3={data[3]}
+				data4={data[4]}
+				data5={data[5]}
+			/>
+
+			<CategoriesCards
+				data0={data[0]}
+				data1={data[1]}
+				data2={data[2]}
+				data3={data[3]}
+				data4={data[4]}
+				data5={data[5]}
+				data6={data[6]}
+			/>
+
 			<SliderBlock style={{ padding: "100px 0" }} />
 			<div className={s.discount}>
 				<img

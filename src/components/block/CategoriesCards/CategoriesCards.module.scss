@@ -1,0 +1,17 @@
+.CategoriesCards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:30px;
+}
+
+@media screen and(max-width:1050px){
+	.CategoriesCards{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and(max-width:576px){
+	.CategoriesCards{
+		grid-template-columns: 1fr;
+	}
+}

@@ -19,12 +19,13 @@
     right: 18px;
     top: 16px;
 }
-
+.img{
+	
+}
 .image {
-    max-width: 200px;
-    min-height: 200px;
-    margin-top: 50px;
-    margin-bottom: 12px;
+	flex-grow: 1;
+	margin-top: 50px;
+	margin-bottom: 12px;
 }
 
 .name {

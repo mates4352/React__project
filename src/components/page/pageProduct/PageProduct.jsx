@@ -20,6 +20,7 @@ import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 import star from "./../../../assets/images/svg/Star.svg"
 
 import Rating from "react-rating"
+import { data } from "../../block/navigation/data"
 
 
 
@@ -99,10 +100,10 @@ const PageProduct = (props) => {
 				</div>
 			</section>
 
-			<Navigation
+			{/* <Navigation
 				styleWrapper={{ height: "70px", margin: "0 0 50px 0" }}
 				styleList={{ paddingLeft: "38px" }}
-				text1="О товаре"
+				text={data[0].text}
 				text2="Характеристики"
 				text3="Отзывы"
 				text4="Самовывоз"
@@ -110,7 +111,7 @@ const PageProduct = (props) => {
 				text6="Cервис"
 				text7="Гарантия"
 			// text8=""
-			/>
+			/> */}
 
 			<div className={s.selfdelivery}>
 

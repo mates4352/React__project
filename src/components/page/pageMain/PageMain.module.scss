@@ -3,14 +3,6 @@
 @import "./../../../scss/abstracts/variable/variable";
 
 .PageMain{
-	.CategoriesCards{
-		.grid{
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-			gap:30px;
-		}
-	}
-	
 	.banner{
 		display: flex;
 		justify-content: space-between;
@@ -106,11 +98,6 @@
 		}
 	}
 	@media screen and(max-width:1050px){
-		.CategoriesCards{
-			.grid{
-				grid-template-columns: 1fr 1fr;
-			}
-		}
 		.discount{
 			&:hover {
 				.discountImg{
@@ -132,14 +119,6 @@
 		.banner{
 			flex-direction: column;
 			align-items: center;
-		}
-	}
-	
-	@media screen and(max-width:576px){
-		.CategoriesCards{
-			.grid{
-				grid-template-columns: 1fr;
-			}
 		}
 	}
 	
