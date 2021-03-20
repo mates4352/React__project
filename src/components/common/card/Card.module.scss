@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     // width: 270px;
-    height: 403px;
+    min-height: 403px;
     border: 1px solid #E0E0E0;
     position: relative;
 }
@@ -19,17 +19,11 @@
     right: 18px;
     top: 16px;
 }
-.img{
-	
-}
+
 .image {
-   //  max-width: 200px;
-   //  min-height: 200px;
-   //  margin-top: 50px;
-   //  margin-bottom: 12px;
-    // padding-top: 50px;
-    padding-bottom: 12px;
-    flex-grow: 1;
+	flex-grow: 1;
+	margin-bottom: 12px;
+    width: max-content;
 }
 
 .name {
