@@ -95,29 +95,55 @@ const PageCatalog = () => {
 						<button className={s.btntitle}>Параметры</button>
 						<button className={s.btntitle}>По марке</button>
 					</div>
+					<div className={s.}>
+						<MenuSorting
+							type="checkbox"
+							id="lebe1"
+							for="lebe1"
+							labelvalue="Наличие"
+							
+							/>
+						<div className={s.}>
+							<RadioBatton style={{ padding: "0 55px 0 0" }}
+								name="on"
+								type="radio"
+								id="radio_1"
+								for="radio_1"
+								value="В наличиe"
+							/>
+							<RadioBatton
+								name="on"
+								type="radio"
+								id="radio_2"
+								for="radio_2"
+								value="Под зака"
+							/>		
+						</div>
+						
+					</div>
 					<MenuSorting
 						type="checkbox"
 						id="lebe1"
 						for="lebe1"
 						labelvalue="Наличие"
-						value={
-							<>
-								<RadioBatton style={{ padding: "0 55px 0 0" }}
-									name="on"
-									type="radio"
-									id="radio_1"
-									for="radio_1"
-									value="В наличиe"
-								/>
-								<RadioBatton
-									name="on"
-									type="radio"
-									id="radio_2"
-									for="radio_2"
-									value="Под зака"
-								/>
-							</>
-						}
+						// value={
+						// 	<>
+						// 		<RadioBatton style={{ padding: "0 55px 0 0" }}
+						// 			name="on"
+						// 			type="radio"
+						// 			id="radio_1"
+						// 			for="radio_1"
+						// 			value="В наличиe"
+						// 		/>
+						// 		<RadioBatton
+						// 			name="on"
+						// 			type="radio"
+						// 			id="radio_2"
+						// 			for="radio_2"
+						// 			value="Под зака"
+						// 		/>
+						// 	</>
+						// }
 					/>
 
 					<MenuSorting
