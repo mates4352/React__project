@@ -17,7 +17,6 @@ import gidrotsikl36666 from "./../../../assets/images/svg/gidrotsikl36666.svg"
 import rec from "./../../../assets/images/svg/Rectangle 17.svg"
 import rec1 from "./../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
-
 // import star from "./../../../assets/images/svg/Star.svg"
 
 
