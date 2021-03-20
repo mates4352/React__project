@@ -47,10 +47,9 @@ const PageProduct = (props) => {
 				</div>
 
 				<div className={s.infoCard}>
-					<h2 className={s.title}>
-						Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
-					</h2>
-					<span className={s.code}> Код товара:366666-2</span>
+					<h2 className={s.title}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h2>
+					<span className={s.code}>Код товара:</span>
+					<span className={s.code}>  366666-2</span>
 					<div className={s.images}>
 						<img className={s.like} src={like} alt={'like'} />
 						<div className={s.recs}>
@@ -65,7 +64,7 @@ const PageProduct = (props) => {
 							<img src={star} alt={'star'} />
 							<img src={star} alt={'star'} />
 						</div>
-						<Rating  style={{ margin: "0 0 0 50px" }}/>
+						<Rating style={{ margin: "0 0 0 50px" }} />
 					</div>
 					<table className={s.table}>
 						<tr>
@@ -113,22 +112,29 @@ const PageProduct = (props) => {
 			// text8=""
 			/> */}
 
-			<div className={s.selfdelivery}>
+			<section className={s.selfdelivery}>
 
 				<header className={s.header}>
-					<form className={s.form}>
+					<form>
 						<label className={s.label}>
 							Магазин <input className={s.inputShop} type="text" placeholder="Адрес" value={s.value} />
 						</label>
 					</form>
-					<form className={s.form}>
-					<input className={s.checkbox} type="checkbox"/>
-					<label> Забрать сегодня</label>
-					</form>
-					<form className={s.form}>
-					<input className={s.checkbox} type="checkbox" checked="checked"/>
-					<label> Забрать в течение недели</label>
-					</form>
+
+					<div className={s.radio}>
+						<label className={s.customRadio}>
+							<input type="radio" name="time" />
+							<span>Забрать сегодня</span>
+						</label>
+					</div>
+
+					<div className={s.radio}>
+						<label className={s.customRadio}>
+							<input type="radio" name="time" />
+							<span>Забрать в течение недели</span>
+						</label>
+					</div>
+
 				</header>
 
 				<div className={s.gridWrapper}>
@@ -154,7 +160,7 @@ const PageProduct = (props) => {
 					<div className={s.gridItem} id={s.item23}>Нет в наличии</div>
 					<div className={s.gridItem} id={s.item24}>0<BtnBuy /></div>
 				</div>
-			</div>
+			</section>
 
 			<SliderBlock style={{ padding: "100px 0" }} />
 
