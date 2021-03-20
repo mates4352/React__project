@@ -23,3 +23,15 @@
     flex: 0 1 25%;
     object-fit: cover;
 }
+
+@media screen and(max-width:992px) {
+    .swipper {
+        flex: 0 0 40%;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .swipper {
+        flex: 0 0 70%;
+    }
+}

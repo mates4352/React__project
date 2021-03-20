@@ -91,9 +91,9 @@
         margin-right: 4px;
     }
 
-    .stars {
-        margin-left: 25px;
-    }
+    // .stars {
+    //     margin-left: 25px;
+    // }
 
     // ------------table
     .table {
@@ -157,22 +157,6 @@
     th,
     td {
         padding: 15px 0px 6px;
-    }
-
-    @media screen and(max-width:1050px) {
-        .bigCard {
-            justify-content: center;
-        }
-
-        .bigImage {
-            margin-top: 5%;
-            max-width: 90%;
-            padding-bottom: 5%;
-        }
-
-        th {
-            padding-right: 15px;
-        }
     }
 }
 

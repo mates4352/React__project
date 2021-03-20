@@ -23,7 +23,7 @@ import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 // import { data } from "../../block/navigation/data"
 
 import React from 'react';
-import Rating from "./../../common/rating/Rating"
+import Rating from "./Rating"
 
 
 

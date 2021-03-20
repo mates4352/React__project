@@ -66,3 +66,18 @@
     right: 0;
     bottom: 0;
 }
+
+@media screen and(max-width:992px) {
+    .name {
+        font-size: 25px;
+    }
+    
+    .image {
+        width: auto;
+    }
+
+    .price {
+        font-size: 35px;
+    }
+}
+
