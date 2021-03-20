@@ -1,5 +1,5 @@
 import s from "./PageProduct.module.scss"
-
+import "./rating.scss"
 // components
 import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
 import SliderBlock from "./../../block/sliderBlock/SliderBlock"
@@ -17,14 +17,14 @@ import gidrotsikl36666 from "./../../../assets/images/svg/gidrotsikl36666.svg"
 import rec from "./../../../assets/images/svg/Rectangle 17.svg"
 import rec1 from "./../../../assets/images/svg/Rectangle 17.1.svg"
 import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
-import { Rating } from "@material-ui/lab"
-import "./rating.scss"
 
 // import star from "./../../../assets/images/svg/Star.svg"
 
 
 // import { data } from "../../block/navigation/data"
 
+import React from 'react';
+import Rating from "./../../common/rating/Rating"
 
 
 
