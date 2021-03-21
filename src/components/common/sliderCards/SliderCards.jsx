@@ -21,6 +21,7 @@ import "./SliderCards.scss"
 SwiperCore.use([Navigation,Autoplay,]);
 
 
+
 const SliderCards = (props) => {
 	return (
 		<div className="wrapper">
@@ -83,36 +84,6 @@ const SliderCards = (props) => {
 						price='9 800 ₽'
 						absent=''
 						message=''
-					/>
-				</SwiperSlide>
-
-				<SwiperSlide className="swipper">
-					<Card className="card"
-						image={jacket}
-						name="Спасательный жилет BRP Men's Airflow PFD"
-						price='6 900 ₽'
-						absent=''
-						message=''
-					/>
-				</SwiperSlide>
-
-				<SwiperSlide className="swipper">
-					<Card className="card"
-						image={BRP}
-						name='BRP Audio-Premium System'
-						price='68 000 ₽'
-						absent=''
-						message=''
-					/>
-				</SwiperSlide>
-
-				<SwiperSlide className="swipper">
-					<Card className="card"
-						image={equipment}
-						name='Спасательное снаряжение'
-						price=''
-						absent='нет в наличии'
-						message='Сообщить о поступлении'
 					/>
 				</SwiperSlide>
 				

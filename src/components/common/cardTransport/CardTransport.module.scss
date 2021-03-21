@@ -30,6 +30,17 @@
 		position:absolute;
 		bottom:15px;
 		left:20px;
+		&::before{
+			content: "";
+			@include size(6px,9px);
+
+			position:absolute;
+			top:50%;
+			right:-10px;
+			transform: translateY(-50%);
+
+			background:url("./../../../assets//images/svg/arrow.svg") no-repeat center/cover;
+		}
 	}
 }
 

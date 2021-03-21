@@ -143,6 +143,7 @@ import Rating from "./Rating"
 
 					</header>
 
+					
 					<div className={s.gridWrapper}>
 						<div className={s.gridItem} id={s.item5}>Адрес</div>
 						<div className={s.gridItem} id={s.item6}>Режим работы</div>
