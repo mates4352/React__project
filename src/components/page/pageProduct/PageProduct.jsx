@@ -4,9 +4,10 @@ import "./rating.scss"
 // components
 import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
 import SliderBlock from "./../../block/sliderBlock/SliderBlock"
-import GridSchedule from "../../block/gridSchedule/GridSchedule"
+// import GridSchedule from "../../block/gridSchedule/GridSchedule"
 import Navigation from "./../../block/navigation/Navigation"
 import { data } from "./../../block/navigation/data"
+import Delivery from "./delivery/Delivery"
 
 // common
 import Sale from "../../common/sale/Sale"
@@ -24,6 +25,10 @@ import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 import React from 'react';
 import Rating from "./Rating"
 
+// import {SectionDelivery} from 'SectionDelivery'
+import { NavLink } from "react-router-dom";
+
+
 
 const PageProduct = (props) => {
 
@@ -38,9 +43,9 @@ const PageProduct = (props) => {
 						style={{ width: "94px", height: "44px", fontSize: "15px", lineHeight: "18px" }}
 						text='SALE'
 					/>
-					<div>
+					<NavLink to={"/PageCatalog"}>
 						<img className={s.bigImage} src={gidrotsikl36666} alt={'bigImage'} />
-					</div>
+					</NavLink>
 					<p className={s.lastPrice}>1 200 475 ₽</p>
 					<p className={s.price}>1 100 475 ₽</p>
 					<span className={s.message}>Нашли дешевле? Снизим цену!</span>
@@ -102,7 +107,11 @@ const PageProduct = (props) => {
 				link6={data[14]}
 			/>
 
-			<section className={s.selfdelivery}>
+            {/* <Route path='/Delivery' component={Delivery}/> */}
+			<Delivery/>
+
+				
+				{/* <section className={s.delivery}>
 
 				<header className={s.header}>
 					<form>
@@ -151,7 +160,9 @@ const PageProduct = (props) => {
 					<div className={s.gridItem} id={s.item24}>0<BtnBuy /></div>
 				</div>
 
-			</section>
+			</section> */}
+
+
 
 			<SliderBlock style={{ padding: "100px 0" }} />
 
