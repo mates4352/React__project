@@ -95,3 +95,31 @@
     @include font4(14px,1.2,$BarlowRegular,$main-color);
     border-bottom: 1px solid $main-color;
 }
+
+// *************** Бренд **************//
+.sortingBrend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// *************** Модель **************//
+.sortingModelInput {
+    width: 100%;
+    height: 30px;
+    border: solid 1px #E0E0E0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.sortingModel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// *************** Страны **************//
+.sortingCountru {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

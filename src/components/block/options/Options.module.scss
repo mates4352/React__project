@@ -4,11 +4,7 @@
 @import "./../../../scss/base/fonts";
 
 
-
-
-// ========= левый блок ========= //
-
-.leftSection {
+.options {
     max-width: 290px;
     width: 100%;
     border: 1px solid green;
@@ -16,9 +12,10 @@
 		display: none;
 	}
 }
+
+// =========кнопки верхнии========= //
 .titleMenu {
     margin-bottom: 41px;
-    
 }
 .btntitle {
     @include font4(16px, 1.5, $SfProBold, #C4C4C4);
@@ -28,62 +25,9 @@
     text-transform: uppercase;
 }
 
-.btntitle:checked {
+.btntitle:hover{
     color: $main-color;
     border-bottom: 2px solid $sub-color;
-}
-
-
-
-
-
-
-
-// ========= Наличие ========= //
-
-// ========= Новинки ========= //
-
-// ========= Цена ========= //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.sortingModel{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.sortingModelInput {
-    width: 100%;
-    height: 30px;
-    border: solid 1px #E0E0E0;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.sortingBrend {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.sortingCountru {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 // =========кнопки нижнии========= //
@@ -111,7 +55,6 @@
     position: relative;
     margin-bottom: 15px;
 }
-
 .btnSelectDown::after {
     content: "";
     @include size(12px, 7.5px);

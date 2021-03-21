@@ -34,7 +34,6 @@ const data4 ={
     value:"Акции"
 }
 const data5 ={
-    // style:"flex: "0 1 50%", marginBottom: "20px" ",
     type:"checkbox",
     id:"checkbox0",
     for:"checkbox0",
@@ -52,6 +51,56 @@ const data7 ={
     for:"checkbox2",
     value:"Spark 3"
 }
+const data8 ={
+    type:"checkbox",
+    id:"checkbox3",
+    for:"checkbox3",
+    value:"Sea-doo Spark 2"
+}
+const data9 ={
+    type:"checkbox",
+    id:"checkbox4",
+    for:"checkbox4",
+    value:"SeaDoo Spark 90"
+}
+const data10 ={
+    type:"checkbox",
+    id:"checkbox5",
+    for:"checkbox5",
+    value:"SeaDoo GTI 155"
+}
+const data11 ={
+    type:"checkbox",
+    id:"checkbox6",
+    for:"checkbox6",
+    value:"SeaDoo GTR 230"
+}
+const data12 ={
+    type:"checkbox",
+    id:"checkbox7",
+    for:"checkbox7",
+    value:"Россия"
+}
+const data13 ={
+    type:"checkbox",
+    id:"checkbox8",
+    for:"checkbox8",
+    value:"Германия"
+}
+const data14 ={
+    type:"checkbox",
+    id:"checkbox9",
+    for:"checkbox9",
+    value:"Китай"
+}
+const data15 ={
+    type:"checkbox",
+    id:"checkbox10",
+    for:"checkbox10",
+    value:"США"
+}
+
+
 
 
 
@@ -64,6 +113,14 @@ const data = [
     data5,
     data6,
     data7,
+    data8,
+    data9,
+    data10,
+    data11,
+    data12,
+    data13,
+    data14,
+    data15,
 ]
 
 export default data

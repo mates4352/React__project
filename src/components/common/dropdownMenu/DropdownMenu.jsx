@@ -13,7 +13,6 @@ const DropdownMenu = (props) => {
                     <option>{props.valueItem4}</option>
                     <option>{props.valueItem5}</option>
                 </select>
-
             </div>
         </div>
     );
