@@ -20,7 +20,7 @@ const Header = (props) => {
 							<li className={s.item}>
 								<NavLink
 									className={s.text}
-									to={"#"}
+									to={"/PageMain"}
 								>
 									Магазины
 								</NavLink>

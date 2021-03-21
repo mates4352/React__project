@@ -13,12 +13,12 @@ function Data(title, image, alt, href) {
 }
 
 export const data = [
-	new Data("Квадроциклы", img1,"Квадроциклы",'/1'),
-	new Data("Гидроциклы",  img2,"Гидроциклы",'/2'),
-	new Data("Катера",      img3,"Катера",'/3'),
-	new Data("Снегоходы",   img4,"Снегоходы",'/4'),
-	new Data("Вездеходы",   img5,"Вездеходы",'/5'),
-	new Data("Двигатели", img6, "Двигатели", '/6'),
+	new Data("Квадроциклы", img1,"Квадроциклы" ,'/PageCatalog'),
+	new Data("Гидроциклы",  img2,"Гидроциклы",'/PageCatalog'),
+	new Data("Катера",      img3,"Катера",'/PageCatalog'),
+	new Data("Снегоходы",   img4,"Снегоходы",'/PageCatalog'),
+	new Data("Вездеходы",   img5,"Вездеходы",'/PageCatalog'),
+	new Data("Двигатели", img6, "Двигатели", '/PageCatalog'),
 ]
 
 
