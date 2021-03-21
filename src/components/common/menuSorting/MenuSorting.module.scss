@@ -1,0 +1,125 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/base/fonts";
+@import "./../../../scss/abstracts/mixins/mixins";
+
+// *************** Стиль для аккордиона **************//
+.menuLabel{
+    @include font4(16px,1.2,$SFProSemibold,$main-color);
+    position: relative;
+
+    display: block;
+    padding: 0 0 19px 25px;
+    margin-top: 40px;
+    
+}
+.menuLabel::before {
+    content: "";
+    display: block;
+    background-image: url("./../../../assets/images/PageCatalog/Shape.png");
+    @include size(12px, 7.5px);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50%);
+    z-index: 1;
+}
+
+// Если при нажатии надо поменять картинку инпута, то создаем ::after
+// .menuLabel::after {
+//     content: "";
+//     display: block;
+//     background-image: url("./../../../assets/images/PageCatalog/ExpandMoreUp.png");
+//     @include size(12px, 7.5px);
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     transform: translateY(50%);
+//     z-index: 2;
+
+//     opacity: 0;
+// }
+
+.menuContent {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.menuInput {
+    display: none;
+}
+.menuInput:checked ~ .menuContent {
+    height: auto;
+    overflow-y: auto;
+}
+
+// Когда нажимаем какртинка у инпута меняется с::before на ::after  
+// .menuInput:checked + .menuLabel::after{
+//     opacity: 1;
+// }
+// .menuInput:checked + .menuLabel::before{
+//     opacity: 0;
+// }
+
+.menuInput:checked + .menuLabel::before{
+    transform: rotate(180deg);
+}
+
+.menu:hover {
+    transform: scale(1.015);
+}
+// *************** Стиль для аккордиона **************//
+
+
+
+// *************** Цена **************//
+.price {
+    display: flex;
+    flex-direction: column;
+}
+.priceFromTo {
+    display: flex;
+    justify-content: space-between;
+}
+.priceText {
+    display: flex;
+    margin-bottom: 15px;
+}
+.priceSpan {
+    @include font4(14px,1.2,$SFProRegular,$cardSpan);
+    margin-right: 10px;
+}
+.priceInput {
+    @include font4(14px,1.2,$BarlowRegular,$main-color);
+    border-bottom: 1px solid $main-color;
+}
+
+// *************** Бренд **************//
+.sortingBrend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// *************** Модель **************//
+.sortingModelInput {
+    width: 100%;
+    height: 30px;
+    border: solid 1px #E0E0E0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.sortingModel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// *************** Страны **************//
+.sortingCountru {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

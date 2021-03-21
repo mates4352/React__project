@@ -1,0 +1,53 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/base/fonts";
+@import "./../../../scss/abstracts/mixins/mixins";
+
+.dropdownSelect{
+    max-width: 270px;
+    width: 100%;
+    border-bottom: 2px solid $cardSpan;
+    display: flex;
+    justify-content: space-between;
+    // padding-left: 26px;
+    // padding-bottom: 6px;
+    // align-items: baseline;
+    margin-top: 25px;  
+}
+
+.dropdownSelect:hover {
+    transform: scale(1.015);
+}
+
+.dropdownText {
+    @include font4(16px, 1.2, $SFProSemibold, $main-color);
+    padding: 0 0 10px 25px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownItem {
+    @include font4(14px, 1.2, $BarlowRegular, $main-color);
+    display: block;
+    appearance: none;
+    cursor: pointer;
+
+    padding-right: 20px;
+}
+
+.dropdown::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 7.5px;
+
+    pointer-events: none;
+
+    background-image: url("./../../../assets/images/PageCatalog/Shape.png");
+
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+

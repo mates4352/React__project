@@ -1,4 +1,3 @@
-import s from './Rating.module.scss'
 
 
 import Rating from '@material-ui/lab/Rating';

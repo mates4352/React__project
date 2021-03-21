@@ -1,6 +1,10 @@
+@import "./../../../scss/abstracts/variable/variable";
+
+
 .rating .MuiRating-root{
-	color: #3f51b5 ;
+	color: $sub-color;
 }
 .rating .MuiRating-sizeLarge{
 	font-size: 3rem;
+	margin-left: 15px;
 }
