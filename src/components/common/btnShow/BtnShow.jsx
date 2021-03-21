@@ -7,6 +7,7 @@ const BtnShow = (props) => {
 		className={s.show}
 		style={props.style}
 		onSubmit={props.submit}
+		href={props.href}
 	>
 		Показать еще
 	</button>

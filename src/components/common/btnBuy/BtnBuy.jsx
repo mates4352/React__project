@@ -8,6 +8,7 @@ const BtnBuy = (props) => {
 				className={s.buy}
 				style={props.style}
 				onSubmit={props.submit}
+				href={props.href}
 			>
 				купить
 	</button>

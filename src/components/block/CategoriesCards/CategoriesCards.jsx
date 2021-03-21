@@ -3,17 +3,25 @@ import s from "./CategoriesCards.module.scss"
 import CardTransport from "../../common/cardTransport/CardTransport";
 
 export const CategoriesCards = (props) => {
+	// window.addEventListener("resize", function () {
+	// 	adaptive_function()
+	// })
+
+	// function size(w) {
+	// 	return w <= "1200"
+	// }
+	
+	// function adaptive_function() {
+	// 	let w = window.innerWidth
+	// 	size(w)
+	// }
+
+	// adaptive_function()
+
+	
 	return (
 		<section className={s.CategoriesCards}>
-			{props.card.map(d =>
-				< CardTransport
-					title={d.title}
-					img={d.img}
-					href={d.href}
-					alt={d.alt}
-				/>
-			)}
-			{/* {props.card0 &&
+			{props.card0 &&
 				< CardTransport
 					title={props.card0.title}
 					img={props.card0.img}
@@ -60,14 +68,6 @@ export const CategoriesCards = (props) => {
 					href={props.card5.href}
 					alt={props.card5.alt}
 				/>}
-
-			{props.card6 &&
-				<CardTransport
-					title={props.card6.title}
-					img={props.card6.img}
-					href={props.card6.href}
-					alt={props.card6.alt}
-				/>} */}
 
 		</section>
 	);

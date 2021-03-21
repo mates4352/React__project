@@ -4,8 +4,7 @@ const Sale = (props) => {
 	return (
 		<span
 			className={s.sale}
-			style={props.style}
-			>
+			style={props.style}>
 			{props.text}
 		</span>
 	);

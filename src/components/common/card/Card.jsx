@@ -4,26 +4,45 @@ import s from "./Card.module.scss"
 import like from "./../../../assets/images/svg/like.svg"
 import cart from "./../../../assets/images/svg/cart.svg"
 import Sale from "../sale/Sale";
+import { NavLink } from "react-router-dom";
 
 
 
 const Card = (props) => {
 	return (
-		<div className={s.wrapper}>
-			<Sale text='SALE' />
-			<img className={s.like} src={like} alt={'Like'} />
-			<img style={props.styleImg} className={s.image} src={props.image} alt={'image'} />
-			<p style={props.styleName} className={s.name} >{props.name}</p>
+		<div style={props.styleCard} className={s.wrapper}>
+				<Sale text='SALE' />
+			<img
+				className={s.like}
+				src={like}
+				alt={'Like'}
+			/>
+
+			<NavLink className={s.image} to={"/PageProduct"}>
+				<img
+					style={props.styleImg}
+					src={props.image}
+					alt={'image'}
+				/>
+			</NavLink>
+
+			<p
+				style={props.styleName}
+				className={s.name}>
+				{props.name}
+			</p>
+
 			<div>
-				<p className={s.absent} >{props.absent}</p>
-				<a className={s.message} >{props.message}</a>
+				<p className={s.absent}>{props.absent}</p>
+				<a className={s.message}>{props.message}</a>
 			</div>
-			<div>
-				<span className={s.price}>{props.price}</span>
-				<button className={s.btnCart}>
-					<img src={cart} alt={'Cart'} />
-				</button>
-			</div>
+
+			<span className={s.price}>{props.price}</span>
+
+			<button className={s.btnCart}>
+				<img src={cart} alt={'Cart'} />
+			</button>
+
 		</div>
 	);
 }

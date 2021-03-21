@@ -9,7 +9,8 @@
     flex-direction: column;
     align-items: center;
     // width: 270px;
-    min-height: 403px;
+    height: 400px;
+	 padding: 60px 0 30px;
     border: 1px solid #E0E0E0;
     position: relative;
 }
@@ -23,7 +24,7 @@
 .image {
 	flex-grow: 1;
 	margin-bottom: 12px;
-    width: max-content;
+   width: max-content;
 }
 
 .name {
@@ -54,7 +55,6 @@
     @include font4(30px, 36px, $Barlow, $main-color);
     font-weight: bold;
     @extend %flexCenter;
-    padding-bottom: 30px;
 }
 
 .btnCart {
@@ -78,6 +78,12 @@
 
     .price {
         font-size: 35px;
+    }
+}
+
+@media screen and(max-width:576px) {
+    .image {
+        width: max-content;
     }
 }
 

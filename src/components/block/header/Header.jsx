@@ -8,6 +8,8 @@ import { data } from "./../navigation/data"
 import { NavLink } from "react-router-dom"
 import s from "./Header.module.scss"
 
+
+
 const Header = (props) => {
 
 	return (
@@ -20,7 +22,7 @@ const Header = (props) => {
 							<li className={s.item}>
 								<NavLink
 									className={s.text}
-									to={"#"}
+									to={"/PageMain"}
 								>
 									Магазины
 								</NavLink>

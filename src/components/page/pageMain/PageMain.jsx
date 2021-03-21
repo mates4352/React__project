@@ -42,12 +42,12 @@ const PageMain = () => {
 			</div>
 
 			<CategoriesCards
-				card={data}
-				// card1={data[1]}
-				// card2={data[2]}
-				// card3={data[3]}
-				// card4={data[4]}
-				// card5={data[5]}
+				card0={data[0]}
+				card1={data[1]}
+				card2={data[2]}
+				card3={data[3]}
+				card4={data[4]}
+				card5={data[5]}
 			/>
 
 			<SliderBlock style={{ padding: "100px 0" }} />

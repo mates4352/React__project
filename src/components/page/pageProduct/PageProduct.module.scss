@@ -48,11 +48,6 @@
 
     .message {
         @include font4(15px, 18px, $SFProRegular, $sub-color);
-
-        &:hover {
-            // text-decoration: underline;
-            border-bottom: 3px solid;
-        }
     }
 
     // ------------infoCard
@@ -72,7 +67,6 @@
     .images {
         display: flex;
         align-items: flex-end;
-        // flex-direction: row;
         margin: 22px 0 35px;
     }
 
@@ -91,10 +85,6 @@
         margin-right: 4px;
     }
 
-    // .stars {
-    //     margin-left: 25px;
-    // }
-
     // ------------table
     .table {
         display: table;
@@ -106,16 +96,6 @@
     tr {
         border-bottom: 1px solid rgba(0, 0, 0, .12);
         // opacity: 0.6;
-
-        &:hover {
-            border-bottom: 3px solid $sub-color;
-            // text-decoration: none;
-            // text-decoration-color: $sub-color;
-        }
-
-        &:first-child {
-            border-bottom: none;
-        }
     }
 
     th {
@@ -132,7 +112,7 @@
 
         &:active {
             font-weight: bold;
-            border-bottom: 3px solid $sub-color;
+            // border-bottom: 3px solid $sub-color;
         }
     }
 
@@ -158,6 +138,21 @@
     td {
         padding: 15px 0px 6px;
     }
+
+    @media screen and(max-width:992px) {
+        .bigCard {
+            margin: 0;
+            justify-content: center;
+        }
+
+        .bigImage {
+            max-width: 80%;
+        }
+
+        th {
+            padding-right: 15px;
+        }
+    }
 }
 
 
@@ -175,7 +170,7 @@
     }
 
     // -------------------- inputShop
-    .label {
+    .labelShop {
         position: relative;
 
         &::after {
@@ -199,6 +194,7 @@
             background: #F0F0F4;
             border-radius: 3px;
             padding: 17px;
+            border: 2px solid white;
 
             &:hover {
                 border: 2px solid $sub-color;
@@ -247,67 +243,11 @@
     }
 
     // -------------------radio-buttons
-
-    //  .radio {
-    //     display: none;
-    //   }
-
-    //   .labelRadio {
-    //     display: inline-block;
-    //     padding: 5px 10px;
-    //     cursor: pointer;
-    //   }
-
-    //   .labelRadio span {
-    //     position: relative;
-    //     line-height: 22px;
-    //   }
-
-    //   .labelRadio span:before,
-    //   .labelRadio span:after {
-    //     content: '';
-    //   }
-
-    //   .labelRadio span:before {
-    //     border: 1px solid $sub-color;
-    //     width: 20px;
-    //     height: 20px;
-    //     margin-right: 10px;
-    //     display: inline-block;
-    //     vertical-align: top;
-    //   }
-
-    //   .labelRadio span:after {
-    //     background: $sub-color;
-    //     width: 14px;
-    //     height: 14px;
-    //     position: absolute;
-    //     top: 2px;
-    //     left: 3px;
-    //     // transition: 500ms;
-    //     opacity: 0;
-    // }
-    //   .labelRadio .radio:checked+span:after {
-    //     opacity: 1;
-    //   }
-
-    //   /* стили для радиокнопки, находящейся в состоянии checked */
-    //   .labelRadio>input:checked+span::before {
-    //     border-color: #0b76ef;
-    //     // background-color: #0b76ef;
-    //   }
-
-    //   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-    //   .labelRadio>input:focus:not(:checked)+span::before {
-    //     border-color: #80bdff;
-    //   }
-
-    // ----------------radio new
     .radio {
-        margin-bottom: 0.2em;
-        padding-right: 55px;
+            margin-bottom: 0.2em;
+            padding-right: 55px;
 
-        &:hover {
+            &:hover {
             text-decoration: underline;
             text-decoration-color: $sub-color;
         }
@@ -331,8 +271,8 @@
     .customRadio>span::before {
         content: '';
         display: inline-block;
-        width: 1em;
-        height: 1em;
+        width: 14px;
+        height: 14px;
         flex-shrink: 0;
         flex-grow: 0;
         border: 1px solid #adb5bd;
@@ -369,7 +309,6 @@
         background-color: $sub-color;
     }
 
-
     // ---------------------- grid
     .gridWrapper {
         display: grid;
@@ -378,10 +317,6 @@
         grid-row-gap: 20px;
         @include font4(16px, 24px, $SFProRegular, $main-color);
     }
-
-    // .gridWrapper:hover>.gridItem {
-    //     // border-bottom: 2px solid $sub-color;
-    // }
 
     .gridItem {
         // border: 2px solid lightgray;
@@ -418,6 +353,4 @@
     #item8 {
         @include font4(20px, 24px, $SFProRegular, $main-color);
     }
-
-    
 }
