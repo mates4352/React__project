@@ -13,7 +13,7 @@ function App() {
 			<div className="container">
 				<Header style={{ padding: "55px 0 45px 0" }} />
 
-				<Route  path='/PageMain' component={PageMain}/>
+				<Route exact path='/' component={PageMain}/>
 				<Route path='/PageCatalog' component={PageCatalog}/>
 				<Route path='/PageProduct' component={PageProduct}/>
 				{/* <PageMain /> */}

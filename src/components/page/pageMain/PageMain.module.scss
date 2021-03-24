@@ -6,7 +6,6 @@
 	.banner{
 		display: flex;
 		justify-content: space-between;
-		
 	}
 	
 	.Search{
@@ -116,8 +115,10 @@
 				text-align: center;
 			}
 		}
-		// .banner{
-		// }
+		.banner{
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 	
 }
