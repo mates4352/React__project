@@ -3,14 +3,15 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/base/fonts";
 
-.pageCatalog {
-    border: 1px solid red;
-}
+.catalog {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+	gap: 33px;
 
-.wrapper {
-    display: flex;
 	@media screen and(max-width:992px) {
-		justify-content: center;
+		grid-template-columns: 270px 270px;
+	}
+	@media screen and(max-width:576px) {
+		grid-template-columns: 270px;
 	}
 }
-

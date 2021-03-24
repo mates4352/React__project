@@ -24,11 +24,12 @@
 .image {
 	flex-grow: 1;
 	margin-bottom: 12px;
-   width: max-content;
+    // max-height: 200px;
+    width: max-content;
 }
 
 .name {
-    max-width: 70%;
+    max-width: 85%;
     // height: 50px;
     @extend %flexCenter;
     @include font4(20px, 24px, $SFProRegular, $main-color);
