@@ -67,9 +67,6 @@
     transform: rotate(180deg);
 }
 
-.menu:hover {
-    transform: scale(1.015);
-}
 // *************** Стиль для аккордиона **************//
 
 
@@ -91,7 +88,7 @@
     @include font4(14px,1.2,$SFProRegular,$cardSpan);
     margin-right: 10px;
 }
-.priceInput {
+.priceSpan1 {
     @include font4(14px,1.2,$BarlowRegular,$main-color);
     border-bottom: 1px solid $main-color;
 }

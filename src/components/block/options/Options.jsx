@@ -14,8 +14,8 @@ const Options = () => {
 	return (
 		<div className={s.options}>
 			<div className={s.titleMenu}>
-				<button className={s.btntitle}>Параметры</button>
-				<button className={s.btntitle}>По марке</button>
+				<button className={s.btntitleOption}>Параметры</button>
+				<button className={s.btntitleBrand}>По марке</button>
 			</div>
 			<div className={s.menu}>
 				<MenuSorting

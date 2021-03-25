@@ -14,9 +14,6 @@
     margin-top: 25px;  
 }
 
-.dropdownSelect:hover {
-    transform: scale(1.015);
-}
 
 .dropdownText {
     @include font4(16px, 1.2, $SFProSemibold, $main-color);

@@ -8,10 +8,25 @@ const BreadCrumbs = (props) => {
 	return (
 		<ul className={s.BreadCrumbs}>
 			<li className={s.BreadCrumb}>
+			{props.Crumb0 &&
 				<Crumb
-					href='#'
-					value='Главная'
+					href={props.Crumb0.href}
+					value={props.Crumb0.value}
 				/>
+			}
+			{props.Crumb1 &&
+				<Crumb
+					href={props.Crumb1.href}
+					value={props.Crumb1.value}
+				/>
+			}
+			{props.Crumb2 &&
+				<Crumb
+					href={props.Crumb2.href}
+					value={props.Crumb2.value}
+				/>
+			}
+				
 			</li>
 		</ul>
 	);

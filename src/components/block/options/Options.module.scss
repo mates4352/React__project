@@ -17,18 +17,24 @@
 .titleMenu {
     margin-bottom: 41px;
 }
-.btntitle {
-    @include font4(16px, 1.5, $SfProBold, #C4C4C4);
+.btntitleOption {
+    @include font4(16px, 1.5, $SfProBold, $main-color);
     letter-spacing: 1px;
-    margin-right: 40px;
+    margin-right: 32px;
     background-color: white;
+    box-sizing: border-box;
+    border-bottom: 2px solid $sub-color;
+    text-transform: uppercase;
+}
+.btntitleBrand {
+    @include font4(16px, 1.5, $SfProBold, $cardSpan);
+    letter-spacing: 1px;
+    margin-right: 32px;
+    background-color: white;
+    box-sizing: border-box;
     text-transform: uppercase;
 }
 
-.btntitle:hover{
-    color: $main-color;
-    border-bottom: 2px solid $sub-color;
-}
 
 // =========кнопки нижнии========= //
 .leftSectionBtnSelect {
