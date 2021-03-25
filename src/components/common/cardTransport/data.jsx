@@ -14,11 +14,11 @@ function Data(title, image, alt, href) {
 
 export const data = [
 	new Data("Квадроциклы", img1,"Квадроциклы" ,'/PageCatalog'),
-	new Data("Гидроциклы",  img2,"Гидроциклы",'/PageCatalog'),
-	new Data("Катера",      img3,"Катера",'/PageCatalog'),
-	new Data("Снегоходы",   img4,"Снегоходы",'/PageCatalog'),
-	new Data("Вездеходы",   img5,"Вездеходы",'/PageCatalog'),
-	new Data("Двигатели", img6, "Двигатели", '/PageCatalog'),
+	new Data("Гидроциклы",  img2,"Гидроциклы"  ,'/PageCatalog'),
+	new Data("Катера",      img3,"Катера"      ,'/PageCatalog'),
+	new Data("Снегоходы",   img4,"Снегоходы"   ,'/PageCatalog'),
+	new Data("Вездеходы",   img5,"Вездеходы"   ,'/PageCatalog'),
+	new Data("Двигатели",   img6,"Двигатели"   ,'/PageCatalog'),
 ]
 
 

@@ -156,201 +156,201 @@
 }
 
 
-// ------------selfdelivery, grid
-.selfdelivery {
-    padding-left: 38px;
-    // border: 2px solid rgb(199, 248, 125);
+// // ------------selfdelivery, grid
+// .selfdelivery {
+//     padding-left: 38px;
+//     // border: 2px solid rgb(199, 248, 125);
 
-    .header {
-        padding-bottom: 50px;
-        @include font4(17px, 20px, $SFProRegular, $main-color);
-        opacity: 0.7;
-        display: flex;
-        align-items: center;
-    }
+//     .header {
+//         padding-bottom: 50px;
+//         @include font4(17px, 20px, $SFProRegular, $main-color);
+//         opacity: 0.7;
+//         display: flex;
+//         align-items: center;
+//     }
 
-    // -------------------- inputShop
-    .labelShop {
-        position: relative;
+//     // -------------------- inputShop
+//     .labelShop {
+//         position: relative;
 
-        &::after {
-            display: inline-block;
-            content: "";
-            background-image: url(./../../../assets/images/svg/loupe.svg);
-            background-size: cover;
-            opacity: 0.3;
-            width: 16px;
-            height: 16px;
-            right: 117px;
-            bottom: 0px;
-            z-index: 9999;
-            position: absolute;
-        }
+//         &::after {
+//             display: inline-block;
+//             content: "";
+//             background-image: url(./../../../assets/images/svg/loupe.svg);
+//             background-size: cover;
+//             opacity: 0.3;
+//             width: 16px;
+//             height: 16px;
+//             right: 117px;
+//             bottom: 0px;
+//             z-index: 9999;
+//             position: absolute;
+//         }
 
-        .inputShop {
-            margin: 0 100px 0 17px;
-            min-width: 313px;
-            height: 33px;
-            background: #F0F0F4;
-            border-radius: 3px;
-            padding: 17px;
-            border: 2px solid white;
+//         .inputShop {
+//             margin: 0 100px 0 17px;
+//             min-width: 313px;
+//             height: 33px;
+//             background: #F0F0F4;
+//             border-radius: 3px;
+//             padding: 17px;
+//             border: 2px solid white;
 
-            &:hover {
-                border: 2px solid $sub-color;
-            }
+//             &:hover {
+//                 border: 2px solid $sub-color;
+//             }
 
-            &::-webkit-input-placeholder {
-                opacity: 1;
-                transition: opacity 0.3s ease;
-            }
+//             &::-webkit-input-placeholder {
+//                 opacity: 1;
+//                 transition: opacity 0.3s ease;
+//             }
 
-            &::-moz-placeholder {
-                opacity: 1;
-                transition: opacity 0.3s ease;
-            }
+//             &::-moz-placeholder {
+//                 opacity: 1;
+//                 transition: opacity 0.3s ease;
+//             }
 
-            &:-moz-placeholder {
-                opacity: 1;
-                transition: opacity 0.3s ease;
-            }
+//             &:-moz-placeholder {
+//                 opacity: 1;
+//                 transition: opacity 0.3s ease;
+//             }
 
-            &:-ms-input-placeholder {
-                opacity: 1;
-                transition: opacity 0.3s ease;
-            }
+//             &:-ms-input-placeholder {
+//                 opacity: 1;
+//                 transition: opacity 0.3s ease;
+//             }
 
-            &:focus::-webkit-input-placeholder {
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
+//             &:focus::-webkit-input-placeholder {
+//                 opacity: 0;
+//                 transition: opacity 0.3s ease;
+//             }
 
-            &:focus::-moz-placeholder {
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
+//             &:focus::-moz-placeholder {
+//                 opacity: 0;
+//                 transition: opacity 0.3s ease;
+//             }
 
-            &:focus:-moz-placeholder {
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
+//             &:focus:-moz-placeholder {
+//                 opacity: 0;
+//                 transition: opacity 0.3s ease;
+//             }
 
-            &:focus:-ms-input-placeholder {
-                opacity: 0;
-                transition: opacity 0.3s ease;
-            }
-        }
-    }
+//             &:focus:-ms-input-placeholder {
+//                 opacity: 0;
+//                 transition: opacity 0.3s ease;
+//             }
+//         }
+//     }
 
-    // -------------------radio-buttons
-    .radio {
-            margin-bottom: 0.2em;
-            padding-right: 55px;
+//     // -------------------radio-buttons
+//     .radio {
+//             margin-bottom: 0.2em;
+//             padding-right: 55px;
 
-            &:hover {
-            text-decoration: underline;
-            text-decoration-color: $sub-color;
-        }
-    }
+//             &:hover {
+//             text-decoration: underline;
+//             text-decoration-color: $sub-color;
+//         }
+//     }
 
-    /* для элемента input c type="radio" */
-    .customRadio>input {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-    }
+//     /* для элемента input c type="radio" */
+//     .customRadio>input {
+//         position: absolute;
+//         z-index: -1;
+//         opacity: 0;
+//     }
 
-    /* для элемента label связанного с .custom-radio */
-    .customRadio>span {
-        display: inline-flex;
-        align-items: center;
-        user-select: none;
-    }
+//     /* для элемента label связанного с .custom-radio */
+//     .customRadio>span {
+//         display: inline-flex;
+//         align-items: center;
+//         user-select: none;
+//     }
 
-    /* создание в label псевдоэлемента  before со следующими стилями */
-    .customRadio>span::before {
-        content: '';
-        display: inline-block;
-        width: 14px;
-        height: 14px;
-        flex-shrink: 0;
-        flex-grow: 0;
-        border: 1px solid #adb5bd;
-        margin-right: 18px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 50% 50%;
-    }
+//     /* создание в label псевдоэлемента  before со следующими стилями */
+//     .customRadio>span::before {
+//         content: '';
+//         display: inline-block;
+//         width: 14px;
+//         height: 14px;
+//         flex-shrink: 0;
+//         flex-grow: 0;
+//         border: 1px solid #adb5bd;
+//         margin-right: 18px;
+//         background-repeat: no-repeat;
+//         background-position: center center;
+//         background-size: 50% 50%;
+//     }
 
-    /* стили при наведении курсора на радио */
-    .customRadio>input:not(:disabled):not(:checked)+span:hover::before {
-        border-color: #b3d7ff;
-    }
+//     /* стили при наведении курсора на радио */
+//     .customRadio>input:not(:disabled):not(:checked)+span:hover::before {
+//         border-color: #b3d7ff;
+//     }
 
-    /* стили для активной радиокнопки (при нажатии на неё) */
-    .customRadio>input:active+span::before {
-        background-color: #b3d7ff;
-        border-color: #b3d7ff;
-    }
+//     /* стили для активной радиокнопки (при нажатии на неё) */
+//     .customRadio>input:active+span::before {
+//         background-color: #b3d7ff;
+//         border-color: #b3d7ff;
+//     }
 
-    /* стили для радиокнопки, находящейся в фокусе */
-    .customRadio>input:focus+span::before {
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    }
+//     /* стили для радиокнопки, находящейся в фокусе */
+//     .customRadio>input:focus+span::before {
+//         box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//     }
 
-    /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-    .customRadio>input:focus:not(:checked)+span::before {
-        border-color: #80bdff;
-    }
+//     /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+//     .customRadio>input:focus:not(:checked)+span::before {
+//         border-color: #80bdff;
+//     }
 
-    /* стили для радиокнопки, находящейся в состоянии checked */
-    .customRadio>input:checked+span::before {
-        border-color: $sub-color;
-        background-color: $sub-color;
-    }
+//     /* стили для радиокнопки, находящейся в состоянии checked */
+//     .customRadio>input:checked+span::before {
+//         border-color: $sub-color;
+//         background-color: $sub-color;
+//     }
 
-    // ---------------------- grid
-    .gridWrapper {
-        display: grid;
-        grid-template-columns: 27% 22% 18% 33%;
-        grid-auto-rows: minmax(70px, auto);
-        grid-row-gap: 20px;
-        @include font4(16px, 24px, $SFProRegular, $main-color);
-    }
+//     // ---------------------- grid
+//     .gridWrapper {
+//         display: grid;
+//         grid-template-columns: 27% 22% 18% 33%;
+//         grid-auto-rows: minmax(70px, auto);
+//         grid-row-gap: 20px;
+//         @include font4(16px, 24px, $SFProRegular, $main-color);
+//     }
 
-    .gridItem {
-        // border: 2px solid lightgray;
-        // background-color: rgb(218, 244, 253);
-        border-bottom: 3px solid rgba(0, 0, 0, .12);
+//     .gridItem {
+//         // border: 2px solid lightgray;
+//         // background-color: rgb(218, 244, 253);
+//         border-bottom: 3px solid rgba(0, 0, 0, .12);
 
-        &:hover {
-            border-bottom: 3px solid $sub-color;
-            //text-decoration: none;
-            //text-decoration-color: $sub-color;
-            text-decoration: underline;
-            text-decoration-color: $sub-color;
-        }
+//         &:hover {
+//             border-bottom: 3px solid $sub-color;
+//             //text-decoration: none;
+//             //text-decoration-color: $sub-color;
+//             text-decoration: underline;
+//             text-decoration-color: $sub-color;
+//         }
 
-        &:first-child,
-        &:nth-child(2),
-        &:nth-child(3),
-        &:nth-child(4) {
-            border-bottom: none;
-        }
-    }
+//         &:first-child,
+//         &:nth-child(2),
+//         &:nth-child(3),
+//         &:nth-child(4) {
+//             border-bottom: none;
+//         }
+//     }
 
-    #item12,
-    #item16,
-    #item20,
-    #item24 {
-        display: flex;
-        justify-content: space-between;
-    }
+//     #item12,
+//     #item16,
+//     #item20,
+//     #item24 {
+//         display: flex;
+//         justify-content: space-between;
+//     }
 
-    #item5,
-    #item6,
-    #item7,
-    #item8 {
-        @include font4(20px, 24px, $SFProRegular, $main-color);
-    }
-}
+//     #item5,
+//     #item6,
+//     #item7,
+//     #item8 {
+//         @include font4(20px, 24px, $SFProRegular, $main-color);
+//     }
+// }
