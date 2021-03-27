@@ -76,6 +76,15 @@ const SliderCards = (props) => {
 		{ image: bag, name: 'Водонепроницаемый Рюкзак', price: '9 800 ₽', absent: '', message: ''}
 	]
 
+	let cardsElements = data
+		.map( i => <Card
+			image={i.image}
+			name={i.name}
+			price={i.price}
+			absent={i.absent}
+			message={i.message}
+		/>);
+
 	return (
 		<div className="wrapper">
 			<Swiper

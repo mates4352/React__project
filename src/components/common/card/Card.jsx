@@ -17,8 +17,6 @@ const Card = (props) => {
 				src={like}
 				alt={'Like'}
 			/>
-
-            
 			<NavLink className={s.image} to={"/PageProduct"}>
 				<img
 					style={props.styleImg}
@@ -26,24 +24,16 @@ const Card = (props) => {
 					alt={'image'}
 				/>
 			</NavLink>
-
-			
 			<p
 				style={props.styleName}
 				className={s.name}>
 				{props.name}
 			</p>
-
 			<div>
-			
 				<p className={s.absent}>{props.absent}</p>
-		
 				<a className={s.message}>{props.message}</a>
 			</div>
-
-			
 			<span className={s.price}>{props.price}</span>
-
 			<button className={s.btnCart}>
 				<img src={cart} alt={'Cart'} />
 			</button>
