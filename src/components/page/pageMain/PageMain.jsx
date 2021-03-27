@@ -11,7 +11,6 @@ import s from "./PageMain.module.scss"
 import SliderBanner from "../../block/sliderBanner/SliderBanner"
 
 const PageMain = () => {
-	console.log(data);
 	return (
 		<div className={s.PageMain}>
 

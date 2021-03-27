@@ -1,20 +1,19 @@
 import s from "./PageProduct.module.scss"
-import "./rating.scss"
+import Delivery from "./delivery/Delivery"
 
 // components
 import BreadCrumbs from "./../../block/breadCrumbs/BreadCrumbs"
+// import data from "./../../block/breadCrumbs/crumb/data"
 import SliderBlock from "./../../block/sliderBlock/SliderBlock"
-// import GridSchedule from "../../block/gridSchedule/GridSchedule"
 import Navigation from "./../../block/navigation/Navigation"
 import { data } from "./../../block/navigation/data"
-import Delivery from "./delivery/Delivery"
 
 // common
 import Sale from "../../common/sale/Sale"
 import BtnShow from "../../common/btnShow/BtnShow"
 import BtnBuy from "../../common/btnBuy/BtnBuy"
 
-// Image
+// images
 import like from "./../../../assets/images/svg/like.svg"
 import gidrotsikl36666 from "./../../../assets/images/svg/gidrotsikl36666.svg"
 import rec from "./../../../assets/images/svg/Rectangle 17.svg"
@@ -23,18 +22,19 @@ import rec2 from "./../../../assets/images/svg/Rectangle 17.2.svg"
 
 // Библиотечка Rating/Material UI
 import React from 'react';
-import Rating from "./Rating"
-
-// import {SectionDelivery} from 'SectionDelivery'
+import Rating from "./Rating";
+import "./rating.scss"
 import { NavLink } from "react-router-dom";
 
 
-
 const PageProduct = (props) => {
-
 	return (
 		<>
-			<BreadCrumbs />
+			<BreadCrumbs
+			// Crumb0={data[0]}
+			// Crumb1={data[1]}
+			// Crumb1={data[2]}
+			/>
 
 			<section className={s.aboutProduct}>
 
@@ -107,62 +107,7 @@ const PageProduct = (props) => {
 				link6={data[14]}
 			/>
 
-            {/* <Route path='/Delivery' component={Delivery}/> */}
-			<Delivery/>
-
-				
-				{/* <section className={s.delivery}>
-
-				<header className={s.header}>
-					<form>
-						<label className={s.labelShop}>
-							Магазин <input className={s.inputShop} type="text" placeholder="Введите название магазина" value={s.value} />
-						</label>
-					</form>
-
-					<div className={s.radio}>
-						<label className={s.customRadio}>
-							<input type="radio" name="time" />
-							<span>Забрать сегодня</span>
-						</label>
-					</div>
-
-					<div className={s.radio}>
-						<label className={s.customRadio}>
-							<input type="radio" name="time" />
-							<span>Забрать в течение недели</span>
-						</label>
-					</div>
-
-				</header>
-
-				<div className={s.gridWrapper}>
-					<div className={s.gridItem} id={s.item5}>Адрес</div>
-					<div className={s.gridItem} id={s.item6}>Режим работы</div>
-					<div className={s.gridItem} id={s.item7}>Доступно</div>
-					<div className={s.gridItem} id={s.item8}>Количество</div>
-					<div className={s.gridItem} id={s.item9}>Москва, ул. Науки 25</div>
-
-					<div className={s.gridItem} id={s.item10}><GridSchedule /></div>
-					<div className={s.gridItem} id={s.item11}>В наличии </div>
-					<div className={s.gridItem} id={s.item12}>1<BtnBuy /></div>
-					<div className={s.gridItem} id={s.item13}>Москва, ул.  Южная 134</div>
-					<div className={s.gridItem} id={s.item14}><GridSchedule /></div>
-					<div className={s.gridItem} id={s.item15}>В наличии </div>
-					<div className={s.gridItem} id={s.item16}>2<BtnBuy /> </div>
-					<div className={s.gridItem} id={s.item17}>Санкт-Петербург, ул. Красная 19</div>
-					<div className={s.gridItem} id={s.item18}><GridSchedule /></div>
-					<div className={s.gridItem} id={s.item19}>Нет в наличии</div>
-					<div className={s.gridItem} id={s.item20}>0<BtnBuy /></div>
-					<div className={s.gridItem} id={s.item21}>Киев, ул. Шевченко 167</div>
-					<div className={s.gridItem} id={s.item22}><GridSchedule /></div>
-					<div className={s.gridItem} id={s.item23}>Нет в наличии</div>
-					<div className={s.gridItem} id={s.item24}>0<BtnBuy /></div>
-				</div>
-
-			</section> */}
-
-
+			<Delivery />
 
 			<SliderBlock style={{ padding: "100px 0" }} />
 
