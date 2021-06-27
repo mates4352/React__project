@@ -1,55 +1,54 @@
 import banner from "./../../../assets/images/banner.jpg"
-
-import { Swiper, SwiperSlide,  } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
-
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
-
+import React from 'react';
+import Swiper from 'react-id-swiper';
+import 'swiper/swiper.scss'
 import "./SliderBanner.scss"
 
-SwiperCore.use([Navigation,]);
-
-const SliderBanner = (props) => {
-	return (
-		<Swiper
-			spaceBetween={0}
-			slidesPerView={1}
-			loop={true}
-			autoplay={{
-				delay: 5000,
-				disableOnInteraction: false
-			}}
-			navigation
-			onSlideChange={() => console.log('slide change')}
-			onSwiper={(swiper) => console.log(swiper)}
-		>
-			<SwiperSlide className="swipper">
+const SliderBanner = () => {
+	const params = {
+	  pagination: {
+		 el: '.swiper-pagination',
+		 type: 'bullets',
+		 clickable: true
+	  },
+	  navigation: {
+		 nextEl: '.swiper-button-next',
+		 prevEl: '.swiper-button-prev'
+	  },
+	  spaceBetween: 30
+	}
+  
+	return(
+	  <Swiper {...params}>
+			<div>
+				<img
+					className="bannerImg"
+					src={banner}
+					alt="banner"
+			/>
+			</div>
+			<div>
 				<img
 					className="bannerImg"
 					src={banner}
 					alt="banner"
 				/>
-			</SwiperSlide>
-
-			<SwiperSlide className="swipper">
+			</div>
+			<div>
 				<img
 					className="bannerImg"
 					src={banner}
 					alt="banner"
 				/>
-			</SwiperSlide>
+			</div>
 
-			<SwiperSlide className="swipper">
-				<img
-					className="bannerImg"
-					src={banner}
-					alt="banner"
-				/>
-			</SwiperSlide>
+	  </Swiper>
+	)
+ }
+  
+ export default SliderBanner;
 
-		</Swiper>
-	);
-}
 
-export default SliderBanner;
+
+
+

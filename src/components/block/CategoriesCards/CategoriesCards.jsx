@@ -3,22 +3,6 @@ import s from "./CategoriesCards.module.scss"
 import CardTransport from "../../common/cardTransport/CardTransport";
 
 export const CategoriesCards = (props) => {
-	// window.addEventListener("resize", function () {
-	// 	adaptive_function()
-	// })
-
-	// function size(w) {
-	// 	return w <= "1200"
-	// }
-	
-	// function adaptive_function() {
-	// 	let w = window.innerWidth
-	// 	size(w)
-	// }
-
-	// adaptive_function()
-
-	
 	return (
 		<section className={s.CategoriesCards}>
 			{props.card0 &&

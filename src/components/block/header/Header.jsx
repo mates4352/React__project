@@ -4,21 +4,25 @@ import like from "./../../../assets/images/svg/like.svg"
 import person from "./../../../assets/images/svg/person.svg"
 import basket from "./../../../assets/images/svg/basket.svg"
 import Navigation from "../navigation/Navigation"
+import React, { useState } from 'react';
 import { data } from "./../navigation/data"
 import { NavLink } from "react-router-dom"
 import s from "./Header.module.scss"
 
-
+import MobileMenu from './../mobileMenu/MobileMenu'
 
 const Header = (props) => {
-
+	const [menuActive, setMenuActive] = useState(false);
 	return (
 		<>
 			<header className={s.header} style={props.style}>
 				<div className={s.header__wrapper}>
+				<button className={s.burger} onClick={()=> setMenuActive(!menuActive)}>
+						<span></span>
+				</button>
+					<MobileMenu active={menuActive} setActive={setMenuActive}/>
 					<nav className={s.menu}>
 						<ul className={s.list}>
-
 							<li className={s.item}>
 								<NavLink
 									className={s.text}

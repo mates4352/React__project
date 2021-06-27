@@ -4,7 +4,7 @@ import s from "./CardTransport.module.scss"
 
 const CardTransport = (props) => {
 	return (
-		<div className={s.CategoryCard}>
+		<NavLink className={s.CategoryCard} to={props.href}>
 
 			{props.title && <h3
 				className={s.title}>
@@ -26,7 +26,7 @@ const CardTransport = (props) => {
 				</NavLink>
 			}
 
-		</div>
+		</NavLink>
 
 	);
 }

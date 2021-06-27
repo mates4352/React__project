@@ -3,6 +3,9 @@
 
 
 .Navigation{
+	@media screen and(max-width:992px) {
+		display: none;
+	}
 	.wrapper{
 		height: 55px;
 		margin-bottom:80px;

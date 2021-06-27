@@ -11,14 +11,14 @@ import s from "./PageMain.module.scss"
 import SliderBanner from "../../block/sliderBanner/SliderBanner"
 
 const PageMain = () => {
-	console.log(data);
 	return (
 		<div className={s.PageMain}>
-
 			<div className={s.banner}>
-				<SliderBanner />
+				<div className={s.hidden}>
+					<SliderBanner />
+				</div>
 				<Card
-					styleCard={{minWidth:"265px"}}
+					styleCard={{width:"100%"}}
 					absent="Лодочный мотор Suzuki DF9.9BRS"
 					price="190000р"
 					image={img}

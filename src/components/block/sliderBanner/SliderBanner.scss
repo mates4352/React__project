@@ -3,25 +3,7 @@
 	object-fit: cover;
 	object-position: center;
 }
-.swipper{
-	min-height: 400px;
-}
+
 .swiper-button-next{
-	right: 80px;
-}
-
-
-@media screen and(max-width:992px){
-	.bannerImg{
-	}
-	.swipper{
-		min-height: 300px;
-		margin-bottom: 25px;
-	}
-	.swiper-container {
-		width: 100%;
-	}
-	.swiper-button-next{
-		right: 15px;
-	}
+	right: 50px;
 }

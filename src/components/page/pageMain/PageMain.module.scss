@@ -28,6 +28,13 @@
 			}
 		}
 	}
+
+	.hidden {
+		width: 75%;
+		@media screen and (max-width:992px) {
+			display: none;
+		}
+	}
 	
 	.SearchInput{
 		position: relative;

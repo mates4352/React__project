@@ -82,13 +82,11 @@ const SliderCards = (props) => {
 				spaceBetween={20}
 				slidesPerView={4}
 				loop={true}
-			// 	autoplay={{
-			// 		delay: 2500,
-			// 		disableOnInteraction: false
-			//   }}
+				autoplay={{
+					delay: 2500,
+					disableOnInteraction: false
+			  }}
 				navigation
-				onSlideChange={() => console.log('slide change')}
-				onSwiper={(swiper) => console.log(swiper)}
 			>
 				<SwiperSlide className="swipper">
 				{/* {props.data0 && */}
