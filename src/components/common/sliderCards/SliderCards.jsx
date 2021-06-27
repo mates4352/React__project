@@ -65,17 +65,10 @@ const SliderCards = (props) => {
 				spaceBetween={20}
 				slidesPerView={4}
 				loop={true}
-<<<<<<< HEAD
 				autoplay={{
 					delay: 2500,
 					disableOnInteraction: false
 			  }}
-=======
-				// 	autoplay={{
-				// 		delay: 2500,
-				// 		disableOnInteraction: false
-				//   }}
->>>>>>> 4c483568aaf1ee12e10e34292c594a3e95696680
 				navigation
 			>
 				<SwiperSlide className="swipper">
