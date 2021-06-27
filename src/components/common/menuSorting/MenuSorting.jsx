@@ -70,11 +70,13 @@ const MenuSorting = (props) => {
                             <div className={s.priceFromTo}>
                                 <div className={s.priceText}>
                                     <span className={s.priceSpan}>от</span>
-                                    <input className={s.priceInput} name="price" type="text" min="0" max="1 000 000" value="100 000" />
+                                    <span className={s.priceSpan1}>100 000</span>
+                                    {/* <input className={s.priceInput} name="price" type="text" min="0" max="1 000 000" value="100 000" /> */}
                                 </div>
                                 <div className={s.priceText}>
                                     <span className={s.priceSpan}>до</span>
-                                    <input className={s.priceInput} name="price" type="text" min="0" max="1 000 000" value="500 000" />
+                                    <span className={s.priceSpan1}>500 000</span>
+                                    {/* <input className={s.priceInput} name="price" type="text" min="0" max="1 000 000" value="500 000" /> */}
                                 </div>
                             </div>
                         </div>

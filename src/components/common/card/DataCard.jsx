@@ -1,4 +1,4 @@
-// Картинки из PageProduct 
+// // Картинки из PageProduct 
 // import recordPlayer from "./../../../assets/images/svg/recordPlayer.svg"
 // import navigator from "./../../../assets/images/svg/navigator.svg"
 // import RF from "./../../../assets/images/svg/RF.svg"
@@ -15,12 +15,12 @@
 // }
 
 
-// export const data = [
+// export const DataCard= [
 // 	new Data(recordPlayer,'BRP Audio-портативная система','','нет в наличии','Сообщить о поступлении'),
 // 	new Data(navigator,'Garmin Echomap Plus 62cv','45 800 ₽','',''),
 // 	new Data(RF,'RF D.E.S.S.TM Key','','нет в наличии','Сообщить о поступлении'),
 // 	new Data(suit,'Мужской костюм 3мм','7 000 ₽','',''),
-// 	new Data(bag,'BRP Audio-портативная система','','нет в наличии','Сообщить о поступлении')
+// 	new Data(bag,'Водонепроницаемый Рюкзак','9 800 ₽','',''),
 // ]
 
 
@@ -37,4 +37,5 @@
 		
 // 	]
 	
-// 	export default data
+	// export default DataCard
+
